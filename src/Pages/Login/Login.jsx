@@ -50,16 +50,21 @@ const Login = () => {
 
                          <div >
                               <div className='flex mb-2 justify-around'>
-                                   <p className='text-base font-normal'>New here?</p>
-                                   <Link to={'/register'} className='text-lg font-medium underline  hover:font-semibold hover:text-cyan-500'>Create an account</Link>
+                                   <p className='text-base font-normal'>Dont Have An Account </p>
+                                   <Link to={'/register'} className='text-lg font-medium underline  hover:font-semibold hover:text-cyan-500'>Register</Link>
                               </div>
                               <h1 className="text-lg mb-4 font-semibold text-center"> Continue With</h1>
-                              <div className=' flex justify-center gap-6 '>
-                                   <button onClick={handelGoogle}>
-                                        <FaGoogle className='size-8 text-cyan-500 mb-6 ' />
-                                   </button>
+                              <div className=' flex justify-center gap-6  mb-6'>
+                                   <div>
+                                        <button onClick={handelGoogle} >
+                                             <FaGoogle className='size-8  text-cyan-500  ' />
+                                             <span><p className='text-base font-semibold mt-1'>Google</p></span>
+
+                                        </button>
+                                   </div>
                                    <button onClick={handelGithub}>
-                                        <FaGithub className='size-8    mb-6 ' />
+                                        <FaGithub className='size-8 ' />
+                                        <span><p className='text-base font-semibold mt-1'>GitHub</p></span>
                                    </button>
                               </div>
                          </div>
