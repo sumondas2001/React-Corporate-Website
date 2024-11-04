@@ -1,4 +1,6 @@
-import loginImg from '../../assets/login/login.svg'
+import { Link } from 'react-router-dom';
+import loginImg from '../../assets/login/login.svg';
+import { FaGoogle, FaGithub } from "react-icons/fa";
 
 const Login = () => {
 
@@ -8,6 +10,12 @@ const Login = () => {
           const email = from.email.value;
           const password = from.password.value;
           console.log(email, password)
+     }
+     const handelGoogle = () => {
+          console.log('google login')
+     };
+     const handelGithub = () => {
+          console.log('git hub login')
      }
      return (
           <div className='mb-20'>
@@ -39,8 +47,22 @@ const Login = () => {
 
                               </div>
                          </form>
-               
 
+                         <div >
+                              <div className='flex mb-2 justify-around'>
+                                   <p className='text-base font-normal'>New here?</p>
+                                   <Link to={'/register'} className='text-lg font-medium underline  hover:font-semibold hover:text-cyan-500'>Create an account</Link>
+                              </div>
+                              <h1 className="text-lg mb-4 font-semibold text-center"> Continue With</h1>
+                              <div className=' flex justify-center gap-6 '>
+                                   <button onClick={handelGoogle}>
+                                        <FaGoogle className='size-8 text-cyan-500 mb-6 ' />
+                                   </button>
+                                   <button onClick={handelGithub}>
+                                        <FaGithub className='size-8    mb-6 ' />
+                                   </button>
+                              </div>
+                         </div>
                     </div>
                </div>
           </div>
