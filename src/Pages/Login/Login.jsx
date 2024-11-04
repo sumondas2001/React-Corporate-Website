@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import loginImg from '../../assets/login/login.svg';
 import { FaGoogle, FaGithub } from "react-icons/fa";
+import { useEffect } from 'react';
+import AOS from 'aos';
 
 const Login = () => {
+     useEffect(() => {
+          AOS.init()
+     }, [])
 
      const handelLogin = (event) => {
           event.preventDefault();
@@ -20,7 +25,7 @@ const Login = () => {
      return (
           <div className='mb-20'>
                <h1 className="text-3xl font-bold text-center mt-4 text-cyan-600">Login Now ! </h1>
-               <div className='flex gap-10 justify-center mt-10'>
+               <div data-aos="zoom-in-down" className='flex gap-10 justify-center items-center mt-10'>
                     <div>
                          <img className='size-96' src={loginImg} alt="" />
                     </div>

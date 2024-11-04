@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import loginImg from '../../assets/login/login.svg';
 import { FaGoogle, FaGithub } from "react-icons/fa";
+import { useEffect } from 'react';
+import AOS from 'aos';
 
 const Register = () => {
+     useEffect(() => {
+          AOS.init()
+     }, [])
 
 
      const handelRegister = (event) => {
@@ -17,13 +22,13 @@ const Register = () => {
           console.log('google login')
      };
      const handelGithub = () => {
-          
+
           console.log('git hub login')
      }
      return (
           <div className='mb-20'>
                <h1 className="text-3xl font-bold text-center mt-4 text-cyan-600">Register Now ! </h1>
-               <div className='flex gap-10 justify-center mt-10'>
+               <div data-aos="zoom-in-down" className='flex gap-10 justify-center items-center mt-10'>
                     <div>
                          <img className='size-96' src={loginImg} alt="" />
                     </div>
@@ -58,10 +63,10 @@ const Register = () => {
                          <div >
                               <div className='flex mb-2 justify-around'>
                                    <p className='text-base font-normal'>Already Have An Account </p>
-                                   <Link to={'/register'} className='text-lg font-medium underline  hover:font-semibold hover:text-cyan-500'>Login</Link>
+                                   <Link to={'/login'} className='text-lg font-medium underline  hover:font-semibold hover:text-cyan-500'>Login</Link>
                               </div>
                               <h1 className="text-lg mb-4 font-semibold text-center"> Continue With</h1>
-                              <div className=' flex justify-center gap-6  mb-6'>
+                              <div className=' flex justify-center gap-6 mb-6'>
                                    <div>
                                         <button onClick={handelGoogle} >
                                              <FaGoogle className='size-8  text-cyan-500  ' />
