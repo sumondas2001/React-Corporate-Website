@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        aleo: ' "Aleo", serif'
+        poppins: '"Poppins", serif'
       }
     },
   },

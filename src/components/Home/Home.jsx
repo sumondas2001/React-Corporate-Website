@@ -1,6 +1,7 @@
 import About from "../../components/About/About";
 import Slider from "../Slider/slider";
 import Timeline from "../Growth/Growth";
+import OurTeam from "../OurTeam/OurTeam";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
                <Slider></Slider>
                <About></About>
                <Timeline></Timeline>
+               <OurTeam></OurTeam>
           </div>
      );
 };

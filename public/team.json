@@ -1,0 +1,38 @@
+[
+     {
+          "id": 1,
+          "name": "Kaiara Spencer",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_5.jpg",
+          "person": "Product Manager"
+     },
+     {
+          "id": 2,
+          "name": "Dave Simpson",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_6.jpg",
+          "person": "Product Manager"
+     },
+     {
+          "id": 3,
+          "name": "Ben Thompson",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_7.jpg",
+          "person": "Product Manager"
+     },
+     {
+          "id": 4,
+          "name": "Kyla Stewart",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_8.jpg",
+          "person": "Product Manager"
+     },
+     {
+          "id": 5,
+          "name": "Kaiara Spencer",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_9.jpg",
+          "person": "Product Manager"
+     },
+     {
+          "id": 6,
+          "name": "Dave Simpson",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_10.jpg",
+          "person": "Product Manager"
+     },
+]
