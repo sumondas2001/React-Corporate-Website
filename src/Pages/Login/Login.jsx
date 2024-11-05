@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
 import loginImg from '../../assets/login/login.svg';
 import { FaGoogle, FaGithub } from "react-icons/fa";
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import AOS from 'aos';
+import { AuthContext } from '../../Provider/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Login = () => {
+
+     const { loginUser } = useContext(AuthContext);
+
      useEffect(() => {
           AOS.init()
      }, [])
@@ -14,7 +19,19 @@ const Login = () => {
           const from = event.target;
           const email = from.email.value;
           const password = from.password.value;
-          console.log(email, password)
+          console.log(email, password);
+
+
+          loginUser(email, password)
+               .then(res => {
+                    console.log(res.user);
+                    toast.success('Login Successfully')
+                    from.reset()
+               })
+               .catch(error => {
+                    toast.error(error.message)
+                    console.log(error.message)
+               })
      }
      const handelGoogle = () => {
           console.log('google login')
