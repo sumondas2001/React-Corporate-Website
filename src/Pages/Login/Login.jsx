@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 
 const Login = () => {
 
-     const { loginUser } = useContext(AuthContext);
+     const { loginUser, googleLogin } = useContext(AuthContext);
 
      useEffect(() => {
           AOS.init()
@@ -25,23 +25,27 @@ const Login = () => {
           loginUser(email, password)
                .then(res => {
                     console.log(res.user);
-                    toast.success('Login Successfully')
-                    from.reset()
+                    toast.success('Login Successfully');
+                    from.reset();
                })
                .catch(error => {
-                    toast.error(error.message)
-                    console.log(error.message)
+                    toast.error(error.message);
+                    console.log(error.message);
                })
      }
      const handelGoogle = () => {
-          console.log('google login')
+          googleLogin()
+               .then(() => {
+                    toast.success('Login Successfully')
+               })
+               .catch(error => {
+                    toast.error(error.message)
+               })
      };
-     const handelGithub = () => {
-          console.log('git hub login')
-     }
+
      return (
           <div className='mb-20'>
-               <h1 className="text-3xl font-bold text-center mt-4 text-cyan-600">Login Now ! </h1>
+               <h1 className="text-xl font-bold text-center mt-4 text-cyan-600">Login Now ! </h1>
                <div data-aos="zoom-in-down" className='flex gap-10 justify-center items-center mt-10'>
                     <div>
                          <img className='size-96' src={loginImg} alt="" />
@@ -72,10 +76,10 @@ const Login = () => {
 
                          <div >
                               <div className='flex mb-2 justify-around'>
-                                   <p className='text-base font-normal'>Dont Have An Account </p>
-                                   <Link to={'/register'} className='text-lg font-medium underline  hover:font-semibold hover:text-cyan-500'>Register</Link>
+                                   <p className='text-sm font-normal'>Dont Have An Account </p>
+                                   <Link to={'/register'} className='text-base font-medium underline  hover:font-semibold hover:text-cyan-500'>Register</Link>
                               </div>
-                              <h1 className="text-lg mb-4 font-semibold text-center"> Continue With</h1>
+                              <h1 className="text-base mb-4 font-semibold text-center"> Continue With</h1>
                               <div className=' flex justify-center gap-6  mb-6'>
                                    <div>
                                         <button onClick={handelGoogle} >
@@ -84,10 +88,7 @@ const Login = () => {
 
                                         </button>
                                    </div>
-                                   <button onClick={handelGithub}>
-                                        <FaGithub className='size-8 ' />
-                                        <span><p className='text-base font-semibold mt-1'>GitHub</p></span>
-                                   </button>
+
                               </div>
                          </div>
                     </div>

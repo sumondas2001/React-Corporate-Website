@@ -7,7 +7,7 @@ import { AuthContext } from '../../Provider/AuthProvider';
 import toast from 'react-hot-toast';
 
 const Register = () => {
-     const { createUser } = useContext(AuthContext);
+     const { createUser, googleLogin } = useContext(AuthContext);
      const [error, setError] = useState('');
 
 
@@ -49,15 +49,18 @@ const Register = () => {
 
      }
      const handelGoogle = () => {
-          console.log('google login')
+          googleLogin()
+               .then(() => {
+                    toast.success('Login Successfully')
+               })
+               .catch(error => {
+                    toast.error(error.message)
+               })
      };
-     const handelGithub = () => {
 
-          console.log('git hub login')
-     }
      return (
           <div className='mb-20'>
-               <h1 className="text-3xl font-bold text-center mt-4 text-cyan-600">Register Now ! </h1>
+               <h1 className="text-xl font-bold text-center mt-4 text-cyan-600">Register Now ! </h1>
                <div data-aos="zoom-in-down" className='flex gap-10 justify-center items-center mt-10'>
                     <div data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
@@ -107,10 +110,10 @@ const Register = () => {
                          <div >
 
                               <div className='flex mb-2 justify-around'>
-                                   <p className='text-base font-normal'>Already Have An Account </p>
-                                   <Link to={'/login'} className='text-lg font-medium underline  hover:font-semibold hover:text-cyan-500'>Login</Link>
+                                   <p className='text-sm font-normal'>Already Have An Account </p>
+                                   <Link to={'/login'} className='text-base font-medium underline  hover:font-semibold hover:text-cyan-500'>Login</Link>
                               </div>
-                              <h1 className="text-lg mb-4 font-semibold text-center"> Continue With</h1>
+                              <h1 className="text-base mb-4 font-semibold text-center"> Continue With</h1>
                               <div className=' flex justify-center gap-6 mb-6'>
                                    <div>
                                         <button onClick={handelGoogle} >
@@ -119,10 +122,7 @@ const Register = () => {
 
                                         </button>
                                    </div>
-                                   <button onClick={handelGithub}>
-                                        <FaGithub className='size-8 ' />
-                                        <span><p className='text-base font-semibold mt-1'>GitHub</p></span>
-                                   </button>
+
                               </div>
                          </div>
                     </div>
