@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import loginImg from '../../assets/login/login.svg';
-import { FaGoogle, FaGithub } from "react-icons/fa";
+import { FaGoogle, } from "react-icons/fa";
 import { useContext, useEffect, useState } from 'react';
 import AOS from 'aos';
 import { AuthContext } from '../../Provider/AuthProvider';
 import toast from 'react-hot-toast';
+import 'react-awesome-button/dist/styles.css';
+
 
 const Register = () => {
-     const { createUser, googleLogin } = useContext(AuthContext);
+     const { createUser, googleLogin, updateProfile } = useContext(AuthContext);
      const [error, setError] = useState('');
 
 
@@ -38,7 +40,8 @@ const Register = () => {
           createUser(email, password)
                .then(res => {
 
-                    toast.success('Register Successfully')
+                    toast.success('Register Successfully');
+                    updateProfile(name)
                     from.reset();
                     console.log(res.user)
                })
@@ -64,7 +67,7 @@ const Register = () => {
                <div data-aos="zoom-in-down" className='flex gap-10 justify-center items-center mt-10'>
                     <div data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1500"
+                         data-aos-duration="1000"
                          data-aos-offset="100">
                          <img className='size-96' src={loginImg} alt="" />
                     </div>
@@ -121,6 +124,10 @@ const Register = () => {
                                              <span><p className='text-base font-semibold mt-1'>Google</p></span>
 
                                         </button>
+
+
+
+
                                    </div>
 
                               </div>

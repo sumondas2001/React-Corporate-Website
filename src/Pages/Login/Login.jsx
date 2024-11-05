@@ -35,8 +35,13 @@ const Login = () => {
      }
      const handelGoogle = () => {
           googleLogin()
-               .then(() => {
-                    toast.success('Login Successfully')
+               .then((res) => {
+                    toast.success('Login Successfully');
+                    console.log(res.user);
+
+
+
+
                })
                .catch(error => {
                     toast.error(error.message)

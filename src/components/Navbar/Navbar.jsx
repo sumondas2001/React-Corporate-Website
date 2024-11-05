@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import { AwesomeButton } from "react-awesome-button";
 
 
 const Navbar = () => {
@@ -119,13 +120,42 @@ const Navbar = () => {
                     </ul>
                </div>
                <div className="navbar-end">
+                    {user ?
+
+                         <div className="dropdown dropdown-end">
+                              <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                   <div className="w-10 rounded-full">
+                                        <img
+                                             alt="Tailwind CSS Navbar component"
+                                             src={user.photoURL} />
+                                   </div>
+                              </div>
+                              <ul
+                                   tabIndex={0}
+                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow v">
+                                   <li>
+                                        <a className="justify-between text-base font-normal">
+                                             Name: {user?.displayName}
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <p className="justify-between text-xs font-normal mb-2 mt-2">
+                                             {user?.email}
+                                        </p>
+                                   </li>
+
+                                   <li>
+                                        <button onClick={handelLogOut} className="text-sm font-semibold bg-red-500 hover:bg-red-600 text-white p-2 rounded-lg">LogOut</button>
+
+                                   </li>
+                              </ul>
+                         </div>
 
 
 
-                    {
-                         user ? <button onClick={handelLogOut} className="text-sm font-semibold bg-red-500 text-white p-2 rounded-lg">LogOut</button>
-                              :
-                              <Link to={'/login'} className="text-sm p-3 font-semibold rounded-lg bg-cyan-500">Login</Link>
+
+                         :
+                         <Link to={'/login'} > <AwesomeButton type="primary">Login</AwesomeButton></Link>
                     }
                </div>
           </div>
@@ -133,3 +163,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
