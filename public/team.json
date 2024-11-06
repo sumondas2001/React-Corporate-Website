@@ -3,36 +3,48 @@
           "id": 1,
           "name": "Kaiara Spencer",
           "img": "https://preview.colorlib.com/theme/nitro/images/person_5.jpg",
-          "person": "Product Manager"
+          "profession": "Accountant Manager"
      },
      {
           "id": 2,
           "name": "Dave Simpson",
           "img": "https://preview.colorlib.com/theme/nitro/images/person_6.jpg",
-          "person": "Product Manager"
+          "profession": "Lawyer"
      },
      {
           "id": 3,
           "name": "Ben Thompson",
           "img": "https://preview.colorlib.com/theme/nitro/images/person_7.jpg",
-          "person": "Product Manager"
+          "profession": "Chiropractor"
      },
      {
           "id": 4,
           "name": "Kyla Stewart",
           "img": "https://preview.colorlib.com/theme/nitro/images/person_8.jpg",
-          "person": "Product Manager"
+          "profession": "Engineer"
      },
      {
           "id": 5,
           "name": "Kaiara Spencer",
-          "img": "https://preview.colorlib.com/theme/nitro/images/person_9.jpg",
-          "person": "Product Manager"
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_3.jpg.webp",
+          "profession": "Medical care"
      },
      {
           "id": 6,
           "name": "Dave Simpson",
-          "img": "https://preview.colorlib.com/theme/nitro/images/person_10.jpg",
-          "person": "Product Manager"
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_2.jpg.webp",
+          "profession": "Product Manager"
      },
+     {
+          "id": 7,
+          "name": "Ben Thompson",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_4.jpg.webp",
+          "profession": "Social Worker"
+     },
+     {
+          "id": 8,
+          "name": "Dave Simpson",
+          "img": "https://preview.colorlib.com/theme/nitro/images/person_1.jpg.webp",
+          "profession": "Chiropractor"
+     }
 ]

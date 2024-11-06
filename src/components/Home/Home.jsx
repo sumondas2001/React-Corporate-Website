@@ -1,7 +1,7 @@
 import About from "../../components/About/About";
 import Slider from "../Slider/slider";
-import Timeline from "../Growth/Growth";
-import OurTeam from "../OurTeam/OurTeam";
+import Growth from "../Growth/Growth";
+import OurTeams from "../OurTeams/OurTeams";
 
 
 const Home = () => {
@@ -9,8 +9,8 @@ const Home = () => {
           <div>
                <Slider></Slider>
                <About></About>
-               {/* <Timeline></Timeline> */}
-               {/* <OurTeam></OurTeam> */}
+               <Growth></Growth>
+               <OurTeams></OurTeams>
           </div>
      );
 };
