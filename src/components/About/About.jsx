@@ -9,7 +9,7 @@ const About = () => {
 
      useEffect(() => {
           AOS.init()
-     }, [])
+     }, []);
      return (
           <div className="mt-10 mb-10 flex flex-col lg:flex-row md:flex-row lg:gap-8 md:gap-4 items-center text-center lg:text-left md:text-left">
 

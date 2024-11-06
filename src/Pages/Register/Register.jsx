@@ -64,12 +64,12 @@ const Register = () => {
      return (
           <div className='mb-20'>
                <h1 className="text-xl font-bold text-center mt-4 text-cyan-600">Register Now ! </h1>
-               <div data-aos="zoom-in-down" className='flex gap-10 justify-center items-center mt-10'>
+               <div data-aos="zoom-in-down" className='lg:flex md:flex  gap-10 justify-center items-center mt-10'>
                     <div data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
                          data-aos-duration="1000"
                          data-aos-offset="100">
-                         <img className='size-96' src={loginImg} alt="" />
+                         <img className='lg:size-96 md:size-80 size-80' src={loginImg} alt="" />
                     </div>
                     <div className="card  w-full max-w-sm shrink-0 shadow-2xl" data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"

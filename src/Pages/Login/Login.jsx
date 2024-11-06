@@ -51,9 +51,9 @@ const Login = () => {
      return (
           <div className='mb-20'>
                <h1 className="text-xl font-bold text-center mt-4 text-cyan-600">Login Now ! </h1>
-               <div data-aos="zoom-in-down" className='flex gap-10 justify-center items-center mt-10'>
+               <div data-aos="zoom-in-down" className='md:flex lg:flex  gap-10 justify-center items-center mt-10'>
                     <div>
-                         <img className='size-96' src={loginImg} alt="" />
+                         <img className='lg:size-96 md:size-80 size-80' src={loginImg} alt="" />
                     </div>
                     <div className="card  w-full max-w-sm shrink-0 shadow-2xl">
                          <form onSubmit={handelLogin} className="card-body">
