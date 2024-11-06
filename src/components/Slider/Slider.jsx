@@ -15,19 +15,13 @@ const Slider = () => {
                     <img
                          src={img1}
                          className="w-full rounded-xl" />
-                    <div className="absolute rounded-xl h-full pl-14 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                         <div className="space-y-7 md:w-1/3 ">
-                              <div data-aos="fade-up"
-                                   data-aos-easing="ease-out-cubic"
-                                   data-aos-duration="1000"
-                                   data-aos-offset="0">
+                    <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
+                              <div >
                                    <h1 className="text-2xl font-bold text-white">Innovating for a Sustainable Future</h1>
                                    <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
-                              <div data-aos="fade-up"
-                                   data-aos-easing="ease-out-cubic"
-                                   data-aos-duration="0"
-                                   data-aos-offset="100">
+                              <div >
                                    <AwesomeButton type="primary">Discover More</AwesomeButton>
 
 
@@ -43,19 +37,19 @@ const Slider = () => {
                     <img
                          src={img2}
                          className="w-full rounded-xl" />
-                    <div className="absolute rounded-xl h-full pl-14 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                         <div className="space-y-7 w-1/3 ">
-                              <h1 className="text-2xl font-bold text-white">Innovating for a Sustainable Future</h1>
+                    <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
+                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
                               <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                              <div className="">
-                                   <AwesomeButton type="primary">Discover More</AwesomeButton>
+                              <div className=" ">
+                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
 
                               </div>
                          </div>
                     </div>
                     <div className="absolute bottom-10  left-5 right-20 justify-end flex -translate-y-1/2 transform gap-10">
-                         <a href="#slide2" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
+                         <a href="#slide1" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
                          <a href="#slide3"  ><FaArrowRight className="text-2xl  text-white opacity-50" /></a>
                     </div>
                </div>
@@ -63,19 +57,19 @@ const Slider = () => {
                     <img
                          src={img3}
                          className="w-full rounded-xl" />
-                    <div className="absolute rounded-xl h-full pl-14 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                         <div className="space-y-7 w-1/3 ">
-                              <h1 className="text-2xl font-bold text-white">Innovating for a Sustainable Future</h1>
+                    <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
+                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
                               <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                              <div className="">
-                                   <AwesomeButton type="primary">Discover More</AwesomeButton>
+                              <div className=" ">
+                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
 
                               </div>
                          </div>
                     </div>
                     <div className="absolute bottom-10  left-5 right-20 justify-end flex -translate-y-1/2 transform gap-10">
-                         <a href="#slide3" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
+                         <a href="#slide2" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
                          <a href="#slide4"  ><FaArrowRight className="text-2xl  text-white opacity-50" /></a>
                     </div>
                </div>
@@ -83,19 +77,19 @@ const Slider = () => {
                     <img
                          src={img4}
                          className="w-full rounded-xl" />
-                    <div className="absolute rounded-xl h-full pl-14 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                         <div className="space-y-7 w-1/3 ">
-                              <h1 className="text-2xl font-bold text-white">Innovating for a Sustainable Future</h1>
+                    <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
+                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
                               <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                              <div className="">
-                                   <AwesomeButton type="primary">Discover More</AwesomeButton>
+                              <div className=" ">
+                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
 
                               </div>
                          </div>
                     </div>
                     <div className="absolute bottom-10  left-5 right-20 justify-end flex -translate-y-1/2 transform gap-10">
-                         <a href="#slide4" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
+                         <a href="#slide3" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
                          <a href="#slide5"  ><FaArrowRight className="text-2xl  text-white opacity-50" /></a>
                     </div>
                </div>
@@ -103,19 +97,19 @@ const Slider = () => {
                     <img
                          src={img5}
                          className="w-full rounded-xl" />
-                    <div className="absolute rounded-xl h-full pl-14 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                         <div className="space-y-7 w-1/3 ">
-                              <h1 className="text-2xl font-bold text-white">Innovating for a Sustainable Future</h1>
+                    <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
+                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
                               <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                              <div className="">
-                                   <AwesomeButton type="primary">Discover More</AwesomeButton>
+                              <div className=" ">
+                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
 
                               </div>
                          </div>
                     </div>
                     <div className="absolute bottom-10  left-5 right-20 justify-end flex -translate-y-1/2 transform gap-10">
-                         <a href="#slide5" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
+                         <a href="#slide4" ><FaArrowLeft className="text-2xl text-white opacity-50" /></a>
                          <a href="#slide6"  ><FaArrowRight className="text-2xl  text-white opacity-50" /></a>
                     </div>
                </div>
@@ -123,12 +117,12 @@ const Slider = () => {
                     <img
                          src={img6}
                          className="w-full rounded-xl" />
-                    <div className="absolute rounded-xl h-full pl-14 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                         <div className="space-y-7 w-1/3 ">
-                              <h1 className="text-2xl font-bold text-white">Innovating for a Sustainable Future</h1>
+                    <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
+                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
                               <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                              <div className="">
-                                   <AwesomeButton type="primary">Discover More</AwesomeButton>
+                              <div className=" ">
+                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
 
                               </div>
@@ -139,6 +133,7 @@ const Slider = () => {
                          <a href="#slide1"  ><FaArrowRight className="text-2xl  text-white opacity-50" /></a>
                     </div>
                </div>
+
 
 
 

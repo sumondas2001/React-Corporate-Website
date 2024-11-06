@@ -12,7 +12,7 @@ const Footer = () => {
                     </div>
 
                     <dir>
-                         <ul className=" text-lg font-semibold text-white ">
+                         <ul className=" text-sm font-semibold text-white ">
                               <Link className="hover:underline" to={'/'}> <li>HOME</li></Link>
                               <Link className="hover:underline" to={'/blog'}> <li>BLOG</li></Link>
                               <Link className="hover:underline" to={'/contacts'}> <li>CONTACTS</li></Link>
@@ -23,7 +23,7 @@ const Footer = () => {
                          </ul>
                     </dir>
                     <dir>
-                         <ul className=" text-lg font-semibold text-white">
+                         <ul className=" text-sm font-semibold text-white">S
                               <Link className="hover:underline" to={'/'}> <li>FACEBOOK</li></Link>
                               <Link className="hover:underline" to={'/blog'}> <li>INSTAGRAM</li></Link>
                               <Link className="hover:underline" to={'/contacts'}> <li>SPOTIFY</li></Link>

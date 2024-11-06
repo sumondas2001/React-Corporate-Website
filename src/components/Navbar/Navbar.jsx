@@ -132,7 +132,7 @@ const Navbar = () => {
                               </div>
                               <ul
                                    tabIndex={0}
-                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow v">
+                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow ">
                                    <li>
                                         <a className="justify-between text-base font-normal">
                                              Name: {user?.displayName}
@@ -144,7 +144,7 @@ const Navbar = () => {
                                         </p>
                                    </li>
 
-                                   <li>
+                                   <li className="w-14 ">
                                         <button onClick={handelLogOut} className="text-sm font-semibold bg-red-500 hover:bg-red-600 text-white p-2 rounded-lg">LogOut</button>
 
                                    </li>
