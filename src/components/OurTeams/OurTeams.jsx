@@ -34,7 +34,7 @@ const OurTeams = () => {
 
                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 ">
                     {
-                         team.map(team => <OurTeam
+                         team?.map(team => <OurTeam
                               key={team.id}
                               team={team}
                          ></OurTeam>)

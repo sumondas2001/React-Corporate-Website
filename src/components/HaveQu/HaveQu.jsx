@@ -2,7 +2,12 @@
 
 const HaveQu = () => {
      return (
-          <div className="lg:w-[800px] md:w-[600px] w-[350px] mx-auto py-3" >
+          <div className="lg:w-[800px] md:w-[600px] w-[350px] mx-auto py-3"
+               data-aos="fade-up"
+               data-aos-easing="ease-out-cubic"
+               data-aos-duration="1000"
+               data-aos-offset="100"
+          >
 
                <h1 className="text-2xl font-medium text-center mb-4">FAQ</h1>
                <hr className="w-28 mt-2 border-t-black mx-auto" />

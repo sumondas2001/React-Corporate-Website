@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 const OurService = ({ service }) => {
      const { service_description, service_img, service_name } = service;
@@ -22,3 +23,8 @@ const OurService = ({ service }) => {
 };
 
 export default OurService;
+
+OurService.propTypes = {
+
+     service: PropTypes.object
+}
