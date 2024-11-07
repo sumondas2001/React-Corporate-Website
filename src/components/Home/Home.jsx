@@ -1,7 +1,7 @@
 import About from "../../components/About/About";
 import Slider from "../Slider/slider";
 import Growth from "../Growth/Growth";
-import OurTeams from "../OurTeams/OurTeams";
+import OurServices from "../OurServices/OurServices";
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
                <Slider></Slider>
                <About></About>
                <Growth></Growth>
-               <OurTeams></OurTeams>
+               <OurServices></OurServices>
           </div>
      );
 };

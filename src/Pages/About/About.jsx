@@ -1,9 +1,9 @@
+import OurTeams from "../../components/OurTeams/OurTeams";
 
 const About = () => {
      return (
           <div>
-               <h1 className="text-xl font-semibold"> About Section</h1>
-
+               <OurTeams></OurTeams>
           </div>
      );
 };

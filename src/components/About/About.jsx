@@ -11,13 +11,13 @@ const About = () => {
           AOS.init()
      }, []);
      return (
-          <div className="mt-10 mb-10 flex flex-col lg:flex-row md:flex-row lg:gap-8 md:gap-4 items-center text-center lg:text-left md:text-left">
+          <div className="mt-10 mb-10 flex flex-col lg:flex-row-reverse md:flex-row lg:gap-8 md:gap-4 items-center text-center lg:text-left md:text-left">
 
                <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
                     data-aos-offset="100">
-                    <img className="lg:w-[550px] w-full lg:h-[550px] mb-3 md:h-[550px] h-[300px]" src={aboutImg} alt="" />
+                    <img className="lg:w-[500px] object-cover w-full lg:h-[450px] rounded-tl-xl rounded-br-xl mb-3 md:h-[550px] h-[300px]  cursor-pointer transition duration-1000 hover:scale-75" src={aboutImg} alt="" />
                </div>
 
                <div className="md:w-1/2 w-5/6 lg:w-1/2 lg:px-14 px-4" data-aos="fade-up"

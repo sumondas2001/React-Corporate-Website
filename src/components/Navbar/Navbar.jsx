@@ -25,39 +25,42 @@ const Navbar = () => {
           <li>
                <NavLink
                     to="/about"
-                    className={({ isActive, isPending, isTransitioning }) =>
-                         [
-                              isPending ? "pending" : "",
-                              isActive ? "active" : "",
-                              isTransitioning ? "transitioning" : "",
-                         ].join(" ")
-                    }
+                    style={({ isActive, isTransitioning }) => {
+                         return {
+                              fontWeight: isActive ? "bold" : "",
+                              color: isActive ? "teal" : "black",
+                              background: isActive ? 'white' : '',
+                              viewTransitionName: isTransitioning ? "slide" : "",
+                         };
+                    }}
                >
                     ABOUT
                </NavLink>
           </li>
           <li><NavLink
                to="/blog"
-               className={({ isActive, isPending, isTransitioning }) =>
-                    [
-                         isPending ? "pending" : "",
-                         isActive ? "active" : "",
-                         isTransitioning ? "transitioning" : "",
-                    ].join(" ")
-               }
+               style={({ isActive, isTransitioning }) => {
+                    return {
+                         fontWeight: isActive ? "bold" : "",
+                         color: isActive ? "teal" : "black",
+                         background: isActive ? 'white' : '',
+                         viewTransitionName: isTransitioning ? "slide" : "",
+                    };
+               }}
           >
                BLOG
           </NavLink>
           </li>
           <li><NavLink
                to="/contacts"
-               className={({ isActive, isPending, isTransitioning }) =>
-                    [
-                         isPending ? "pending" : "",
-                         isActive ? "active" : "",
-                         isTransitioning ? "transitioning" : "",
-                    ].join(" ")
-               }
+               style={({ isActive, isTransitioning }) => {
+                    return {
+                         fontWeight: isActive ? "bold" : "",
+                         color: isActive ? "teal" : "black",
+                         background: isActive ? 'white' : '',
+                         viewTransitionName: isTransitioning ? "slide" : "",
+                    };
+               }}
           >
                CONTACTS
           </NavLink>
@@ -65,13 +68,14 @@ const Navbar = () => {
           <li>
                <NavLink
                     to="/gallery"
-                    className={({ isActive, isPending, isTransitioning }) =>
-                         [
-                              isPending ? "pending" : "",
-                              isActive ? "active" : "",
-                              isTransitioning ? "transitioning" : "",
-                         ].join(" ")
-                    }
+                    style={({ isActive, isTransitioning }) => {
+                         return {
+                              fontWeight: isActive ? "bold" : "",
+                              color: isActive ? "teal" : "black",
+                              background: isActive ? 'white' : '',
+                              viewTransitionName: isTransitioning ? "slide" : "",
+                         };
+                    }}
                >
                     GALLERY
                </NavLink>

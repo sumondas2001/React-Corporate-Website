@@ -10,7 +10,7 @@ const OurTeam = ({ team }) => {
      }, [])
      // console.log(team)
      return (
-          <div className="p-4"
+          <div className="lg:p-4 md:p-4 p-8"
                data-aos="fade-up"
                data-aos-offset="200"
                data-aos-delay="50"
@@ -19,7 +19,7 @@ const OurTeam = ({ team }) => {
                data-aos-mirror="true"
                data-aos-once="false"
           >
-               <img className="rounded-md" src={img} alt="" />
+               <img className="rounded-t-md object-cover" src={img} alt="" />
                <div className="mt-3 text-center">
                     <h1 className="text-base font-semibold">{name}</h1>
                     <p className="text-sm font-light opacity-100" >{profession}</p>

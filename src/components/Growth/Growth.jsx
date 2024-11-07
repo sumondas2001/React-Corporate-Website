@@ -7,22 +7,22 @@ const Growth = () => {
      return (
           <div>
 
-               <h1 className="text-2xl mb-10  text-center mt-10"> <span style={{ color: 'cyan', fontWeight: 'bold', }}>
+               <h1 className="text-xl mb-10  text-center mt-10"> <span style={{ color: 'cyan', fontWeight: 'bold', }}>
                     <Typewriter
                          words={['Company Growth']}
-                         loop={1}
+                         loop={0}
                          cursor
 
-                         typeSpeed={100}
-                         deleteSpeed={100}
-                         delaySpeed={100}
+                         typeSpeed={240}
+                         deleteSpeed={150}
+                         delaySpeed={1500}
 
                     />
                </span> </h1>
 
-               {/* <div className="flex justify-center mb-10 ">
+               <div className="flex justify-center mb-10  px-4">
 
-                    <ul className="timeline ">
+                    <ul className="timeline timeline-vertical lg:timeline-horizontal">
                          <li >
                               <div className="timeline-start timeline-box">Growth though direction</div>
                               <div className="timeline-middle">
@@ -107,7 +107,7 @@ const Growth = () => {
                               </div>
                          </li>
                     </ul>
-               </div> */}
+               </div>
 
 
           </div>
