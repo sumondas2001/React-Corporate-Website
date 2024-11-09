@@ -12,7 +12,7 @@ const OurServices = () => {
           axios.get('services.json')
                .then(res => {
                     setServices(res.data);
-                    console.log(res.data)
+                    // console.log(res.data)
                })
                .catch(error => {
                     toast.error(error)
