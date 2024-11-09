@@ -21,9 +21,11 @@ const OurServices = () => {
      return (
           <div className="mb-10">
                <div className="text-center">
-                    <h1 className="text-xl font-medium">Our Services</h1>
-                    <hr className="w-28 mt-2 border-t-black mx-auto" />
-                    <hr className="w-40 mt-2 border-t-black mx-auto" />
+                    <div>
+                         <h1 className="text-xl font-medium">Our Services</h1>
+                         <hr className="w-28 mt-2 border-t-black mx-auto" />
+                         <hr className="w-40 mt-2 border-t-black mx-auto" />
+                    </div>
                     <h4 className="text-xl mb-10  text-center mt-10"> <span style={{ color: 'cyan', fontWeight: 'bold', }}>
                          <Typewriter
                               words={['What we do']}

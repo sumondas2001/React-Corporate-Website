@@ -50,10 +50,10 @@ const ContactFrom = () => {
                     </div>
 
                     <div>
-                         <input type="text" className="lg:w-[634px] md:w-full w-full  border border-black h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Write your notes or questions here....." required id="" />
+                         <input type="text" className="lg:w-[634px] md:w-full w-full  border border-black h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
                     </div>
 
-                    <button className="text-sm font-medium p-3 bg-cyan-500 mt-6  mb-10 " type="submit"> Send Message</button>
+                    <button className="text-sm font-medium p-3 bg-cyan-500 mt-6   " type="submit"> Send Message</button>
                </form>
           </div>
      );

@@ -4,6 +4,7 @@ import Growth from "../Growth/Growth";
 import OurServices from "../OurServices/OurServices";
 import HaveQu from "../HaveQu/HaveQu";
 import ContactFrom from "../ContactFrom/ContactFrom";
+import OurClients from "../OurClients/OurClients";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
                     <HaveQu></HaveQu>
                     <ContactFrom></ContactFrom>
                </div>
+               <OurClients></OurClients>
           </div>
      );
 };

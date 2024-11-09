@@ -1,0 +1,34 @@
+[
+     {
+          "id": 1,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-masterstudy-222x93.png"
+     },
+     {
+          "id": 2,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-consulting-222x93.png"
+     },
+     {
+          "id": 3,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-masterstudy-222x93.png"
+     },
+     {
+          "id": 4,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-happychild-222x93.png"
+     },
+     {
+          "id": 5,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-masterstudy-222x93.png"
+     },
+     {
+          "id": 6,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-motors-222x93.png"
+     },
+     {
+          "id": 7,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-smartuniversity-222x93.png"
+     },
+     {
+          "id": 8,
+          "CompanyImg": "https://pearl.stylemixthemes.com/wp-content/uploads/2017/04/logo-happychild-222x93.png"
+     }
+]
