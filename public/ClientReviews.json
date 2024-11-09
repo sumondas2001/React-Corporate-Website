@@ -1,0 +1,44 @@
+[
+     {
+          "id": 1,
+          "clientName": "Anna Briggs",
+          "clientPosition": "CEO Smart Move Ltd.",
+          "ClientImg": "https://pearl.stylemixthemes.com/transportation-two/wp-content/uploads/sites/44/2017/07/contact_1-100x100.jpg",
+          "clientReview": "We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors."
+     },
+     {
+          "id": 2,
+          "clientName": "Jonathan Adams",
+          "clientPosition": "Founder, Great Wall Ltd.",
+          "ClientImg": "https://pearl.stylemixthemes.com/transportation-two/wp-content/uploads/sites/44/2017/04/staff_3-100x100.jpg",
+          "clientReview": "This is due to their excellent service, competitive pricing and customer support. That’s becoming so distant and digital, it’s throughly refreshing to get such a personal touch."
+     },
+     {
+          "id": 3,
+          "clientName": "Samuel C. Hartnett",
+          "clientPosition": "Founder & CTO MoveSmart Corp.",
+          "ClientImg": "https://pearl.stylemixthemes.com/transportation-two/wp-content/uploads/sites/44/2017/04/Layer-719-100x100.jpg",
+          "clientReview": "We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors."
+     },
+     {
+          "id": 4,
+          "clientName": "Jonathan Adams",
+          "clientPosition": "Founder, Great Wall Ltd.",
+          "ClientImg": "https://pearl.stylemixthemes.com/transportation-two/wp-content/uploads/sites/44/2017/04/staff_3-100x100.jpg",
+          "clientReview": "This is due to their excellent service, competitive pricing and customer support. That’s becoming so distant and digital, it’s throughly refreshing to get such a personal touch."
+     },
+     {
+          "id": 5,
+          "clientName": "Anna Briggs",
+          "clientPosition": "CEO Smart Move Ltd.",
+          "ClientImg": "https://pearl.stylemixthemes.com/transportation-two/wp-content/uploads/sites/44/2017/07/contact_1-100x100.jpg",
+          "clientReview": "We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors."
+     },
+     {
+          "id": 6,
+          "clientName": "Samuel C. Hartnett",
+          "clientPosition": "Founder & CTO MoveSmart Corp.",
+          "ClientImg": "https://pearl.stylemixthemes.com/transportation-two/wp-content/uploads/sites/44/2017/04/Layer-719-100x100.jpg",
+          "clientReview": "We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors."
+     }
+]

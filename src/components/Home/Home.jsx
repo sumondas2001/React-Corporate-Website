@@ -5,6 +5,7 @@ import OurServices from "../OurServices/OurServices";
 import HaveQu from "../HaveQu/HaveQu";
 import ContactFrom from "../ContactFrom/ContactFrom";
 import OurClients from "../OurClients/OurClients";
+import ClientReviews from "../ClientReviews/ClientReviews";
 
 
 const Home = () => {
@@ -19,6 +20,8 @@ const Home = () => {
                     <ContactFrom></ContactFrom>
                </div>
                <OurClients></OurClients>
+
+               <ClientReviews></ClientReviews>
           </div>
      );
 };

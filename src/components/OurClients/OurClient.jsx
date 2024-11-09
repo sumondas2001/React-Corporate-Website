@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 
 const OurClient = ({ client }) => {
-     console.log(client);
+     // console.log(client);
      const { CompanyImg } = client;
      return (
           <div>
@@ -10,3 +11,10 @@ const OurClient = ({ client }) => {
 };
 
 export default OurClient;
+
+
+OurClient.propTypes = {
+
+     client: PropTypes.object,
+
+}
