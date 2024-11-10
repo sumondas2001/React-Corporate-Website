@@ -3,11 +3,11 @@ import Root from "../components/Root";
 import Home from "../components/Home/Home";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import About from "../Pages/About/About";
-import Blog from "../Pages/Blog/Blog";
 import Contacts from "../Pages/Contacts/Contacts";
 import Gallery from "../Pages/Gallery/Gallery";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import BlogPages from "../Pages/BlogPages/BlogPages";
 
 const router = createBrowserRouter([
      {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
                },
                {
                     path: '/blog',
-                    element: <Blog></Blog>
+                    element: <BlogPages></BlogPages>
                },
                {
                     path: '/contacts',
