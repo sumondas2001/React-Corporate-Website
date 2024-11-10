@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import loginImg from '../../assets/login/login.svg';
-import { FaGoogle, FaGithub } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 import { useContext, useEffect } from 'react';
 import AOS from 'aos';
 import { AuthContext } from '../../Provider/AuthProvider';
