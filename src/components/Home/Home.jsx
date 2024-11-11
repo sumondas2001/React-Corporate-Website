@@ -6,11 +6,13 @@ import HaveQu from "../HaveQu/HaveQu";
 import ContactFrom from "../ContactFrom/ContactFrom";
 import OurClients from "../OurClients/OurClients";
 import ClientReviews from "../ClientReviews/ClientReviews";
+import PagesTitle from "../PagesTitle/PagesTitle";
 
 
 const Home = () => {
      return (
           <div>
+               <PagesTitle title={"Home"}></PagesTitle>
                <Slider></Slider>
                <About></About>
                <Growth></Growth>

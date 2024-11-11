@@ -19,8 +19,8 @@ const Slider = () => {
                     <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                          <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
                               <div >
-                                   <h1 className="text-2xl font-bold text-white">Innovating for a Sustainable Future</h1>
-                                   <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                                   <h1 className="md:text-2xl lg:text-3xl  text-base  font-bold text-white">Innovating for a Sustainable Future</h1>
+                                   <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
                               <div >
                                    <AwesomeButton type="primary">Discover More</AwesomeButton>
@@ -40,8 +40,10 @@ const Slider = () => {
                          className="w-full rounded-xl object-cover" />
                     <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                          <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
-                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
-                              <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              <div >
+                                   <h1 className="md:text-2xl lg:text-3xl  text-base  font-bold text-white">Innovating for a Sustainable Future</h1>
+                                   <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              </div>
                               <div className=" ">
                                    <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
@@ -60,8 +62,10 @@ const Slider = () => {
                          className="w-full rounded-xl object-cover" />
                     <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                          <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
-                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
-                              <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              <div >
+                                   <h1 className="md:text-2xl lg:text-3xl  text-base  font-bold text-white">Innovating for a Sustainable Future</h1>
+                                   <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              </div>
                               <div className=" ">
                                    <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
@@ -80,8 +84,10 @@ const Slider = () => {
                          className="w-full rounded-xl object-cover" />
                     <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                          <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
-                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
-                              <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              <div >
+                                   <h1 className="md:text-2xl lg:text-3xl  text-base  font-bold text-white">Innovating for a Sustainable Future</h1>
+                                   <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              </div>
                               <div className=" ">
                                    <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
@@ -100,8 +106,10 @@ const Slider = () => {
                          className="w-full rounded-xl object-cover  " />
                     <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                          <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
-                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
-                              <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              <div >
+                                   <h1 className="md:text-2xl lg:text-3xl  text-base  font-bold text-white">Innovating for a Sustainable Future</h1>
+                                   <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              </div>
                               <div className=" ">
                                    <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
@@ -120,8 +128,10 @@ const Slider = () => {
                          className="w-full rounded-xl object-cover" />
                     <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                          <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]  ">
-                              <h1 className="md:text-2xl lg:text-3xl  text-lg  font-bold text-white">Innovating for a Sustainable Future</h1>
-                              <p className="text-sm font-normal text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              <div >
+                                   <h1 className="md:text-2xl lg:text-3xl  text-base  font-bold text-white">Innovating for a Sustainable Future</h1>
+                                   <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                              </div>
                               <div className=" ">
                                    <AwesomeButton type="primary" >Discover More</AwesomeButton>
 

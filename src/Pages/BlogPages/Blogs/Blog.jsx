@@ -21,7 +21,7 @@ const Blog = ({ blog }) => {
                     <p className="text-sm font-light">{blog_description}</p>
                </div>
                <div className="flex mt-5 items-center px-4">
-                    <img className="mr-6 size-8 rounded-full" src={user_img} alt="" />
+                    <img className="mr-6 size-8 rounded-full object-cover" src={user_img} alt="" />
 
                     <h4 className="text-sm font-medium">By {user_name}</h4>
                </div>

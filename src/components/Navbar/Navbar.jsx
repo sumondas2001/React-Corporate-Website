@@ -25,61 +25,33 @@ const Navbar = () => {
           <li>
                <NavLink
                     to="/about"
-                    style={({ isActive, isTransitioning }) => {
-                         return {
-                              fontWeight: isActive ? "bold" : "",
-                              color: isActive ? "teal" : "black",
-                              background: isActive ? 'white' : '',
-                              viewTransitionName: isTransitioning ? "slide" : "",
-                         };
-                    }}
+                    className={({ isActive, isPending }) =>
+                         isPending ? "pending" : isActive ? 'underline  text-cyan-600' : ''
+                    }
                >
-                    ABOUT
+                    <span className="font-semibold"> ABOUT</span>
+               </NavLink>
+          </li>
+          <li>
+               <NavLink
+                    to="/blog"
+                    className={({ isActive, isPending }) =>
+                         isPending ? "pending" : isActive ? 'underline  text-cyan-600' : ''
+                    }
+               >
+                    BLOG
                </NavLink>
           </li>
           <li><NavLink
-               to="/blog"
-               style={({ isActive, isTransitioning }) => {
-                    return {
-                         fontWeight: isActive ? "bold" : "",
-                         color: isActive ? "teal" : "black",
-                         background: isActive ? 'white' : '',
-                         viewTransitionName: isTransitioning ? "slide" : "",
-                    };
-               }}
-          >
-               BLOG
-          </NavLink>
-          </li>
-          <li><NavLink
                to="/contacts"
-               style={({ isActive, isTransitioning }) => {
-                    return {
-                         fontWeight: isActive ? "bold" : "",
-                         color: isActive ? "teal" : "black",
-                         background: isActive ? 'white' : '',
-                         viewTransitionName: isTransitioning ? "slide" : "",
-                    };
-               }}
+               className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? 'underline  text-cyan-600' : ''
+               }
           >
                CONTACTS
           </NavLink>
           </li>
-          <li>
-               <NavLink
-                    to="/gallery"
-                    style={({ isActive, isTransitioning }) => {
-                         return {
-                              fontWeight: isActive ? "bold" : "",
-                              color: isActive ? "teal" : "black",
-                              background: isActive ? 'white' : '',
-                              viewTransitionName: isTransitioning ? "slide" : "",
-                         };
-                    }}
-               >
-                    GALLERY
-               </NavLink>
-          </li>
+
 
 
 
@@ -105,13 +77,13 @@ const Navbar = () => {
                          </div>
                          <ul
                               tabIndex={0}
-                              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-sm font-medium">
+                              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-sm font-bold">
                               {link}
                          </ul>
                     </div>
 
                     <div>
-                         <Link to={'/'} className="text-2xl text-cyan-500 font-bold ">LOGO </Link>
+                         <Link to={'/'} ><img className="size-20  " src="https://i.ibb.co.com/sJZwLBW/pngtree-company-logo-design-trademark-design-creative-logo-png-image-4569380-removebg-preview.png" alt="" /> </Link>
                     </div>
 
                </div>
@@ -119,7 +91,7 @@ const Navbar = () => {
 
 
                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal text-sm font-medium px-1">
+                    <ul className="menu menu-horizontal text-sm font-bold px-1">
                          {link}
                     </ul>
                </div>

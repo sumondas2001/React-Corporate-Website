@@ -4,10 +4,10 @@ import Home from "../components/Home/Home";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import About from "../Pages/About/About";
 import Contacts from "../Pages/Contacts/Contacts";
-import Gallery from "../Pages/Gallery/Gallery";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import BlogPages from "../Pages/BlogPages/BlogPages";
+
 
 const router = createBrowserRouter([
      {
@@ -31,10 +31,7 @@ const router = createBrowserRouter([
                     path: '/contacts',
                     element: <Contacts></Contacts>
                },
-               {
-                    path: '/gallery',
-                    element: <Gallery></Gallery>
-               },
+
                {
                     path: '/login',
                     element: <Login></Login>
@@ -42,7 +39,8 @@ const router = createBrowserRouter([
                {
                     path: '/register',
                     element: <Register></Register>
-               }
+               },
+
           ]
      }
 ]);

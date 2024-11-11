@@ -6,9 +6,9 @@ const Footer = () => {
           <div className="bg-slate-900 lg:p-10 md:p-8 p-4">
                <div className=" flex md:flex-row lg:flex-row flex-col justify-evenly">
                     <div className="flex justify-center items-center">
-                         <h1 className="lg:text-2xl  md:text-xl text-lg font-bold text-cyan-500">
-                              LOGO
-                         </h1>
+                         <div>
+                              <Link to={'/'} ><img className="size-20  " src="https://i.ibb.co.com/sJZwLBW/pngtree-company-logo-design-trademark-design-creative-logo-png-image-4569380-removebg-preview.png" alt="" /> </Link>
+                         </div>
                     </div>
 
                     <dir>

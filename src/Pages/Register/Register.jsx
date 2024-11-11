@@ -6,6 +6,7 @@ import AOS from 'aos';
 import { AuthContext } from '../../Provider/AuthProvider';
 import toast from 'react-hot-toast';
 import 'react-awesome-button/dist/styles.css';
+import PagesTitle from '../../components/PagesTitle/PagesTitle';
 
 
 const Register = () => {
@@ -63,6 +64,9 @@ const Register = () => {
 
      return (
           <div className='mb-20'>
+
+               <PagesTitle title={"Register"}></PagesTitle>
+
                <h1 className="text-xl font-bold text-center mt-4 text-cyan-600">Register Now ! </h1>
                <div data-aos="zoom-in-down" className='lg:flex md:flex  gap-10 justify-center items-center mt-10'>
                     <div data-aos="fade-up"
