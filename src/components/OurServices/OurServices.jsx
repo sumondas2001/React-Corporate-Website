@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Typewriter } from "react-simple-typewriter";
 import OurService from "./OurService";
+import { Link } from "react-router-dom";
 
 const OurServices = () => {
 
@@ -49,6 +50,10 @@ const OurServices = () => {
 
                          </OurService>)
                     }
+               </div>
+
+               <div className="text-center mt-10">
+                    <Link to={'/services'}><button className="text-sm font-medium p-3 bg-cyan-500 mt-6 hover:bg-cyan-400 text-white">See More</button></Link>
                </div>
           </div>
      );

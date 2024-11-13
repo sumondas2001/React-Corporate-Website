@@ -6,9 +6,12 @@ import { Toaster } from "react-hot-toast";
 
 const Root = () => {
      return (
-          <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[380px] mx-auto font-poppins">
-               <Navbar />
-               <Outlet></Outlet>
+          <div>
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[380px] mx-auto font-poppins">
+                    <Navbar />
+                    <Outlet></Outlet>
+
+               </div>
                <Footer></Footer>
                <Toaster />
           </div>

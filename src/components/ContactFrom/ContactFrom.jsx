@@ -13,7 +13,7 @@ const ContactFrom = () => {
           const message = from.message.value;
 
           const fromData = { firstName, lastName, email, subject, message };
-          console.log(fromData)
+          // console.log(fromData)
      }
      return (
           <div className="mt-4 " data-aos="fade-up"
@@ -53,7 +53,7 @@ const ContactFrom = () => {
                          <input type="text" className="lg:w-[634px] md:w-full w-full  border border-black h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
                     </div>
 
-                    <button className="text-sm font-medium p-3 bg-cyan-500 mt-6   " type="submit"> Send Message</button>
+                    <button className="text-sm font-medium p-3 hover:bg-cyan-400 text-white bg-cyan-500 mt-6 " type="submit"> Send Message</button>
                </form>
           </div>
      );
