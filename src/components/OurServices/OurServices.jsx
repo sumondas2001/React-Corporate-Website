@@ -27,7 +27,7 @@ const OurServices = () => {
                          <hr className="w-28 mt-2 border-t-black mx-auto" />
                          <hr className="w-40 mt-2 border-t-black mx-auto" />
                     </div>
-                    <h4 className="text-xl mb-10  text-center mt-10"> <span style={{ color: 'cyan', fontWeight: 'bold', }}>
+                    <h4 className="text-xl mb-10  text-center mt-10"> <span style={{ color: '#71C9CE', fontWeight: 'bold', }}>
                          <Typewriter
                               words={['What we do']}
                               loop={0}
@@ -53,7 +53,7 @@ const OurServices = () => {
                </div>
 
                <div className="text-center mt-10">
-                    <Link to={'/services'}><button className="text-sm font-medium p-3 bg-cyan-500 mt-6 hover:bg-cyan-400 text-white">See More</button></Link>
+                    <Link to={'/services'}><button className="rounded-md text-sm font-medium px-5 py-3 bg-cyan-600 mt-6 hover:bg-cyan-700 text-white">See More</button></Link>
                </div>
           </div>
      );

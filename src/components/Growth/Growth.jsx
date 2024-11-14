@@ -7,7 +7,7 @@ const Growth = () => {
      return (
           <div>
 
-               <h1 className="text-xl mb-10  text-center mt-10"> <span style={{ color: 'cyan', fontWeight: 'bold', }}>
+               <h1 className="text-xl mb-10  text-center mt-10"> <span style={{ color: '#71C9CE', fontWeight: 'bold', }}>
                     <Typewriter
                          words={['Company Growth']}
                          loop={0}
@@ -20,7 +20,13 @@ const Growth = () => {
                     />
                </span> </h1>
 
-               <div className="flex justify-center mb-10  px-4">
+               <div
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+
+                    className="flex justify-center mb-10  px-4">
 
                     <ul className="timeline timeline-vertical lg:timeline-horizontal">
                          <li >

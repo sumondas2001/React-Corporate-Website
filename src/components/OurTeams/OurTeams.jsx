@@ -22,7 +22,7 @@ const OurTeams = () => {
      }, [])
 
      return (
-          <div className="mt-10 lg:mb-10 md:mb-6 mb-4">
+          <div className="mt-10 lg:mb-10 md:mb-6 mb-4"  >
                <div>
 
                     <h1 className="text-2xl  font-bold text-cyan-500 text-center mt-10">Our Team</h1>

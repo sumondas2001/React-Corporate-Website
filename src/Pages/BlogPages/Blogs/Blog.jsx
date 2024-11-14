@@ -5,7 +5,7 @@ const Blog = ({ blog }) => {
      const { blog_title, blog_date, blog_img, blog_description, user_img, user_name } = blog;
      console.log(blog)
      return (
-          <div className="shadow-xl py-6 mt-10"
+          <div className="shadow-xl bg-[#E3FDFD] py-6 mt-10"
                data-aos="fade-up"
                data-aos-offset="200"
                data-aos-delay="50"
@@ -16,8 +16,8 @@ const Blog = ({ blog }) => {
           >
                <img className="h-[200px] w-[400px] rounded-t-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={blog_img} alt="" />
                <div className="px-4 mt-6 space-y-3">
-                    <p className="text-xs font-light">{blog_date}</p>
-                    <h3 className="text-base font-medium">{blog_title}</h3>
+                    <p className="text-xs font-normal">{blog_date}</p>
+                    <h3 className="text-base font-semibold">{blog_title}</h3>
                     <p className="text-sm font-light">{blog_description}</p>
                </div>
                <div className="flex mt-5 items-center px-4">

@@ -68,17 +68,22 @@ const Register = () => {
                <PagesTitle title={"Register"}></PagesTitle>
 
                <h1 className="text-xl font-bold text-center mt-4 text-cyan-600">Register Now ! </h1>
-               <div data-aos="zoom-in-down" className='lg:flex md:flex  gap-10 justify-center items-center mt-10'>
+               <div className='lg:flex md:flex  gap-10 justify-center items-center mt-10'>
                     <div data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000"
-                         data-aos-offset="100">
+                         data-aos-duration="2000"
+                         data-aos-offset="100"
+
+                    >
                          <img className='lg:size-96 md:size-80 size-80' src={loginImg} alt="" />
                     </div>
-                    <div className="card  w-full max-w-sm shrink-0 shadow-2xl" data-aos="fade-up"
+                    <div className="card  w-full max-w-sm shrink-0 shadow-2xl"
+
+                         data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1500"
-                         data-aos-offset="100">
+                         data-aos-duration="1000"
+                         data-aos-offset="100"
+                    >
                          <form onSubmit={handelRegister} className="card-body">
                               <div className="form-control">
                                    <label className="label">

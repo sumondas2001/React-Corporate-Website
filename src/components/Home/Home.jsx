@@ -17,8 +17,8 @@ const Home = () => {
                <About></About>
                <Growth></Growth>
                <OurServices></OurServices>
-               <div className="flex lg:flex-row  md:flex-col flex-col lg:gap-10 md:gap-3 gap-3">
-                    <HaveQu></HaveQu>
+               <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:gap-10 md:gap-3 gap-3">
+                    <HaveQu ></HaveQu>
                     <ContactFrom></ContactFrom>
                </div>
                <OurClients></OurClients>

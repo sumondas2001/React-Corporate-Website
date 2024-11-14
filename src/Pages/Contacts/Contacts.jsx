@@ -18,7 +18,7 @@ const Contacts = () => {
                     data-aos-duration="1000"
                     data-aos-offset="100"
 
-                    className="flex text-center  mt-14 mb-10 lg:justify-evenly md:justify-evenly gap-4">
+                    className="flex text-center  mt-14 mb-10 lg:justify-evenly md:justify-evenly gap-4 bg-[#E3FDFD] py-20  rounded-xl">
 
 
                     <div className="space-y-3">
@@ -43,7 +43,7 @@ const Contacts = () => {
                     <h1 className="text-xl font-medium text-center">How we can help you?</h1>
 
 
-                    <div className="flex justify-center ">
+                    <div className=" ">
                          <ContactFrom></ContactFrom>
                     </div>
                </div>
