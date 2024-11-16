@@ -18,7 +18,10 @@ const OurServices = () => {
                .catch(error => {
                     toast.error(error)
                })
-     }, [])
+     }, []);
+
+
+
      return (
           <div className="mb-10">
                <div className="text-center">
@@ -43,7 +46,7 @@ const OurServices = () => {
 
                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-8 ">
                     {
-                         Services?.map(service => <OurService
+                         Services?.slice(0, 6).map(service => <OurService
                               key={service.id}
                               service={service}
                          >

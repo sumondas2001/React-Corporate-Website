@@ -1,14 +1,14 @@
 
+import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
 import Blogs from "./Blogs/Blogs";
-import BlogsImg from "./BlogsImg/BlogsImg";
 
 const BlogPages = () => {
-
+     const imgUrl = 'https://i.ibb.co.com/XFkGVBq/contact-us-classic-bg-1.jpg'
 
 
      return (
           <div>
-               <BlogsImg></BlogsImg>
+               <PagesCoverImg imgUrl={imgUrl} title={"BLOG"}></PagesCoverImg>
                <Blogs></Blogs>
 
           </div>

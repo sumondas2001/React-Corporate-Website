@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
-import ContactsImg from "../../components/ContactsImg/ContactsImg";
 import { FaEnvelopeOpenText, FaPhoneAlt, FaMoneyCheck } from "react-icons/fa";
 import ContactFrom from "../../components/ContactFrom/ContactFrom";
 import PagesTitle from "../../components/PagesTitle/PagesTitle";
+import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
 
 
 const Contacts = () => {
+     const imgUrl = 'https://i.ibb.co.com/VSwdvzT/contact-us-classic-03.jpg';
      return (
           <div className="mb-10">
 
                <PagesTitle title={"Contacts"}></PagesTitle>
 
-
-               <ContactsImg></ContactsImg>
+               <PagesCoverImg imgUrl={imgUrl} title={'CONTACTS'}></PagesCoverImg>
                <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"

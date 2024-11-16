@@ -11,6 +11,7 @@ import BlogPages from "../Pages/BlogPages/BlogPages";
 import AdminPagesLayout from "../Pages/AdminPanel/AdminPagesLayout/AdminPagesLayout";
 import Admin from "../Pages/AdminPanel/Admin/Admin";
 import Services from "../Pages/Services/Services";
+import ServiceDetails from "../components/OurServices/ServiceDetails/ServiceDetails";
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
                     path: '/services',
                     element: <Services></Services>
                },
+               {
+                    path: '/services/servicesDetails/:id',
+                    element: <ServiceDetails></ServiceDetails>
+               },
+
                {
                     path: '/adminPanel',
                     element: <AdminPagesLayout></AdminPagesLayout>,

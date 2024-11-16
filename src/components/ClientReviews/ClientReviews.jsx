@@ -1,18 +1,17 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ClientReview from "./ClientReview";
-import Marquee from "react-fast-marquee";
-import { Carousel } from "react-responsive-carousel";
+
 
 const ClientReviews = () => {
 
      const [ClientReviews, setClientReviews] = useState([]);
 
      useEffect(() => {
-          axios.get('ClientReviews.json')
+          axios.get('/ClientReviews.json')
                .then(res => {
                     setClientReviews(res.data);
-                    console.log(res.data)
+                    // console.log(res.data)
                })
                .catch(error => {
                     console.log(error)
