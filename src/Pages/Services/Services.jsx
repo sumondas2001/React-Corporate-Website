@@ -4,7 +4,6 @@ import OurService from "../../components/OurServices/OurService";
 import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
 
 const Services = () => {
-     // Cover img url
 
      const imgUrl = 'https://iori.archielite.com/storage/general/box-image-2.png'
 

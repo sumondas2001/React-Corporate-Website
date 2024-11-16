@@ -1,3 +1,4 @@
+import { AwesomeButton } from "react-awesome-button";
 
 const ContactFrom = () => {
 
@@ -53,7 +54,11 @@ const ContactFrom = () => {
                          <input type="text" className=" w-full  border border-black h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
                     </div>
 
-                    <button className="text-sm font-medium rounded-md p-3 hover:bg-cyan-600 text-white bg-cyan-700 mt-6 " type="submit"> Send Message</button>
+                    <button className="mt-6 " type="submit">  <AwesomeButton type="primary">Send Message</AwesomeButton></button>
+
+
+
+
                </form>
           </div>
      );

@@ -22,6 +22,7 @@ const OurService = ({ service }) => {
                               <FaArrowRightLong className="mr-6 text-2xl  text-[#5a989b]" />
                          </Link>
                     </div>
+
                </div>
 
 

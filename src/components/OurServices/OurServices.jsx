@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import { Typewriter } from "react-simple-typewriter";
 import OurService from "./OurService";
 import { Link } from "react-router-dom";
+import { AwesomeButton } from "react-awesome-button";
 
 const OurServices = () => {
 
@@ -56,7 +57,11 @@ const OurServices = () => {
                </div>
 
                <div className="text-center mt-10">
-                    <Link to={'/services'}><button className="rounded-md text-sm font-medium px-5 py-3 bg-cyan-600 mt-6 hover:bg-cyan-700 text-white">See More</button></Link>
+                    <Link to={'/services'}>
+                         <AwesomeButton type="primary">See More</AwesomeButton>
+
+
+                    </Link>
                </div>
           </div>
      );
