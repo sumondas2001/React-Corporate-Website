@@ -12,6 +12,7 @@ import AdminPagesLayout from "../Pages/AdminPanel/AdminPagesLayout/AdminPagesLay
 import Admin from "../Pages/AdminPanel/Admin/Admin";
 import Services from "../Pages/Services/Services";
 import ServiceDetails from "../components/OurServices/ServiceDetails/ServiceDetails";
+import ServiceQuoteFrom from "../components/ServiceQuoteFrom/ServiceQuoteFrom";
 
 
 const router = createBrowserRouter([
@@ -50,8 +51,12 @@ const router = createBrowserRouter([
                     element: <Services></Services>
                },
                {
-                    path: '/services/servicesDetails/:id',
+                    path: '/servicesDetails/:id',
                     element: <ServiceDetails></ServiceDetails>
+               },
+               {
+                    path: '/servicesDetails/:id/serviceDetails/serviceQuoteFrom',
+                    element: <ServiceQuoteFrom></ServiceQuoteFrom>
                },
 
                {

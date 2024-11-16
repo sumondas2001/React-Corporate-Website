@@ -26,7 +26,7 @@ const Navbar = () => {
                <NavLink
                     to="/about"
                     className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-cyan-600' : ''
+                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
                     }
                >
                     <span className="font-semibold"> ABOUT</span>
@@ -36,7 +36,7 @@ const Navbar = () => {
                <NavLink
                     to="/blog"
                     className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-cyan-600' : ''
+                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
                     }
                >
                     BLOG
@@ -46,7 +46,7 @@ const Navbar = () => {
                <NavLink
                     to="/contacts"
                     className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-cyan-600' : ''
+                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
                     }
                >
                     CONTACTS
@@ -56,7 +56,7 @@ const Navbar = () => {
                <NavLink
                     to="/services"
                     className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-cyan-600' : ''
+                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
                     }
                >
                     SERVICES
@@ -88,7 +88,7 @@ const Navbar = () => {
                          </div>
                          <ul
                               tabIndex={0}
-                              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-sm font-bold">
+                              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-bold px-1">
                               {link}
                          </ul>
                     </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
 
 
                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal text-sm font-bold px-1">
+                    <ul className="menu menu-horizontal text-base font-bold px-2">
                          {link}
                     </ul>
                </div>

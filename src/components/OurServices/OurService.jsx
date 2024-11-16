@@ -18,7 +18,7 @@ const OurService = ({ service }) => {
                     <p className="text-sm font-light mt-3 ">{service_description?.slice(0, 140)} </p>
 
                     <div className=" justify-end flex mb-6">
-                         <Link to={`/services/servicesDetails/${id}`} >
+                         <Link to={`/servicesDetails/${id}`} >
                               <FaArrowRightLong className="mr-6 text-2xl  text-[#5a989b]" />
                          </Link>
                     </div>

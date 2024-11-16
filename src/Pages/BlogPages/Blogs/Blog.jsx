@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Blog = ({ blog }) => {
      const { blog_title, blog_date, blog_img, blog_description, user_img, user_name } = blog;
-     console.log(blog)
+     // console.log(blog)
      return (
           <div className="shadow-xl bg-[#E3FDFD] py-6 mt-10"
                data-aos="fade-up"
