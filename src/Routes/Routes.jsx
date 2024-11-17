@@ -54,8 +54,9 @@ const router = createBrowserRouter([
                     path: '/servicesDetails/:id',
                     element: <ServiceDetails></ServiceDetails>
                },
+
                {
-                    path: '/servicesDetails/:id/serviceDetails/serviceQuoteFrom',
+                    path: '/serviceDetails/:id/serviceQuoteFrom',
                     element: <ServiceQuoteFrom></ServiceQuoteFrom>
                },
 

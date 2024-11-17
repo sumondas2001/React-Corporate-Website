@@ -25,9 +25,16 @@ const OurTeams = () => {
           <div className="mt-10 lg:mb-10 md:mb-6 mb-4"  >
                <div>
 
-                    <h1 className="text-2xl  font-bold text-cyan-500 text-center mt-10">Our Team</h1>
-                    <hr className="w-28 mt-2 border-t-black mx-auto" />
-                    <hr className="w-40 mt-2 border-t-black mx-auto" />
+                    <div>
+
+                         <h1 className="text-2xl font-medium text-center mb-4">Our Clients</h1>
+
+                         <div className="flex items-center justify-center gap-2 mt-4">
+                              <hr className="w-9  border-cyan-400 border-2 " />
+                              <p className="bg-cyan-400  p-1 w-0"></p>
+                              <hr className="w-9  border-cyan-400 border-2 " />
+                         </div>
+                    </div>
 
                     <p className="lg:text-base md:text-sm text-xs  font-medium text-center mt-4 mb-10">Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Minus minima neque tempora reiciendis.</p>
                </div>

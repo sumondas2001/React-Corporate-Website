@@ -28,9 +28,15 @@ const OurClients = () => {
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="false">
-                    <h1 className="text-2xl font-medium text-center mb-4">Our Clients</h1>
-                    <hr className="w-28 mt-2 border-t-black mx-auto" />
-                    <hr className="w-40 mt-2 border-t-black mx-auto" />
+                    <div>
+                         <h1 className="text-2xl font-medium text-center mb-4">Our Clients</h1>
+
+                         <div className="flex items-center justify-center gap-2 mt-4">
+                              <hr className="w-14  border-cyan-400 border-2 " />
+                              <p className="bg-cyan-400  p-1 w-0"></p>
+                              <hr className="w-14  border-cyan-400 border-2 " />
+                         </div>
+                    </div>
                </div>
                <div data-aos="fade-up"
                     data-aos-offset="200"

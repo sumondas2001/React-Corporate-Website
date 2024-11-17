@@ -1,15 +1,13 @@
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink, useParams } from "react-router-dom";
 import PagesCoverImg from "../../PagesCoverImg/PagesCoverImg";
 import { FaCaretRight } from "react-icons/fa6";
-import { AwesomeButton } from "react-awesome-button";
-import { QuoteFromContext } from "../../../ServiceDetailsProvider/ServiceQuoteFromContext";
 
 
 const ServiceDetails = () => {
      const [service, setService] = useState([]);
-     const { SetServiceDetails } = useContext(QuoteFromContext);
+
 
      const { service_description, service_img, service_name } = service;
      const [allServices, setAllServices] = useState([]);
@@ -18,7 +16,7 @@ const ServiceDetails = () => {
      // COVER img url
      const imgUrl = 'https://www.hitechparks.com/web/apps/corporate/uploads/slider/6_1604077959.jpg';
 
-     SetServiceDetails(service_name);
+
 
      useEffect(() => {
           axios.get('/services.json')
@@ -87,8 +85,10 @@ const ServiceDetails = () => {
                          <p className="text-sm font-light ">{service_description}</p>
 
                          <div>
-                              <Link to={`/servicesDetails/${id}/serviceDetails/serviceQuoteFrom`}>
-                                   <AwesomeButton type="primary">Get A Quote</AwesomeButton>
+
+                              <Link to={`/serviceDetails/${id}/serviceQuoteFrom`}>
+
+                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Get A Quote</button>
                               </Link>
                          </div>
                     </div>

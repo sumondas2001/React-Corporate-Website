@@ -10,10 +10,10 @@ const Services = () => {
 
      const [services, setServices] = useState([]);
      useEffect(() => {
-          axios.get('services.json')
+          axios.get('/services.json')
                .then(res => {
                     setServices(res.data);
-                    // console.log(res.data)
+                    console.log(res.data)
                })
                .catch(error => {
                     console.log(error)
@@ -27,9 +27,11 @@ const Services = () => {
 
 
                <div className="mb-10">
-                    <h1 className="text-xl text-center font-medium">Our Services</h1>
-                    <hr className="w-28 mt-2 border-t-black mx-auto" />
-                    <hr className="w-40 mt-2 border-t-black mx-auto" />
+                    <h1 className="text-xl  font-medium">Our Services</h1>
+                    <div className="flex items-center gap-2 mt-2">
+                         <hr className="w-20 border-cyan-400 border-2 " />
+                         <p className="bg-cyan-400  p-1 w-0"></p>
+                    </div>
                </div>
 
                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-8 ">

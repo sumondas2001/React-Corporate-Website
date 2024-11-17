@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
-import { AwesomeButton } from "react-awesome-button";
 
 
 const Navbar = () => {
@@ -25,8 +24,8 @@ const Navbar = () => {
           <li>
                <NavLink
                     to="/about"
-                    className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
+                    className={({ isActive }) =>
+                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     <span className="font-semibold"> ABOUT</span>
@@ -35,8 +34,8 @@ const Navbar = () => {
           <li>
                <NavLink
                     to="/blog"
-                    className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
+                    className={({ isActive }) =>
+                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     BLOG
@@ -45,8 +44,8 @@ const Navbar = () => {
           <li>
                <NavLink
                     to="/contacts"
-                    className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
+                    className={({ isActive }) =>
+                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     CONTACTS
@@ -55,8 +54,8 @@ const Navbar = () => {
           <li>
                <NavLink
                     to="/services"
-                    className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? 'underline  text-[#3cd0d8]' : ''
+                    className={({ isActive }) =>
+                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     SERVICES
@@ -142,7 +141,7 @@ const Navbar = () => {
 
 
                          :
-                         <Link to={'/login'} > <AwesomeButton type="primary">Login</AwesomeButton></Link>
+                         <Link to={'/login'} >   <button className="mt-6 text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Login</button></Link>
                     }
                </div>
           </div>

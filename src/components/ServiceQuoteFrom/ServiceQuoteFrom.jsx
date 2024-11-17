@@ -1,12 +1,34 @@
-import { useContext } from "react";
-import { QuoteFromContext } from "../../ServiceDetailsProvider/ServiceQuoteFromContext";
+
 import PagesCoverImg from "../PagesCoverImg/PagesCoverImg";
-import { AwesomeButton } from "react-awesome-button";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { useEffect, useState } from "react";
 
 const ServiceQuoteFrom = () => {
-     const { serviceDetails } = useContext(QuoteFromContext);
+
+     const [allServices, setAllServices] = useState([]);
+     const { service_name } = allServices
+
+     const { id } = useParams();
+
      // Cover img url
      const imgUrl = 'https://i.ibb.co.com/ZM7XrqF/22-1604079765-1.jpg';
+
+
+     useEffect(() => {
+          axios.get('/services.json')
+               .then(res => {
+
+
+                    const data = res.data?.find(singleData => singleData.id === parseFloat(id));
+                    setAllServices(data)
+
+               })
+               .catch(error => {
+                    toast.error(error)
+               })
+     }, [id])
 
      const handelQuoteFrom = (event) => {
           event.preventDefault();
@@ -24,20 +46,30 @@ const ServiceQuoteFrom = () => {
           const contactPhone = from.contactPhone.value;
 
 
-          const fromData = { name, email, number, address, city, company, message, contactEmail, contactPhone, serviceDetails };
+          const fromData = { name, email, number, address, city, company, message, contactEmail, contactPhone, service_name };
+          toast.success(`Your ${service_name} Is Booking Successfully !! `)
+          from.reset();
+
           console.log(fromData)
      }
-     console.log(serviceDetails)
+
      return (
-          <div className="mb-10">
+          <div className="mb-14">
                <div className="mt-10 mb-10">
                     <PagesCoverImg title={'Get A Quote'} imgUrl={imgUrl}></PagesCoverImg>
                </div>
                <div className="space-y-2">
                     <div className="flex justify-between">
-                         <h1 className="text-2xl font-bold">Get A Quote</h1>
 
-                         <h1 className="text-xl font-bold ">Service : {serviceDetails}</h1>
+                         <div className="mb-2">
+                              <h1 className="text-2xl font-bold">Get A Quote</h1>
+                              <div className="flex items-center gap-2 mt-2">
+                                   <hr className="w-16 border-cyan-400 border-2 " />
+                                   <p className="bg-cyan-400  p-1 w-0"></p>
+                              </div>
+                         </div>
+
+                         <h1 className="text-xl font-bold ">Service : {service_name}</h1>
 
                     </div>
                     <p className="text-sm font-normal">Get a quote in just 30 minutes</p>
@@ -63,7 +95,7 @@ const ServiceQuoteFrom = () => {
 
                     <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col">
 
-                         <input type="number"
+                         <input type="text"
                               className=" mt-4  w-full rounded-lg px-4 py-3 border border-black" name="number"
                               required
                               placeholder="Your Phone No *"
@@ -95,13 +127,59 @@ const ServiceQuoteFrom = () => {
                     </div>
 
 
-                    <button className="mt-6 " type="submit">  <AwesomeButton type="primary">Send Message</AwesomeButton></button>
-
+                    <button type="submit" className="mt-6 text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Send Message</button>
 
 
 
 
                </form>
+
+               <div className="mt-10">
+                    <h1 className="text-2xl font-semibold">How We Make Work Successful</h1>
+                    <div className="flex items-center gap-2 mt-2">
+                         <hr className="w-36  border-cyan-400 border-2 " />
+                         <p className="bg-cyan-400  p-1 w-0"></p>
+                    </div>
+
+                    <div className="mt-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+                         <div>
+                              <div className="flex gap-5 items-center">
+                                   <h1 className="text-cyan-500 text-2xl font-semibold border-2 border-gray-400 items-center flex justify-center w-10 h-10  rounded-full">1</h1>
+                                   <h1 className="text-xl font-semibold">Analyze</h1>
+                              </div>
+
+                              <p className="text-base font-medium mt-4 ">We utilizes creative and customized methods that tailor our work to the client.</p>
+
+                         </div>
+                         <div>
+                              <div className="flex gap-5 items-center">
+                                   <h1 className="text-cyan-500 text-2xl font-semibold border-2 border-gray-400 items-center flex justify-center w-10 h-10  rounded-full">2</h1>
+                                   <h1 className="text-xl font-semibold">Advise</h1>
+                              </div>
+
+                              <p className="text-base font-medium mt-4 ">Find out when where business needs to go and how to get there – real progress is made.</p>
+
+                         </div>
+                         <div>
+                              <div className="flex gap-5 items-center">
+                                   <h1 className="text-cyan-500 text-2xl font-semibold border-2 border-gray-400 items-center flex justify-center w-10 h-10  rounded-full">3</h1>
+                                   <h1 className="text-xl font-semibold">Strategy</h1>
+                              </div>
+
+                              <p className="text-base font-medium mt-4 ">We deliver business results via hands-on execution and leading teams through complex change.</p>
+
+                         </div>
+                         <div >
+                              <div className="flex gap-5 items-center">
+                                   <h1 className="text-cyan-500 text-2xl font-semibold border-2 border-gray-400 items-center flex justify-center w-10 h-10  rounded-full">4</h1>
+                                   <h1 className="text-xl font-semibold">Result</h1>
+                              </div>
+
+                              <p className="text-base font-medium mt-4 "> We provide valuable guidance and support in the development, and you run a successful.</p>
+
+                         </div>
+                    </div>
+               </div>
           </div>
      );
 };

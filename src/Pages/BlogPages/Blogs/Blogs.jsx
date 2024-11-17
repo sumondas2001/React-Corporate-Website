@@ -7,9 +7,10 @@ const Blogs = () => {
      const [blogs, setBlogs] = useState([]);
 
      useEffect(() => {
-          axios.get("blogs.json")
+          axios.get("/blogs.json")
                .then(res => {
-                    setBlogs(res.data)
+                    setBlogs(res.data);
+                    console.log(res.data)
                })
                .catch(error => {
                     console.log(error)

@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-import { FaEnvelopeOpenText, FaPhoneAlt, FaMoneyCheck } from "react-icons/fa";
+import { FaEnvelopeOpenText, FaPhoneAlt, FaRegClock } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+
 import ContactFrom from "../../components/ContactFrom/ContactFrom";
 import PagesTitle from "../../components/PagesTitle/PagesTitle";
 import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
@@ -13,34 +14,47 @@ const Contacts = () => {
                <PagesTitle title={"Contacts"}></PagesTitle>
 
                <PagesCoverImg imgUrl={imgUrl} title={'CONTACTS'}></PagesCoverImg>
+
+               <div className="mt-10">
+                    <h1 className="text-2xl  font-medium  mb-4">Get in Touch</h1>
+                    <div className="flex items-center gap-2 mt-2">
+                         <hr className="w-14  border-cyan-400 border-2 " />
+                         <p className="bg-cyan-400  p-1 w-0"></p>
+                    </div>
+               </div>
                <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
                     data-aos-offset="100"
 
-                    className="flex text-center  mt-14 mb-10 lg:justify-evenly md:justify-evenly gap-4 bg-[#E3FDFD] py-20  rounded-xl">
+                    className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-6 md:gap-8 gap-6 text-center  mt-8 mb-10  bg-[#E3FDFD] py-20  rounded-xl">
 
 
                     <div className="space-y-3">
                          <FaEnvelopeOpenText className="mx-auto lg:size-9 md:size-7 size-6" />
-                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">How can we help you?</h1>
-                         <Link className="underline hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Send us an email</Link>
+                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Email</h1>
+                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">example@mail.com</p>
                     </div>
                     <div className="space-y-3">
                          <FaPhoneAlt className="mx-auto lg:size-9 md:size-7 size-6" />
-                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Feel free to get in touch?</h1>
-                         <Link className="underline hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Give us a call toady</Link>
+                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Call Us</h1>
+                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">+8801812121212</p>
                     </div>
                     <div className="space-y-3">
-                         <FaMoneyCheck className="mx-auto lg:size-9 md:size-7 size-6" />
-                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Ready to request a quote?</h1>
-                         <Link className="underline hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Describe your project</Link>
+                         <FaRegClock className="mx-auto lg:size-9 md:size-7 size-6" />
+                         <h1 className="lg:text-lg md:text-sm text-xs font-medium text-cyan-500">Office Time</h1>
+                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Monday to Friday 9:00am - 6:00pm</p>
+                    </div>
+                    <div className="space-y-3">
+                         <FaLocationDot className="mx-auto lg:size-9 md:size-7 size-6" />
+                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Address</h1>
+                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal"> Dhaka,Bangladesh</p>
                     </div>
                </div>
 
-               <div className="space-y-3">
-                    <p className="text-base font-light text-center">Fill out the form and we’ll be in touch soon!</p>
-                    <h1 className="text-xl font-medium text-center">How we can help you?</h1>
+               <div className="">
+
+                    <h1 className="text-xl font-medium ">How we can help you?</h1>
 
 
                     <div className=" ">
@@ -50,9 +64,11 @@ const Contacts = () => {
 
                <div className="mt-10 ">
                     <div className="mb-10">
-                         <h1 className="text-2xl font-medium text-center mb-4">Our Location</h1>
-                         <hr className="w-48 mt-2 border-t-black mx-auto" />
-                         <hr className="w-60 mt-2 border-t-black mx-auto" />
+                         <h1 className="text-3xl font-semibold">Our Location</h1>
+                         <div className="flex items-center gap-2 mt-2">
+                              <hr className="w-14  border-cyan-400 border-2 " />
+                              <p className="bg-cyan-400  p-1 w-0"></p>
+                         </div>
                     </div>
                     <iframe
                          data-aos="fade-up"

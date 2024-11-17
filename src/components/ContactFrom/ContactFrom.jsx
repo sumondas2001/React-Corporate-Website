@@ -1,4 +1,4 @@
-import { AwesomeButton } from "react-awesome-button";
+import toast from "react-hot-toast";
 
 const ContactFrom = () => {
 
@@ -12,19 +12,22 @@ const ContactFrom = () => {
           const email = from.email.value;
           const subject = from.subject.value;
           const message = from.message.value;
-
+          from.reset();
+          toast.success('Your Message Send')
           const fromData = { firstName, lastName, email, subject, message };
           console.log(fromData)
      }
      return (
-          <div className="mt-4 " data-aos="fade-up"
+          <div className="mt-2 " data-aos="fade-up"
                data-aos-easing="ease-out-cubic"
                data-aos-duration="1000"
                data-aos-offset="100">
 
-               <h1 className="text-2xl  font-medium text-center mb-4">Contact Form</h1>
-               <hr className="w-48 mt-2 border-t-black mx-auto" />
-               <hr className="w-60 mt-2 border-t-black mx-auto" />
+               <h1 className="text-2xl  font-medium  mb-4">Lets Talk About Your Idea</h1>
+               <div className="flex items-center gap-2 mt-2">
+                    <hr className="w-32  border-cyan-400 border-2 " />
+                    <p className="bg-cyan-400  p-1 w-0"></p>
+               </div>
                <form onSubmit={handelContactFrom}>
                     <div className="flex gap-4 mt-10">
                          <input className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg"
@@ -54,7 +57,10 @@ const ContactFrom = () => {
                          <input type="text" className=" w-full  border border-black h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
                     </div>
 
-                    <button className="mt-6 " type="submit">  <AwesomeButton type="primary">Send Message</AwesomeButton></button>
+
+
+
+                    <button type="submit" className="mt-6 text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Send Message</button>
 
 
 

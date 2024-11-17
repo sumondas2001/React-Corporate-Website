@@ -1,4 +1,3 @@
-import { AwesomeButton } from "react-awesome-button";
 import img1 from "../../assets/homeCarousel/pexels-cottonbro-3205570.jpg";
 import img2 from '../../assets/homeCarousel/pexels-divinetechygirl-1181355.jpg';
 import img3 from '../../assets/homeCarousel/pexels-divinetechygirl-1181396.jpg';
@@ -23,7 +22,9 @@ const Slider = () => {
                                    <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
                               <div >
-                                   <AwesomeButton type="primary">Discover More</AwesomeButton>
+
+
+                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Discover More</button>
 
 
                               </div>
@@ -45,8 +46,7 @@ const Slider = () => {
                                    <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
                               <div className=" ">
-                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
-
+                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Discover More</button>
 
                               </div>
                          </div>
@@ -67,7 +67,8 @@ const Slider = () => {
                                    <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
                               <div className=" ">
-                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
+
+                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Discover More</button>
 
 
                               </div>
@@ -89,7 +90,8 @@ const Slider = () => {
                                    <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
                               <div className=" ">
-                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
+
+                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Discover More</button>
 
 
                               </div>
@@ -111,9 +113,8 @@ const Slider = () => {
                                    <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
                               <div className=" ">
-                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
-
+                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Discover More</button>
                               </div>
                          </div>
                     </div>
@@ -133,8 +134,8 @@ const Slider = () => {
                                    <p className="text-sm  lg:font-normal md:font-normal font-extralight mt-3 text-white">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                               </div>
                               <div className=" ">
-                                   <AwesomeButton type="primary" >Discover More</AwesomeButton>
 
+                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Discover More</button>
 
                               </div>
                          </div>

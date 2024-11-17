@@ -40,24 +40,51 @@ const Footer = () => {
                          <div>
                               <ul className="text-xs font-light text-white space-y-3">
                                    <li className="text-lg text-center md:mb-10 font-semibold">Quick Contact</li>
-                                   {["About Us", "Contacts", "Blog", "Services"].map((item) => (
-                                        <li key={item} className="flex items-center gap-2 text-base font-normal">
-                                             <AiOutlineArrowRight />
-                                             <Link className="hover:underline hover:text-cyan-600">{item}</Link>
-                                        </li>
-                                   ))}
+
+
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/about'} className="hover:underline hover:text-cyan-600">About Us</Link>
+                                   </li>
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/contacts'} className="hover:underline hover:text-cyan-600">Contacts</Link>
+                                   </li>
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/blog'} className="hover:underline hover:text-cyan-600">Blog</Link>
+                                   </li>
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/services'} className="hover:underline hover:text-cyan-600">Services</Link>
+                                   </li>
                               </ul>
                          </div>
 
                          <div>
                               <ul className="text-xs font-light text-white space-y-3">
                                    <li className="text-lg text-center md:mb-10 font-semibold">Our Services</li>
-                                   {["Market research", "Business planning", "Digital advisory", "Consulting", "International Business"].map((service) => (
-                                        <li key={service} className="flex items-center gap-2 text-base font-normal">
-                                             <AiOutlineArrowRight />
-                                             <Link className="hover:underline hover:text-cyan-600">{service}</Link>
-                                        </li>
-                                   ))}
+
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/services'} className="hover:underline hover:text-cyan-600">Market research</Link>
+                                   </li>
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/services'} className="hover:underline hover:text-cyan-600">Business planning</Link>
+                                   </li>
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/services'} className="hover:underline hover:text-cyan-600">Digital advisory</Link>
+                                   </li>
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/services'} className="hover:underline hover:text-cyan-600">Consulting</Link>
+                                   </li>
+                                   <li className="flex items-center gap-2 text-base font-normal">
+                                        <AiOutlineArrowRight />
+                                        <Link to={'/services'} className="hover:underline hover:text-cyan-600">International Business</Link>
+                                   </li>
                               </ul>
                          </div>
                     </div>
