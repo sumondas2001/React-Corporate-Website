@@ -5,7 +5,7 @@ const Blog = ({ blog }) => {
      const { blog_title, blog_date, blog_img, blog_description, user_img, user_name } = blog;
      // console.log(blog)
      return (
-          <div className="shadow-xl bg-[#E3FDFD] py-6 mt-10"
+          <div className="shadow-xl bg-[#E3FDFD] pb-6 mt-10 rounded-t-lg"
                data-aos="fade-up"
                data-aos-offset="200"
                data-aos-delay="50"

@@ -1,0 +1,38 @@
+[
+     {
+          "id": 1,
+          "image": "https://i.ibb.co.com/gyy1cTK/pexels-cottonbro-3205570.jpg",
+          "title": "Innovating for a Sustainable Future",
+          "description": "There are many variations of passages available, but the majority have suffered alteration in some form"
+     },
+     {
+          "id": 2,
+          "image": "https://i.ibb.co.com/qWdWFNj/pexels-divinetechygirl-1181355.jpg",
+          "title": "Empowering Creativity and Innovation",
+          "description": "Unlocking the potential of new ideas for a better tomorrow"
+     },
+     {
+          "id": 3,
+          "image": "https://i.ibb.co.com/6b21MGk/pexels-divinetechygirl-1181396.jpg",
+          "title": "Driving Towards Excellence",
+          "description": "Striving for quality and innovation in every step"
+     },
+     {
+          "id": 4,
+          "image": "https://i.ibb.co.com/jR0QYYJ/pexels-jopwell-2422277.jpg",
+          "title": "Exploring Endless Possibilities",
+          "description": "The journey of a thousand miles begins with a single step"
+     },
+     {
+          "id": 5,
+          "image": "https://i.ibb.co.com/d6PDznz/pexels-marily-torres-227778-776615.jpg",
+          "title": "Transforming the World Through Ideas",
+          "description": "Great ideas shape the world and fuel innovation"
+     },
+     {
+          "id": 6,
+          "image": "https://i.ibb.co.com/tz55pRD/pexels-rethaferguson-3811082.jpg",
+          "title": "Building a Future We Believe In",
+          "description": "Together, we can make a difference for the generations to come"
+     }
+]

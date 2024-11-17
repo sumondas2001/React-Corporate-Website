@@ -45,7 +45,7 @@ const OurClients = () => {
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="false">
-                    <Marquee speed={40} pauseOnHover>
+                    <Marquee speed={25} pauseOnHover>
                          {
                               clients.map(client => <OurClient client={client} key={client.id}></OurClient>)
                          }

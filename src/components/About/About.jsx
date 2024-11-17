@@ -11,7 +11,7 @@ const About = () => {
      }, []);
      return (
 
-          <div className="mt-10 mb-10 flex flex-col md:flex-row lg:justify-between md:gap-4 items-center text-center lg:text-left md:text-left bg-[#E3FDFD] p-6 rounded-md">
+          <div className="mt-10 mb-10 flex flex-col md:flex-row lg:justify-between md:gap-4 items-center text-center lg:text-left md:text-left bg-[#e9f5f5] p-6 rounded-md">
 
                <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"

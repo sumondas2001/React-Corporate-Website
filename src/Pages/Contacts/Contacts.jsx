@@ -30,22 +30,22 @@ const Contacts = () => {
                     className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-6 md:gap-8 gap-6 text-center  mt-8 mb-10  bg-[#E3FDFD] py-20  rounded-xl">
 
 
-                    <div className="space-y-3">
+                    <div className="space-y-3 border-r border-black">
                          <FaEnvelopeOpenText className="mx-auto lg:size-9 md:size-7 size-6" />
                          <h1 className="lg:text-lg md:text-sm text-xs font-medium">Email</h1>
                          <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">example@mail.com</p>
                     </div>
-                    <div className="space-y-3">
+                    <div className="space-y-3 border-r border-black">
                          <FaPhoneAlt className="mx-auto lg:size-9 md:size-7 size-6" />
                          <h1 className="lg:text-lg md:text-sm text-xs font-medium">Call Us</h1>
                          <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">+8801812121212</p>
                     </div>
-                    <div className="space-y-3">
+                    <div className="space-y-3 border-r border-black">
                          <FaRegClock className="mx-auto lg:size-9 md:size-7 size-6" />
                          <h1 className="lg:text-lg md:text-sm text-xs font-medium text-cyan-500">Office Time</h1>
                          <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Monday to Friday 9:00am - 6:00pm</p>
                     </div>
-                    <div className="space-y-3">
+                    <div className="space-y-3 ">
                          <FaLocationDot className="mx-auto lg:size-9 md:size-7 size-6" />
                          <h1 className="lg:text-lg md:text-sm text-xs font-medium">Address</h1>
                          <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal"> Dhaka,Bangladesh</p>

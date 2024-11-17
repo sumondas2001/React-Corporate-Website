@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ClientReview from "./ClientReview";
+import Marquee from "react-fast-marquee";
 
 
 const ClientReviews = () => {
@@ -37,7 +38,7 @@ const ClientReviews = () => {
                </div>
 
 
-               <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-10" data-aos="fade-up"
+               {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-10" data-aos="fade-up"
                     data-aos-offset="200"
                     data-aos-delay="500"
                     data-aos-duration="1000"
@@ -45,14 +46,39 @@ const ClientReviews = () => {
                     data-aos-mirror="true"
                     data-aos-once="false">
 
-                    {
-                         ClientReviews.map(review => <ClientReview
-                              key={review.id}
-                              review={review}
-                         ></ClientReview>)
-                    }
+
+
+               </div> */}
+
+               <div
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+               >
+                    <Marquee
+
+                         speed={18}
+                         pauseOnHover
+                         className="rounded-xl"
+                    >
+
+                         {
+                              ClientReviews.map(review => <ClientReview
+                                   key={review.id}
+                                   review={review}
+                              ></ClientReview>)
+                         }
+
+                    </Marquee>
 
                </div>
+
+
+
 
           </div>
      );

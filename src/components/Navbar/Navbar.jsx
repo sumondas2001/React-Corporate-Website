@@ -68,7 +68,7 @@ const Navbar = () => {
 
      </>
      return (
-          <div className="navbar bg-slate-100 py-2  ">
+          <div className="navbar  py-2  ">
                <div className="navbar-start">
                     <div className="dropdown">
                          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -118,20 +118,20 @@ const Navbar = () => {
                               </div>
                               <ul
                                    tabIndex={0}
-                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow ">
+                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 py-2 shadow ">
                                    <li>
-                                        <a className="justify-between text-sm font-medium">
+                                        <p className=" text-sm font-medium">
                                              {user?.displayName}
-                                        </a>
+                                        </p>
                                    </li>
                                    <li>
-                                        <p className="justify-between text-xs font-normal mb-2 mt-2">
+                                        <p className=" text-xs font-normal mb-2 mt-2">
                                              {user?.email}
                                         </p>
                                    </li>
 
-                                   <li className="w-14 ml-20">
-                                        <button onClick={handelLogOut} className="text-xs font-light bg-red-500 hover:bg-red-400 text-white p-2 rounded-lg">LogOut</button>
+                                   <li className=" ">
+                                        <button onClick={handelLogOut} className="text-sm font-light text-black hover:bg-cyan-700 p-2 rounded-lg ">LogOut</button>
 
                                    </li>
                               </ul>

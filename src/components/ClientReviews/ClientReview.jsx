@@ -4,13 +4,17 @@ const ClientReview = ({ review }) => {
      // console.log(review)
      const { clientName, clientPosition, ClientImg, clientReview } = review;
      return (
-          <div className="space-y-3  text-center bg-[#E3FDFD] shadow-2xl rounded-2xl p-8 ">
+          <div className="space-y-3 lg:w-[450px] md:w-[450px] w-[400px] text-center bg-[#e5f3f3] border border-r-stone-400 px-8 py-10">
                <img className="rounded-full mx-auto" src={ClientImg} alt="" />
 
                <h1 className="text-base font-medium">{clientName}</h1>
                <p className="text-xs font-normal">{clientPosition}</p>
                <p className="text-xs font-extralight">{clientReview}</p>
           </div >
+
+
+
+
      );
 };
 
