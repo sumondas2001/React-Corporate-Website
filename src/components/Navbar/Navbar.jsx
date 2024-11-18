@@ -68,7 +68,7 @@ const Navbar = () => {
 
      </>
      return (
-          <div className="navbar  py-2  ">
+          <div className="navbar  py-2  lg:max-w-[1200px] md:max-w-[700px] max-w-[380px] mx-auto">
                <div className="navbar-start">
                     <div className="dropdown">
                          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -87,7 +87,7 @@ const Navbar = () => {
                          </div>
                          <ul
                               tabIndex={0}
-                              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-bold px-1">
+                              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52 md:w-44 w-36 p-2 shadow text-base font-bold px-1  ">
                               {link}
                          </ul>
                     </div>
@@ -100,12 +100,12 @@ const Navbar = () => {
 
 
 
-               <div className="navbar-center hidden lg:flex">
+               <div className="navbar-center hidden lg:flex  z-10">
                     <ul className="menu menu-horizontal text-base font-bold px-2">
                          {link}
                     </ul>
                </div>
-               <div className="navbar-end z-50">
+               <div className="navbar-end  z-10">
                     {user ?
 
                          <div className="dropdown dropdown-end">
@@ -141,7 +141,7 @@ const Navbar = () => {
 
 
                          :
-                         <Link to={'/login'} >   <button className="mt-6 text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Login</button></Link>
+                         <Link to={'/login'} >  <button className=" text-sm text-white font-bold px-4 flex items-center hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Login</button></Link>
                     }
                </div>
           </div>

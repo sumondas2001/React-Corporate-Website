@@ -17,12 +17,12 @@ const Footer = () => {
                                         alt="Company Logo"
                                    />
                               </Link>
-                              <p className="text-white text-sm font-light lg:w-[400px] md:w-full mx-auto lg:mx-0">
+                              <p className="text-white text-base font-normal lg:w-[400px] md:w-full mx-auto lg:mx-0">
                                    At Visabee Consultants, our mission is to empower individuals to reach their goals and realize their full potential...
                               </p>
                          </div>
                          {/* Newsletter Subscription */}
-                         <div className="mt-8">
+                         <div className="lg:mt-8 md:mt-4 mt-2">
                               <p className="text-base mb-2 text-white font-medium">Subscribe to our newsletter</p>
                               <div className="flex flex-col md:flex-row items-center md:justify-center lg:justify-start">
                                    <input
@@ -36,34 +36,34 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Contact and Services */}
-                    <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-10">
+                    <div className="flex  lg:justify-between lg:items-start md:items-start  md:justify-around justify-around lg:space-x-20">
+
+                         <ul className="text-xs font-light text-white lg:space-y-4 md:space-y-3 space-y-3">
+                              <li className="text-lg text-center lg:mb-8 md:mb-6 mb-6 font-semibold">Quick Contact</li>
+
+
+                              <li className="flex items-center gap-2 text-base font-normal">
+                                   <AiOutlineArrowRight />
+                                   <Link to={'/aboutPages'} className="hover:underline hover:text-cyan-600">About Us</Link>
+                              </li>
+                              <li className="flex items-center gap-2 text-base font-normal">
+                                   <AiOutlineArrowRight />
+                                   <Link to={'/contacts'} className="hover:underline hover:text-cyan-600">Contacts</Link>
+                              </li>
+                              <li className="flex items-center gap-2 text-base font-normal">
+                                   <AiOutlineArrowRight />
+                                   <Link to={'/blog'} className="hover:underline hover:text-cyan-600">Blog</Link>
+                              </li>
+                              <li className="flex items-center gap-2 text-base font-normal">
+                                   <AiOutlineArrowRight />
+                                   <Link to={'/services'} className="hover:underline hover:text-cyan-600">Services</Link>
+                              </li>
+                         </ul>
+
+
                          <div>
-                              <ul className="text-xs font-light text-white space-y-3">
-                                   <li className="text-lg text-center md:mb-10 font-semibold">Quick Contact</li>
-
-
-                                   <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
-                                        <Link to={'/aboutPages'} className="hover:underline hover:text-cyan-600">About Us</Link>
-                                   </li>
-                                   <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
-                                        <Link to={'/contacts'} className="hover:underline hover:text-cyan-600">Contacts</Link>
-                                   </li>
-                                   <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
-                                        <Link to={'/blog'} className="hover:underline hover:text-cyan-600">Blog</Link>
-                                   </li>
-                                   <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
-                                        <Link to={'/services'} className="hover:underline hover:text-cyan-600">Services</Link>
-                                   </li>
-                              </ul>
-                         </div>
-
-                         <div>
-                              <ul className="text-xs font-light text-white space-y-3">
-                                   <li className="text-lg text-center md:mb-10 font-semibold">Our Services</li>
+                              <ul className="text-xs font-light text-white lg:space-y-4 md:space-y-3 space-y-3">
+                                   <li className="text-lg  lg:mb-8 md:mb-6 mb-6 font-semibold">Our Services</li>
 
                                    <li className="flex items-center gap-2 text-base font-normal">
                                         <AiOutlineArrowRight />
@@ -102,9 +102,9 @@ const Footer = () => {
                </div>
 
                {/* Social Media Links */}
-               <div className="text-white flex gap-4 mt-10 justify-center">
+               <div className="text-white flex gap-4 lg:mt-10 md:mt-4 mt-4 justify-center">
                     <a href="https://www.facebook.com/sumondas1010/">
-                         <FaFacebook className="text-cyan-600 text-2xl" />
+                         <FaFacebook className="text-cyan-600 text-2xl " />
                     </a>
                     <a href="#">
                          <FaInstagram className="text-[#E1306C] text-2xl" />
