@@ -3,9 +3,15 @@ import PagesCoverImg from "../PagesCoverImg/PagesCoverImg";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import PagesTitle from "../PagesTitle/PagesTitle";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const ServiceQuoteFrom = () => {
+
+     // window top pages
+     const { PageTop } = useContext(AuthContext);
+     PageTop();
 
      const [allServices, setAllServices] = useState([]);
      const { service_name } = allServices
@@ -55,6 +61,8 @@ const ServiceQuoteFrom = () => {
 
      return (
           <div className="mb-14">
+               <PagesTitle title={'Service Quote From'}></PagesTitle>
+
                <div className="mt-10 mb-10">
                     <PagesCoverImg title={'Get A Quote'} imgUrl={imgUrl}></PagesCoverImg>
                </div>

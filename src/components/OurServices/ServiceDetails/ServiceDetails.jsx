@@ -1,11 +1,17 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink, useParams } from "react-router-dom";
 import PagesCoverImg from "../../PagesCoverImg/PagesCoverImg";
 import { FaCaretRight } from "react-icons/fa6";
+import PagesTitle from "../../PagesTitle/PagesTitle";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 
 const ServiceDetails = () => {
+     // window top pages
+     const { PageTop } = useContext(AuthContext);
+     PageTop();
+
      const [service, setService] = useState([]);
 
 
@@ -46,6 +52,8 @@ const ServiceDetails = () => {
 
      return (
           <div className="mb-10">
+               <PagesTitle title={'Service Details'}></PagesTitle>
+
                <div
 
                     className="mb-14">

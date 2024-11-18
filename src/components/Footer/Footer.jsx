@@ -44,7 +44,7 @@ const Footer = () => {
 
                                    <li className="flex items-center gap-2 text-base font-normal">
                                         <AiOutlineArrowRight />
-                                        <Link to={'/about'} className="hover:underline hover:text-cyan-600">About Us</Link>
+                                        <Link to={'/aboutPages'} className="hover:underline hover:text-cyan-600">About Us</Link>
                                    </li>
                                    <li className="flex items-center gap-2 text-base font-normal">
                                         <AiOutlineArrowRight />

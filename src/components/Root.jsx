@@ -12,6 +12,8 @@ const Root = () => {
           Aos.init()
      }, []);
 
+
+
      return (
 
           <div className="scroll-container">

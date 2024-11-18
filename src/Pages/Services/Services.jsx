@@ -1,9 +1,14 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import OurService from "../../components/OurServices/OurService";
 import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
+import PagesTitle from "../../components/PagesTitle/PagesTitle";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Services = () => {
+     // window top pages
+     const { PageTop } = useContext(AuthContext);
+     PageTop();
 
      const imgUrl = 'https://iori.archielite.com/storage/general/box-image-2.png'
 
@@ -21,6 +26,9 @@ const Services = () => {
      }, [])
      return (
           <div className="mb-10 ">
+               <PagesTitle title={'Services'}></PagesTitle>
+
+
                <div className="mb-10">
                     <PagesCoverImg title={"SERVICE"} imgUrl={imgUrl}></PagesCoverImg>
                </div>

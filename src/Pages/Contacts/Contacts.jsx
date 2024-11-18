@@ -4,9 +4,15 @@ import { FaLocationDot } from "react-icons/fa6";
 import ContactFrom from "../../components/ContactFrom/ContactFrom";
 import PagesTitle from "../../components/PagesTitle/PagesTitle";
 import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Contacts = () => {
+     // window top pages
+     const { PageTop } = useContext(AuthContext);
+     PageTop();
+
      const imgUrl = 'https://i.ibb.co.com/VSwdvzT/contact-us-classic-03.jpg';
      return (
           <div className="mb-10">

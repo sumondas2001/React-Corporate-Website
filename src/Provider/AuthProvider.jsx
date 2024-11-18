@@ -44,8 +44,15 @@ const AuthProvider = ({ children }) => {
           })
                .then()
                .catch()
-     }
+     };
 
+     // pages top 
+
+     const PageTop = () => {
+          useEffect(() => {
+               window.scrollTo(0, 0)
+          }, []);
+     }
 
 
      const authInfo = {
@@ -54,7 +61,8 @@ const AuthProvider = ({ children }) => {
           googleLogin,
           logOut,
           user,
-          userUpdateProfile
+          userUpdateProfile,
+          PageTop
      }
      return (
           <AuthContext.Provider value={authInfo}>

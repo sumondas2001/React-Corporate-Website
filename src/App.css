@@ -1,5 +1,5 @@
 .scroll-container{
-     overflow-y: auto;
+     overflow-y: auto; 
      scroll-behavior: smooth;
   
 }

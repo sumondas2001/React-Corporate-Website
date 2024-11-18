@@ -23,7 +23,7 @@ const Navbar = () => {
 
           <li>
                <NavLink
-                    to="/about"
+                    to="/aboutPages"
                     className={({ isActive }) =>
                          isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
@@ -105,7 +105,7 @@ const Navbar = () => {
                          {link}
                     </ul>
                </div>
-               <div className="navbar-end">
+               <div className="navbar-end z-50">
                     {user ?
 
                          <div className="dropdown dropdown-end">

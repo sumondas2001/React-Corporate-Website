@@ -1,6 +1,7 @@
 import aboutImg from '../../assets/AboutSection/pexels-yankrukov-7793688.jpg'
 import 'aos/dist/aos.css';
 import { FaDollarSign, FaRegStar, FaCheckCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const About = () => {
 
@@ -56,7 +57,7 @@ const About = () => {
                     </div>
 
                     <div className="mt-6 flex justify-center lg:justify-start">
-                         <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">About More Us</button>
+                         <Link to={'/aboutPages'} className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">About More Us</Link>
                     </div>
                </div>
           </div>
