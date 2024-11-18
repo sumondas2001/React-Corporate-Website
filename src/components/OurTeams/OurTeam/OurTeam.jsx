@@ -1,13 +1,9 @@
-import Aos from 'aos';
 import PropTypes from 'prop-types';
-import { useEffect } from 'react';
 
 const OurTeam = ({ team }) => {
      const { name, img, profession } = team;
 
-     useEffect(() => {
-          Aos.init();
-     }, [])
+
      // console.log(team)
      return (
 

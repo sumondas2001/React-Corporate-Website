@@ -1,14 +1,10 @@
 import aboutImg from '../../assets/AboutSection/pexels-yankrukov-7793688.jpg'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
 import { FaDollarSign, FaRegStar, FaCheckCircle } from "react-icons/fa";
 
 const About = () => {
 
-     useEffect(() => {
-          AOS.init()
-     }, []);
+
      return (
 
           <div className="mt-10 mb-10 flex flex-col md:flex-row lg:justify-between md:gap-4 items-center text-center lg:text-left md:text-left bg-[#e9f5f5] p-6 rounded-md">
