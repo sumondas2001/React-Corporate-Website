@@ -18,12 +18,12 @@ const Blog = ({ blog }) => {
                <div className="px-4 mt-6 space-y-3">
                     <p className="text-xs font-normal">{blog_date}</p>
                     <h3 className="text-base font-semibold">{blog_title}</h3>
-                    <p className="text-sm font-light">{blog_description}</p>
+                    <p className="text-sm font-medium text-black">{blog_description}</p>
                </div>
                <div className="flex mt-5 items-center px-4">
                     <img className="mr-6 size-8 rounded-full object-cover" src={user_img} alt="" />
 
-                    <h4 className="text-sm font-medium">By {user_name}</h4>
+                    <h4 className="text-sm font-medium">By <span className="hover:underline text-base hover:text-cyan-700">{user_name}</span></h4>
                </div>
           </div>
      );

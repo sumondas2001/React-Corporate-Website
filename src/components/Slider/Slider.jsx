@@ -26,9 +26,9 @@ const Slider = () => {
 
 
      return (
-          <div >
+          <div className="">
                <Swiper
-
+                    spaceBetween={3}
                     centeredSlides={true}
                     speed={2000}
                     autoplay={{
@@ -39,7 +39,7 @@ const Slider = () => {
                          clickable: true,
                     }}
                     modules={[Autoplay, Pagination]}
-                    className="mySwiper"
+                    className="mySwiper "
                >
 
                     {
@@ -53,9 +53,9 @@ const Slider = () => {
                                    <img
                                         src={slider.image}
                                         alt={`Slide ${slider.id}`}
-                                        className="w-full h-[300px] md:h-[400px] lg:h-[590px] rounded-xl object-cover"
+                                        className="w-full h-[300px] md:h-[400px] lg:h-[590px]  object-cover"
                                    />
-                                   <div className="absolute rounded-xl h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                                   <div className="absolute  h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]">
                                              <div>
                                                   <h1 className="md:text-2xl lg:text-3xl text-base font-bold text-white">

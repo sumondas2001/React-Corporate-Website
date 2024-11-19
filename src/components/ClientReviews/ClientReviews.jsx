@@ -12,12 +12,13 @@ const ClientReviews = () => {
                .get("/ClientReviews.json")
                .then((res) => {
                     setClientReviews(res.data);
-                    console.log(res.data)
+                    // console.log(res.data)
                })
                .catch((error) => {
                     console.log(error);
                });
      }, []);
+
 
      return (
           <div className="mb-10">
@@ -44,7 +45,10 @@ const ClientReviews = () => {
                </div>
 
 
-               <div>
+               <div data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500"
+                    data-aos-offset="100">
                     <Swiper
                          breakpoints={{
                               // Mobile
@@ -73,12 +77,19 @@ const ClientReviews = () => {
                     >
                          {
                               clientReviews.map(slider => <SwiperSlide key={slider.id} slider={slider}>
-                                   <div className=" space-y-3 rounded-xl text-center bg-[#e2f1f1] px-8 py-10">
+                                   <div className=" box-border space-y-3  rounded-xl text-center bg-[#e2f1f1] px-8 py-8 h-80 ">
                                         <img className="rounded-full mx-auto" src={slider.ClientImg} alt="" />
 
                                         <h1 className="text-base font-medium">{slider.clientName}</h1>
                                         <p className="text-xs font-normal">{slider.clientPosition}</p>
-                                        <p className="text-xs font-extralight">{slider.clientReview}</p>
+
+
+                                        <p className="text-xs font-extralight">
+                                             {slider.clientReview.slice(0, 200)}
+                                        </p>
+
+
+
                                    </div >
 
                               </SwiperSlide>)

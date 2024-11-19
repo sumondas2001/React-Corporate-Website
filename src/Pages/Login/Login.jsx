@@ -71,7 +71,7 @@ const Login = () => {
                          data-aos-duration="1000"
                          data-aos-offset="100"
                          className="card  w-full max-w-sm shrink-0 shadow-2xl">
-                         <form onSubmit={handelLogin} className="card-body">
+                         <form onSubmit={handelLogin} className="card-body px-8 py-4">
                               <div className="form-control">
                                    <label className="label">
                                         <span className="label-text">Email</span>
@@ -88,7 +88,7 @@ const Login = () => {
                                    </label>
                               </div>
                               <div className="form-control mt-6">
-                                   <button type='submit' className="btn btn-primary">Login</button>
+                                   <button type='submit' className="btn text-sm font-semibold bg-[#5cc2c7] hover:bg-[#52afb4]">Login</button>
 
 
                               </div>
@@ -99,12 +99,13 @@ const Login = () => {
                                    <p className='text-sm font-normal'>Dont Have An Account </p>
                                    <Link to={'/register'} className='text-base font-medium underline  hover:font-semibold hover:text-cyan-500'>Register</Link>
                               </div>
-                              <h1 className="text-base mb-4 font-semibold text-center"> Continue With</h1>
+                              <h1 className="text-base mb-1 font-semibold text-center">OR</h1>
+                              <hr className='border-1 mb-4 border-black' />
                               <div className=' flex justify-center gap-6  mb-6'>
                                    <div>
                                         <button onClick={handelGoogle} >
                                              <FaGoogle className='size-8  text-cyan-500  ' />
-                                             <span><p className='text-base font-semibold mt-1'>Google</p></span>
+
 
                                         </button>
                                    </div>

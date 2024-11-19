@@ -2,7 +2,7 @@
 
 const CeoSection = () => {
      return (
-          <div className="flex lg:flex-row md:flex-row flex-col lg:justify-evenly md:gap-10 shadow-2xl bg-[#E3FDFD] mb-10 lg:p-10 md:p-6 p-4 mt-10 items-center rounded-xl">
+          <div className="flex lg:flex-row  md:flex-row flex-col lg:justify-evenly md:gap-10 shadow-2xl bg-[#E3FDFD] mb-10 lg:p-10 md:p-6 p-4 mt-10 items-center rounded-xl">
                <div data-aos="fade-up"
                     data-aos-offset="200"
                     data-aos-delay="50"

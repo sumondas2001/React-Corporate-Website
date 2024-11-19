@@ -70,14 +70,20 @@ const ServiceQuoteFrom = () => {
                     <div className="flex justify-between">
 
                          <div className="mb-2">
-                              <h1 className="text-2xl font-bold">Get A Quote</h1>
+                              <h1 className="lg:text-2xl md:text-xl text-sm font-bold">Get A Quote</h1>
                               <div className="flex items-center gap-2 mt-2">
-                                   <hr className="w-16 border-cyan-400 border-2 " />
+                                   <hr className="lg:w-16 md:w-16 w-10 border-cyan-400 border-2 " />
                                    <p className="bg-cyan-400  p-1 w-0"></p>
                               </div>
                          </div>
 
-                         <h1 className="text-xl font-bold ">Service : {service_name}</h1>
+                         <div>
+                              <h1 className="lg:text-xl md:text-lg text-sm  font-bold "> {service_name}</h1>
+                              <div className="flex flex-row-reverse items-center gap-2 mt-2">
+                                   <hr className="lg:w-36 md:w-28 w-20 border-cyan-400 border-2 " />
+                                   <p className="bg-cyan-400  p-1 w-0"></p>
+                              </div>
+                         </div>
 
                     </div>
                     <p className="text-sm font-normal">Get a quote in just 30 minutes</p>

@@ -14,8 +14,8 @@ const OurService = ({ service }) => {
           >
                <img className="rounded-t-2xl object-cover h-60  cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={service_img} alt="" />
                <div className="px-6  ">
-                    <h1 className="text-lg  font-medium mt-3 text-center">{service_name}</h1>
-                    <p className="text-sm font-light mt-3 ">{service_description?.slice(0, 140)} </p>
+                    <h1 className="text-lg font-semibold mt-3 ">{service_name}</h1>
+                    <p className="text-sm font-normal mt-3 ">{service_description?.slice(0, 145)} <span className="font-semibold "> ....</span></p>
 
                     <div className=" justify-end flex mb-6">
                          <Link to={`/servicesDetails/${id}`} >

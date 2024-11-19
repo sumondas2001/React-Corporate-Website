@@ -9,7 +9,7 @@ const Achievement = ({ achievement }) => {
           <div className='text-center '>
                <ScrollTrigger onEnter={() => setCounterState(true)} onExit={() => setCounterState(false)}>
                     <div>
-                         <h1 className="lg:text-3xl md:text-2xl text-xl font-bold text-cyan-600">
+                         <h1 className="lg:text-3xl md:text-2xl text-xl font-bold text-cyan-900">
                               {counterState &&
                                    <CountUp
                                         start={0}
@@ -20,7 +20,7 @@ const Achievement = ({ achievement }) => {
                               }
                               <span className='lg:text-4xl md:text-2xl text-xl   ml-2'>+</span></h1>
 
-                         <h1 className="lg:text-2xl font-semibold mt-4">{achievement.title}</h1>
+                         <h1 className="lg:text-2xl md:text-xl text-sm font-semibold mt-4">{achievement.title}</h1>
                     </div>
                </ScrollTrigger>
 

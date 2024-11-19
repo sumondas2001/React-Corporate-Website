@@ -75,7 +75,7 @@ const Register = () => {
                          data-aos-offset="100"
 
                     >
-                         <img className='lg:size-96 md:size-80 size-80' src={loginImg} alt="" />
+                         <img className='lg:size-96 md:size-80 size-80 ' src={loginImg} alt="" />
                     </div>
                     <div className="card  w-full max-w-sm shrink-0 shadow-2xl"
 
@@ -84,7 +84,7 @@ const Register = () => {
                          data-aos-duration="1000"
                          data-aos-offset="100"
                     >
-                         <form onSubmit={handelRegister} className="card-body">
+                         <form onSubmit={handelRegister} className="card-body px-8 py-4">
                               <div className="form-control">
                                    <label className="label">
                                         <span className="label-text">Name</span>
@@ -111,7 +111,7 @@ const Register = () => {
                                    }
                               </div>
                               <div className="form-control mt-2">
-                                   <button type='submit' className="btn btn-primary">Register</button>
+                                   <button type='submit' className="btn  text-sm font-semibold bg-[#5cc2c7] hover:bg-[#52afb4]">Register</button>
 
 
                               </div>
@@ -125,12 +125,13 @@ const Register = () => {
                                    <p className='text-sm font-normal'>Already Have An Account </p>
                                    <Link to={'/login'} className='text-base font-medium underline  hover:font-semibold hover:text-cyan-500'>Login</Link>
                               </div>
-                              <h1 className="text-base mb-4 font-semibold text-center"> Continue With</h1>
+                              <h1 className="text-base mb-1 font-semibold text-center">OR</h1>
+                              <hr className='border-1 mb-4 border-black' />
                               <div className=' flex justify-center gap-6 mb-6'>
                                    <div>
                                         <button onClick={handelGoogle} >
                                              <FaGoogle className='size-8  text-cyan-500  ' />
-                                             <span><p className='text-base font-semibold mt-1'>Google</p></span>
+
 
                                         </button>
 
@@ -142,8 +143,8 @@ const Register = () => {
                               </div>
                          </div>
                     </div>
-               </div>
-          </div>
+               </div >
+          </div >
      );
 };
 
