@@ -23,7 +23,14 @@ const OurTeams = () => {
 
      return (
           <div className="mt-10 lg:mb-10 md:mb-6 mb-4"  >
-               <div>
+               <div
+
+
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+               >
 
                     <div>
 

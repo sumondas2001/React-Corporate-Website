@@ -7,12 +7,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: '"Poppins", serif'
+
+        Ubuntu: '"Ubuntu", sans-serif'
       }
     },
   },
   plugins: [
-    require('daisyui'),
+    require('daisyui')
+
   ],
 
   daisyui: {

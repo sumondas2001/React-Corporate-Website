@@ -34,7 +34,14 @@ const Services = () => {
                </div>
 
 
-               <div className="mb-10">
+               <div className="mb-10"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+
+
+               >
                     <h1 className="text-xl  font-medium">Our Services</h1>
                     <div className="flex items-center gap-2 mt-2">
                          <hr className="w-20 border-cyan-400 border-2 " />

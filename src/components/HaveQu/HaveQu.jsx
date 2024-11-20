@@ -3,6 +3,8 @@
 const HaveQu = () => {
      return (
           <div className="lg:w-full md:w-full w-full mx-auto py-3"
+
+
                data-aos="fade-up"
                data-aos-easing="ease-out-cubic"
                data-aos-duration="1000"

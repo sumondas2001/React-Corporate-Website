@@ -18,10 +18,11 @@ const AchievementsSection = () => {
      return (
           <div className="lg:mb-20 lg:mt-20 mb-10 mt-10">
                <div className="mb-16"
+
                     data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
-                    data-aos-offset="20"
+                    data-aos-offset="100"
                >
                     <h1 className="lg:text-3xl text-xl font-semibold">Achievements Count</h1>
                     <div className="flex items-center  gap-2 mt-4">
@@ -30,10 +31,11 @@ const AchievementsSection = () => {
                     </div>
                </div>
                <div
+
                     data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
-                    data-aos-offset="20"
+                    data-aos-offset="100"
                     className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-4 md:gap-10 gap-8 box-content mt-10 bg-[#E3FDFD] py-20 rounded-xl">
                     {
                          achievements.map((achievement) => <Achievement

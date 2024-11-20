@@ -18,10 +18,13 @@ const ContactFrom = () => {
           console.log(fromData)
      }
      return (
-          <div className="mt-2 " data-aos="fade-up"
+          <div className="mt-2 "
+
+               data-aos="fade-up"
                data-aos-easing="ease-out-cubic"
                data-aos-duration="1000"
-               data-aos-offset="100">
+               data-aos-offset="100"
+          >
 
                <h1 className="text-2xl  font-medium  mb-4">Lets Talk About Your Idea</h1>
                <div className="flex items-center gap-2 mt-2">

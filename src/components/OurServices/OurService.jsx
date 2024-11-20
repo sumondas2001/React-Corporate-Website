@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const OurService = ({ service }) => {
      const { id, service_description, service_img, service_name } = service;
      return (
-          <div className=" card bg-[#E3FDFD] shadow-xl rounded-2xl "
+          <div className=" card bg-[#E3FDFD] shadow-xl rounded-2xl hover:shadow-2xl"
 
                data-aos="fade-up"
                data-aos-easing="ease-out-cubic"

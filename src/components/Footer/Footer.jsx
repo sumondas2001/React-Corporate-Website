@@ -44,23 +44,23 @@ const Footer = () => {
 
 
                                    <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
+                                        <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                         <Link to={'/'} className="hover:underline hover:text-cyan-600">Home</Link>
                                    </li>
                                    <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
+                                        <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                         <Link to={'/aboutPages'} className="hover:underline hover:text-cyan-600">About Us</Link>
                                    </li>
                                    <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
+                                        <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                         <Link to={'/contacts'} className="hover:underline hover:text-cyan-600">Contacts</Link>
                                    </li>
                                    <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
+                                        <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                         <Link to={'/blog'} className="hover:underline hover:text-cyan-600">Blog</Link>
                                    </li>
                                    <li className="flex items-center gap-2 text-base font-normal">
-                                        <AiOutlineArrowRight />
+                                        <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                         <Link to={'/services'} className="hover:underline hover:text-cyan-600">Services</Link>
                                    </li>
                               </ul>
@@ -71,23 +71,23 @@ const Footer = () => {
                                         <li className="text-lg  lg:mb-8 md:mb-6 mb-6 font-semibold">Our Services</li>
 
                                         <li className="flex items-center gap-2 text-base font-normal">
-                                             <AiOutlineArrowRight />
+                                             <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                              <Link to={'/servicesDetails/1'} className="hover:underline hover:text-cyan-600">Market research</Link>
                                         </li>
                                         <li className="flex items-center gap-2 text-base font-normal">
-                                             <AiOutlineArrowRight />
+                                             <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                              <Link to={'/servicesDetails/1'} className="hover:underline hover:text-cyan-600">Business planning</Link>
                                         </li>
                                         <li className="flex items-center gap-2 text-base font-normal">
-                                             <AiOutlineArrowRight />
+                                             <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                              <Link to={'/servicesDetails/1'} className="hover:underline hover:text-cyan-600">Digital advisory</Link>
                                         </li>
                                         <li className="flex items-center gap-2 text-base font-normal">
-                                             <AiOutlineArrowRight />
+                                             <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                              <Link to={'/servicesDetails/1'} className="hover:underline hover:text-cyan-600">Consulting</Link>
                                         </li>
                                         <li className="flex items-center gap-2 text-base font-normal">
-                                             <AiOutlineArrowRight />
+                                             <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                              <Link to={'/servicesDetails/1'} className="hover:underline hover:text-cyan-600">International Business</Link>
                                         </li>
                                    </ul>

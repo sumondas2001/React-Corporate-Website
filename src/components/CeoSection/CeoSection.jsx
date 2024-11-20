@@ -3,13 +3,12 @@
 const CeoSection = () => {
      return (
           <div className="flex lg:flex-row  md:flex-row flex-col lg:justify-evenly md:gap-10 shadow-2xl bg-[#E3FDFD] mb-10 lg:p-10 md:p-6 p-4 mt-10 items-center rounded-xl">
-               <div data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
+               <div
+
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
+                    data-aos-offset="100"
                >
                     <img className="object-cover lg:h-96 md:h-72 rounded-2xl " src={'https://trax.acrothemes.com/bootstrap-v5/images/team-3.jpg'} alt="" />
                </div>

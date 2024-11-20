@@ -21,44 +21,54 @@ const Contacts = () => {
 
                <PagesCoverImg imgUrl={imgUrl} title={'CONTACTS'}></PagesCoverImg>
 
-               <div className="mt-10">
-                    <h1 className="text-2xl  font-medium  mb-4">Get in Touch</h1>
-                    <div className="flex items-center gap-2 mt-2">
-                         <hr className="w-14  border-cyan-400 border-2 " />
-                         <p className="bg-cyan-400  p-1 w-0"></p>
-                    </div>
-               </div>
-               <div data-aos="fade-up"
+               <div
+                    data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
                     data-aos-offset="100"
-
-                    className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-6 md:gap-10 gap-8 text-center  mt-8 mb-10  bg-[#E3FDFD] py-20  rounded-xl">
-
-
-                    <div className="space-y-3 lg:border-r lg:border-black">
-                         <FaEnvelopeOpenText className="mx-auto lg:size-9 md:size-7 size-6" />
-                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Email</h1>
-                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">example@mail.com</p>
+               >
+                    <div className="mt-10">
+                         <h1 className="text-2xl  font-medium  mb-4">Get in Touch</h1>
+                         <div className="flex items-center gap-2 mt-2">
+                              <hr className="w-14  border-cyan-400 border-2 " />
+                              <p className="bg-cyan-400  p-1 w-0"></p>
+                         </div>
                     </div>
-                    <div className="space-y-3 lg:border-r lg:border-black">
-                         <FaPhoneAlt className="mx-auto lg:size-9 md:size-7 size-6" />
-                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Call Us</h1>
-                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">+8801812121212</p>
-                    </div>
-                    <div className="space-y-3 lg:border-r lg:border-black">
-                         <FaRegClock className="mx-auto lg:size-9 md:size-7 size-6" />
-                         <h1 className="lg:text-lg md:text-sm text-xs font-medium text-cyan-500">Office Time</h1>
-                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Monday to Friday 9:00am - 6:00pm</p>
-                    </div>
-                    <div className="space-y-3 ">
-                         <FaLocationDot className="mx-auto lg:size-9 md:size-7 size-6" />
-                         <h1 className="lg:text-lg md:text-sm text-xs font-medium">Address</h1>
-                         <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal"> Dhaka,Bangladesh</p>
+                    <div
+                         data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="1000"
+                         data-aos-offset="100"
+                         className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-6 md:gap-10 gap-8 text-center  mt-8 mb-10  bg-[#E3FDFD] py-20  rounded-xl">
+
+
+                         <div className="space-y-3 lg:border-r lg:border-black">
+                              <FaEnvelopeOpenText className="mx-auto lg:size-9 md:size-7 size-6" />
+                              <h1 className="lg:text-lg md:text-sm text-xs font-medium">Email</h1>
+                              <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">example@mail.com</p>
+                         </div>
+                         <div className="space-y-3 lg:border-r lg:border-black">
+                              <FaPhoneAlt className="mx-auto lg:size-9 md:size-7 size-6" />
+                              <h1 className="lg:text-lg md:text-sm text-xs font-medium">Call Us</h1>
+                              <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">+8801812121212</p>
+                         </div>
+                         <div className="space-y-3 lg:border-r lg:border-black">
+                              <FaRegClock className="mx-auto lg:size-9 md:size-7 size-6" />
+                              <h1 className="lg:text-lg md:text-sm text-xs font-medium text-cyan-500">Office Time</h1>
+                              <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Monday to Friday 9:00am - 6:00pm</p>
+                         </div>
+                         <div className="space-y-3 ">
+                              <FaLocationDot className="mx-auto lg:size-9 md:size-7 size-6" />
+                              <h1 className="lg:text-lg md:text-sm text-xs font-medium">Address</h1>
+                              <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal"> Dhaka,Bangladesh</p>
+                         </div>
                     </div>
                </div>
 
-               <div className="">
+               <div data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100">
 
                     <h1 className="text-xl font-medium ">How we can help you?</h1>
 
@@ -68,7 +78,12 @@ const Contacts = () => {
                     </div>
                </div>
 
-               <div className="mt-10 ">
+               <div className="mt-10 "
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+               >
                     <div className="mb-10">
                          <h1 className="text-3xl font-semibold">Our Location</h1>
                          <div className="flex items-center gap-2 mt-2">

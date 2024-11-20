@@ -5,14 +5,14 @@ const Blog = ({ blog }) => {
      const { blog_title, blog_date, blog_img, blog_description, user_img, user_name } = blog;
      // console.log(blog)
      return (
-          <div className="shadow-xl bg-[#E3FDFD] pb-6 mt-10 rounded-t-lg"
+          <div className="shadow-xl  bg-[#E3FDFD] pb-6 mt-10 rounded-t-lg "
                data-aos="fade-up"
-               data-aos-offset="200"
-               data-aos-delay="50"
+               data-aos-offset="100"
+
                data-aos-duration="1000"
                data-aos-easing="ease-in-out"
-               data-aos-mirror="true"
-               data-aos-once="false"
+
+
           >
                <img className="h-[200px] w-[400px] rounded-t-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={blog_img} alt="" />
                <div className="px-4 mt-6 space-y-3">

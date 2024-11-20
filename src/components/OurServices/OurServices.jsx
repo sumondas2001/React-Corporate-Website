@@ -24,9 +24,16 @@ const OurServices = () => {
 
 
      return (
-          <div className="mb-10">
+          <div className="mb-10"
+               data-aos="fade-up"
+               data-aos-easing="ease-out-cubic"
+               data-aos-duration="1000"
+               data-aos-offset="100"
+          >
                <div className="text-center">
-                    <div>
+                    <div
+
+                    >
 
 
 

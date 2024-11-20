@@ -16,7 +16,7 @@ const Root = () => {
 
      return (
 
-          <div className="scroll-container  font-poppins">
+          <div className="scroll-container  font-Ubuntu">
                <Navbar />
                <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[350px] mx-auto font-poppins">
                     <Outlet></Outlet>

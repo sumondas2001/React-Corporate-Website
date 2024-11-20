@@ -24,13 +24,11 @@ const ClientReviews = () => {
           <div className="mb-10">
                <div
                     className="mb-10"
+
                     data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
+                    data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
+                    data-aos-offset="100"
                >
                     <div>
                          <h1 className="text-2xl font-medium text-center mb-4">
@@ -45,10 +43,8 @@ const ClientReviews = () => {
                </div>
 
 
-               <div data-aos="fade-up"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1500"
-                    data-aos-offset="100">
+               <div
+               >
                     <Swiper
                          breakpoints={{
                               // Mobile
@@ -77,7 +73,14 @@ const ClientReviews = () => {
                     >
                          {
                               clientReviews.map(slider => <SwiperSlide key={slider.id} slider={slider}>
-                                   <div className=" box-border space-y-3  rounded-xl text-center bg-[#e2f1f1] px-8 py-8 h-80 ">
+                                   <div
+
+
+                                        data-aos="fade-up"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="1000"
+                                        data-aos-offset="100"
+                                        className=" box-border space-y-3  rounded-xl text-center bg-[#e2f1f1] px-8 py-8 h-80 ">
                                         <img className="rounded-full mx-auto" src={slider.ClientImg} alt="" />
 
                                         <h1 className="text-base font-medium">{slider.clientName}</h1>

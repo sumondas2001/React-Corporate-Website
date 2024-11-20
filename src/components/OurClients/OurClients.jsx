@@ -20,14 +20,16 @@ const OurClients = () => {
                })
      }, [])
      return (
-          <div className="mt-10 mb-10" >
-               <div className="mb-10" data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
+          <div className="mt-10 mb-10"
+
+          >
+               <div className="mb-10"
+
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false">
+                    data-aos-offset="100"
+               >
                     <div>
                          <h1 className="text-2xl font-medium text-center mb-4">Our Clients</h1>
 
@@ -38,13 +40,13 @@ const OurClients = () => {
                          </div>
                     </div>
                </div>
-               <div data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
-                    data-aos-duration="1200"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false">
+               <div
+
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+               >
                     <Marquee speed={25} pauseOnHover>
                          {
                               clients.map(client => <OurClient client={client} key={client.id}></OurClient>)

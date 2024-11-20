@@ -66,8 +66,15 @@ const ServiceQuoteFrom = () => {
                <div className="mt-10 mb-10">
                     <PagesCoverImg title={'Get A Quote'} imgUrl={imgUrl}></PagesCoverImg>
                </div>
-               <div className="space-y-2">
-                    <div className="flex justify-between">
+               <div
+
+                    className="space-y-2">
+                    <div
+                         data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="1000"
+                         data-aos-offset="100"
+                         className="flex justify-between">
 
                          <div className="mb-2">
                               <h1 className="lg:text-2xl md:text-xl text-sm font-bold">Get A Quote</h1>
@@ -75,6 +82,8 @@ const ServiceQuoteFrom = () => {
                                    <hr className="lg:w-16 md:w-16 w-10 border-cyan-400 border-2 " />
                                    <p className="bg-cyan-400  p-1 w-0"></p>
                               </div>
+
+                              <p className="text-sm font-normal mt-4">Get a quote in just 30 minutes</p>
                          </div>
 
                          <div>
@@ -86,10 +95,14 @@ const ServiceQuoteFrom = () => {
                          </div>
 
                     </div>
-                    <p className="text-sm font-normal">Get a quote in just 30 minutes</p>
                </div>
 
-               <form className="mt-10" onSubmit={handelQuoteFrom}>
+               <form
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+                    className="mt-10" onSubmit={handelQuoteFrom}>
 
                     <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col">
                          <input className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg  mt-4 "
@@ -148,7 +161,12 @@ const ServiceQuoteFrom = () => {
 
                </form>
 
-               <div className="mt-10">
+               <div
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+                    className="mt-10">
                     <h1 className="text-2xl font-semibold">How We Make Work Successful</h1>
                     <div className="flex items-center gap-2 mt-2">
                          <hr className="w-36  border-cyan-400 border-2 " />

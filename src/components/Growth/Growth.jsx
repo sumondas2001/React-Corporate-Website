@@ -1,6 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
 
-
 const Growth = () => {
 
 
@@ -27,11 +26,11 @@ const Growth = () => {
                     data-aos-duration="1000"
                     data-aos-offset="100"
 
-                    className="flex justify-center mb-10 lg:h-72 md:h-72 h-60  px-4 lg:max-w-[1200px] md:max-w-[700px] max-w-[380px]   overflow-x-auto ">
+                    className="flex justify-center mb-10 lg:h-72 md:h-72 h-60  px-4 lg:max-w-[1200px] md:max-w-[700px] max-w-[380px]   overflow-x-auto  ">
 
-                    <ul className="timeline lg:timeline-horizontal md:timeline-horizontal timeline-horizontal ">
+                    <ul className="timeline  lg:timeline-horizontal md:timeline-horizontal timeline-horizontal ">
                          <li >
-                              <div className="timeline-end timeline-box  lg:text-base md:text-xs font-medium text-xs">Growth though direction</div>
+                              <div className="timeline-end timeline-box bg-[#E3FDFD] lg:text-base md:text-xs font-medium text-xs">Growth though direction</div>
                               <div className="timeline-middle">
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -60,12 +59,12 @@ const Growth = () => {
                                              clipRule="evenodd" />
                                    </svg>
                               </div>
-                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs">Crisis of leader Ship</div>
+                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs bg-[#E3FDFD]">Crisis of leader Ship</div>
                               <hr className="bg-[#71C9CE]" />
                          </li>
                          <li>
                               <hr className="bg-[#71C9CE]" />
-                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs">Crisis of autonomy</div>
+                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs bg-[#E3FDFD]">Crisis of autonomy</div>
                               <div className="timeline-middle">
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -94,12 +93,12 @@ const Growth = () => {
                                              clipRule="evenodd" />
                                    </svg>
                               </div>
-                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs">Crisis of control</div>
+                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs bg-[#E3FDFD]">Crisis of control</div>
                               <hr />
                          </li>
                          <li>
                               <hr />
-                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs">Crisis through collaboration </div>
+                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs bg-[#E3FDFD]">Crisis through collaboration </div>
                               <div className="timeline-middle">
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +114,7 @@ const Growth = () => {
                          </li>
                          <li>
                               <hr />
-                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs">Crisis through collaboration </div>
+                              <div className="timeline-end timeline-box lg:text-base md:text-xs font-medium text-xs bg-[#E3FDFD]" >Crisis through collaboration </div>
                               <div className="timeline-middle">
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
