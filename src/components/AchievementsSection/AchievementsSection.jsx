@@ -16,8 +16,8 @@ const AchievementsSection = () => {
                })
      }, [])
      return (
-          <div className="lg:mb-20 lg:mt-20 mb-10 mt-10">
-               <div className="mb-16"
+          <div className="lg:mb-160 lg:mt-16 mb-10 mt-10">
+               <div className="mb-14"
 
                     data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"

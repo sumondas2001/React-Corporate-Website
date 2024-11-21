@@ -1,7 +1,7 @@
 [
      {
           "id": 1,
-          "image": "https://i.ibb.co.com/gyy1cTK/pexels-cottonbro-3205570.jpg",
+          "image": "https://i.ibb.co.com/MNsv5pN/campaign-creators-g-Msn-Xq-ILjp4-unsplash.jpg",
           "title": "Innovating for a Sustainable Future",
           "description": "There are many variations of passages available, but the majority have suffered alteration in some form"
      },
@@ -32,6 +32,12 @@
      {
           "id": 6,
           "image": "https://i.ibb.co.com/tz55pRD/pexels-rethaferguson-3811082.jpg",
+          "title": "Building a Future We Believe In",
+          "description": "Together, we can make a difference for the generations to come"
+     },
+     {
+          "id": 7,
+          "image": "https://i.ibb.co.com/gyy1cTK/pexels-cottonbro-3205570.jpg",
           "title": "Building a Future We Believe In",
           "description": "Together, we can make a difference for the generations to come"
      }

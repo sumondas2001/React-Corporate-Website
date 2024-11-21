@@ -10,7 +10,7 @@ const Services = () => {
      const { PageTop } = useContext(AuthContext);
      PageTop();
 
-     const imgUrl = 'https://iori.archielite.com/storage/general/box-image-2.png'
+     const imgUrl = 'https://i.ibb.co.com/XVvcVDV/austin-distel-mp-N7xj-KQ-Ns-unsplash.jpg'
 
 
      const [services, setServices] = useState([]);
@@ -42,7 +42,7 @@ const Services = () => {
 
 
                >
-                    <h1 className="text-xl  font-medium">Our Services</h1>
+                    <h1 className="text-2xl  font-medium">Our Services</h1>
                     <div className="flex items-center gap-2 mt-2">
                          <hr className="w-20 border-cyan-400 border-2 " />
                          <p className="bg-cyan-400  p-1 w-0"></p>

@@ -8,14 +8,14 @@ const About = () => {
 
      return (
 
-          <div className="mt-10 mb-10 flex flex-col md:flex-row lg:justify-between md:gap-8 items-center text-center lg:text-left md:text-left bg-[#e9f5f5] lg:p-8 md:p-3 p-0 rounded-md">
+          <div className="mt-10 mb-10 flex flex-col md:flex-row lg:justify-between md:gap-8  items-center text-center lg:text-left md:text-left bg-[#e9f5f5] lg:p-8 md:p-3 p-0 rounded-md">
 
                <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
                     data-aos-offset="100"
                >
-                    <img className="object-cover lg:w-[550px]  md:w-[400px] w-[500px] rounded-3xl mb-3 md:h-[490px] h-[300px] cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={aboutImg} alt="" />
+                    <img className="object-cover lg:w-[550px]  md:w-[400px] w-[500px] rounded-3xl mb-3 md:h-[490px] h-[300px] cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 " src={aboutImg} alt="" />
                </div>
 
                <div className="md:w-1/2 w-5/6 lg:w-1/2 lg:px-14 "
@@ -59,7 +59,10 @@ const About = () => {
                     </div>
 
                     <div className="mt-6 flex justify-center lg:justify-start">
-                         <Link to={'/aboutPages'} className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">About More Us</Link>
+                         <Link to={'/aboutPages'} className=" lg:mb-0 md:mb-0 mb-6"> <button className="px-3 border py-3  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  text-base  font-semibold ">About More Us</button></Link>
+
+
+
                     </div>
                </div>
           </div>

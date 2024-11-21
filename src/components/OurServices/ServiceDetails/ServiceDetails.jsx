@@ -104,7 +104,10 @@ const ServiceDetails = () => {
 
                               <Link to={`/serviceDetails/${id}/serviceQuoteFrom`}>
 
-                                   <button className=" text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Get A Quote</button>
+
+
+
+                                   <button className="px-5 border py-3  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  text-base  font-semibold ">Get A Quote</button>
                               </Link>
                          </div>
                     </div>

@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer/Footer";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 import Aos from "aos";
-import '../App.css';
+// import '../App.css';
 
 
 const Root = () => {
@@ -18,7 +18,7 @@ const Root = () => {
 
           <div className="scroll-container  font-Ubuntu">
                <Navbar />
-               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[350px] mx-auto font-poppins">
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
                     <Outlet></Outlet>
 
                </div>

@@ -33,7 +33,7 @@ const ContactFrom = () => {
                </div>
                <form onSubmit={handelContactFrom}>
                     <div className="flex gap-4 mt-10">
-                         <input className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg"
+                         <input className="px-4 py-3 text-sm font-medium  w-full border focus:outline-none focus:border-cyan-500 border-black rounded-lg"
                               type=" text"
                               name="firstName"
                               required
@@ -41,7 +41,7 @@ const ContactFrom = () => {
                          />
 
                          <input type="text"
-                              className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg"
+                              className="px-4 py-3 text-sm font-medium  w-full border focus:outline-none focus:border-cyan-500 border-black rounded-lg"
                               name="lastName"
                               required
                               placeholder="Your Last Name"
@@ -49,21 +49,23 @@ const ContactFrom = () => {
                     </div>
                     <div className="flex flex-col ">
                          <input type="email"
-                              className=" mt-6  w-full rounded-lg px-4 py-3 border border-black" name="email"
+                              className=" mt-6  w-full rounded-lg px-4 py-3 border focus:outline-none focus:border-cyan-500 border-black" name="email"
                               required
                               placeholder="Your Email"
                          />
-                         <input type="text" className=" w-full mt-6 rounded-lg border border-black px-4 py-3" name="subject" required placeholder="Subject" id="" />
+                         <input type="text" className=" w-full mt-6 rounded-lg border focus:outline-none focus:border-cyan-500 border-black px-4 py-3" name="subject" required placeholder="Subject" id="" />
                     </div>
 
                     <div>
-                         <input type="text" className=" w-full  border border-black h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
+                         <input type="text" className=" w-full  border border-black focus:outline-none focus:border-cyan-500 h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
                     </div>
 
 
 
 
-                    <button type="submit" className="mt-6 text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Send Message</button>
+
+
+                    <button type="submit" className="px-5 mt-6 border py-3  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  text-base  font-semibold ">Send Message</button>
 
 
 

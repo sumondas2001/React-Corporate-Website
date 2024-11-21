@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "../components/Root";
-import Home from "../components/Home/Home";
+import Root from "../components/Root/Root";
+
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Contacts from "../Pages/Contacts/Contacts";
 import Login from "../Pages/Login/Login";
@@ -14,21 +14,36 @@ import ServiceDetails from "../components/OurServices/ServiceDetails/ServiceDeta
 import ServiceQuoteFrom from "../components/ServiceQuoteFrom/ServiceQuoteFrom";
 import AboutPages from "../Pages/AboutPages/AboutPages";
 
+import RootHomePages from "../components/Root/RootHomePages";
+import Home from "../Pages/Home/Home";
+import HomePages2 from "../Pages/HomePages2/HomePages2";
+
 
 const router = createBrowserRouter([
+     {
+          path: '/',
+          element: <RootHomePages></RootHomePages>,
+          children: [
+               {
+                    path: '/',
+                    element: <Home></Home>
+               }
+          ]
+     },
      {
           path: '/',
           element: <Root></Root>,
           errorElement: <ErrorPage></ErrorPage>,
 
           children: [
-               {
-                    path: '/',
-                    element: <Home></Home>
-               },
+
                {
                     path: '/aboutPages',
                     element: <AboutPages></AboutPages>
+               },
+               {
+                    path: '/homePages2',
+                    element: <HomePages2></HomePages2>
                },
                {
                     path: '/blog',

@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
@@ -26,7 +25,7 @@ const Slider = () => {
 
 
      return (
-          <div className="">
+          <div className="sliderWidth">
                <Swiper
                     spaceBetween={3}
                     centeredSlides={true}
@@ -53,7 +52,7 @@ const Slider = () => {
                                    <img
                                         src={slider.image}
                                         alt={`Slide ${slider.id}`}
-                                        className="w-full h-[300px] md:h-[400px] lg:h-[590px]  object-cover"
+                                        className="w-full h-[300px] md:h-[400px] lg:h-[600px]   object-cover"
                                    />
                                    <div className="absolute  h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                                         <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]">

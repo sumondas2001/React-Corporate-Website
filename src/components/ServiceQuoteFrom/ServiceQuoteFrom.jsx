@@ -19,7 +19,7 @@ const ServiceQuoteFrom = () => {
      const { id } = useParams();
 
      // Cover img url
-     const imgUrl = 'https://i.ibb.co.com/ZM7XrqF/22-1604079765-1.jpg';
+     const imgUrl = 'https://i.ibb.co.com/xsHkBNc/alex-kotliarskyi-QBp-ZGq-EMs-Kg-unsplash.jpg';
 
 
      useEffect(() => {
@@ -105,7 +105,7 @@ const ServiceQuoteFrom = () => {
                     className="mt-10" onSubmit={handelQuoteFrom}>
 
                     <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col">
-                         <input className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg  mt-4 "
+                         <input className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg focus:outline-none focus:border-cyan-500  mt-4 "
                               type=" text"
                               name="name"
                               required
@@ -113,7 +113,7 @@ const ServiceQuoteFrom = () => {
                          />
 
                          <input type="email"
-                              className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg  mt-4 "
+                              className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg  mt-4 focus:outline-none focus:border-cyan-500 "
                               name="email"
                               required
                               placeholder="Your Email *"
@@ -123,18 +123,18 @@ const ServiceQuoteFrom = () => {
                     <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col">
 
                          <input type="text"
-                              className=" mt-4  w-full rounded-lg px-4 py-3 border border-black" name="number"
+                              className=" mt-4  w-full rounded-lg px-4 py-3 border border-black focus:outline-none focus:border-cyan-500" name="number"
                               required
                               placeholder="Your Phone No *"
                          />
-                         <input type="text" className=" w-full mt-4 rounded-lg border border-black px-4 py-3" name="company" required placeholder="Company (Optional) *" id="" />
+                         <input type="text" className=" w-full mt-4 rounded-lg border border-black px-4 py-3 focus:outline-none focus:border-cyan-500" name="company" required placeholder="Company (Optional) *" id="" />
                     </div>
 
 
 
                     <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col">
-                         <input type="text" className=" w-full  border border-black  mt-4 rounded-lg px-4 py-3 " name="address" placeholder="Address *" required id="" />
-                         <input type="text" className=" w-full  border border-black mt-4 rounded-lg px-4 py-3 " name="city" placeholder="City *" required id="" />
+                         <input type="text" className=" w-full  border border-black  mt-4 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500 " name="address" placeholder="Address *" required id="" />
+                         <input type="text" className=" w-full  border border-black mt-4 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500" name="city" placeholder="City *" required id="" />
                     </div>
 
                     <div className="mt-4">
@@ -150,11 +150,13 @@ const ServiceQuoteFrom = () => {
                     </div>
 
                     <div>
-                         <input className=" w-full  border border-black mt-4 rounded-lg px-4 py-16 " type="text" name="message" placeholder="Write Your Quotation Detail Here... *" id="" />
+                         <input className=" w-full  border border-black mt-4 rounded-lg px-4 py-16 focus:outline-none focus:border-cyan-500" type="text" name="message" placeholder="Write Your Quotation Detail Here... *" id="" />
                     </div>
 
 
-                    <button type="submit" className="mt-6 text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Send Message</button>
+
+
+                    <button type="submit" className="px-5 mt-6   border py-3  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  text-base  font-semibold ">Send Message</button>
 
 
 

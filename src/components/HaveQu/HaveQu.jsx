@@ -2,7 +2,7 @@
 
 const HaveQu = () => {
      return (
-          <div className="lg:w-full md:w-full w-full mx-auto py-3"
+          <div className="lg:w-full md:w-full w-full mx-auto "
 
 
                data-aos="fade-up"

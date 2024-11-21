@@ -19,19 +19,19 @@ const Footer = () => {
                                         />
                                    </Link>
                                    <p className="text-white text-sm font-thin lg:w-[400px] md:w-full mx-auto lg:mx-0">
-                                        At Visabee Consultants, our mission is to empower individuals to reach their goals and realize their full potential
+                                        Discover our corporate excellence through innovation, integrity, and commitment. Empowering businesses with tailored solutions to drive growth, efficiency, and success. Connect with us for your future endeavors.
                                    </p>
                               </div>
                               {/* Newsletter Subscription */}
-                              <div className="lg:mt-8 md:mt-4 mt-2">
+                              <div className="lg:mt-8 md:mt-4 mt-2 ">
                                    <p className="text-base mb-2 text-white font-medium">Subscribe to our newsletter</p>
-                                   <div className="flex flex-col md:flex-row items-center md:justify-center lg:justify-start">
+                                   <div className="flex  lg:items-center md:items-center items-start md:justify-center justify-evenly lg:justify-start ">
                                         <input
-                                             className="px-4 py-2 rounded w-full md:w-64 mb-4 md:mb-0"
+                                             className="px-4 py-2 rounded lg:w-full md:w-64 w-56 mb-4 md:mb-0"
                                              type="text"
                                              placeholder="Your Email Address"
                                         />
-                                        <button className="bg-cyan-400 hover:bg-cyan-500 px-4 py-2 text-sm font-medium md:ml-4">Subscribe</button>
+                                        <button className="bg-cyan-400 lg:mt-0 md:mt-0 mt-[2px]  hover:bg-cyan-500 px-4 py-2 text-sm font-medium md:ml-4">Subscribe</button>
                                    </div>
                               </div>
                          </div>

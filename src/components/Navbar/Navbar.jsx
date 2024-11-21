@@ -21,14 +21,14 @@ const Navbar = () => {
 
 
      const link = <>
-          <li className="lg:hidden ">
+          <li className=" ">
                <NavLink
                     to="/"
                     className={({ isActive }) =>
-                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
-                    Home
+                    HOME
                </NavLink>
           </li>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                <NavLink
                     to="/aboutPages"
                     className={({ isActive }) =>
-                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     ABOUT
@@ -46,7 +46,7 @@ const Navbar = () => {
                <NavLink
                     to="/blog"
                     className={({ isActive }) =>
-                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     BLOG
@@ -56,7 +56,7 @@ const Navbar = () => {
                <NavLink
                     to="/contacts"
                     className={({ isActive }) =>
-                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     CONTACTS
@@ -66,7 +66,7 @@ const Navbar = () => {
                <NavLink
                     to="/services"
                     className={({ isActive }) =>
-                         isActive ? 'underline focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
                     }
                >
                     SERVICES
@@ -80,8 +80,8 @@ const Navbar = () => {
 
      </>
      return (
-          <div className=" mb-4 ">
-               <div className="navbar px-0 lg:max-w-[1210px] md:max-w-[700px] max-w-[350px] mx-auto  ">
+          <div className=" bg-slate-200  text-black py-0 ">
+               <div className="navbar   px-0 lg:max-w-[1210px] md:max-w-[700px] max-w-[350px] mx-auto  ">
                     <div className="navbar-start">
                          <div className="dropdown">
                               <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -113,7 +113,7 @@ const Navbar = () => {
 
 
 
-                    <div className="navbar-center hidden lg:flex  z-10">
+                    <div className="navbar-center hidden lg:flex px-2  border-2 border-cyan-400  shadow- rounded-full  z-10 ">
                          <ul className="menu menu-horizontal text-base font-bold px-2">
                               {link}
                          </ul>

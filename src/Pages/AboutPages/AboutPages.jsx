@@ -22,8 +22,8 @@ const AboutPages = () => {
                <PagesCoverImg imgUrl={imgUrl} title={"ABOUT"}></PagesCoverImg>
                <CeoSection></CeoSection>
                <OurTeams></OurTeams>
-               <AboutUs></AboutUs>
                <About></About>
+               <AboutUs></AboutUs>
           </div>
      );
 };
