@@ -18,7 +18,7 @@ const Root = () => {
 
           <div className="scroll-container  font-Ubuntu">
                <Navbar />
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+               <div >
                     <Outlet></Outlet>
 
                </div>

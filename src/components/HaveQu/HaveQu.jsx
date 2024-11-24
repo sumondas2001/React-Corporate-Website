@@ -2,6 +2,7 @@
 
 const HaveQu = () => {
      return (
+
           <div className="lg:w-full md:w-full w-full mx-auto "
 
 
@@ -52,6 +53,7 @@ const HaveQu = () => {
                     </div>
                </div>
           </div>
+
      );
 };
 

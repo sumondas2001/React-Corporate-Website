@@ -40,8 +40,13 @@ const Footer = () => {
                          <div className="flex  lg:justify-between lg:items-start md:items-start  md:justify-around justify-around lg:space-x-20">
 
                               <ul className="text-xs font-light text-white lg:space-y-4 md:space-y-3 space-y-3">
-                                   <li className="text-lg text-center lg:mb-8 md:mb-6 mb-6 font-semibold">Quick Contact</li>
-
+                                   <div>
+                                        <li className="text-lg text-center font-semibold">Quick Contact</li>
+                                        <div className="flex items-center mt-3 gap-2 lg:mb-6 md:mb-6 mb-6 ">
+                                             <hr className="w-16  border-cyan-400 border-2 " />
+                                             <p className="bg-cyan-400  p-1 w-0"></p>
+                                        </div>
+                                   </div>
 
                                    <li className="flex items-center gap-2 text-base font-normal">
                                         <AiOutlineArrowRight className="text-cyan-400 text-lg" />
@@ -68,8 +73,13 @@ const Footer = () => {
 
                               <div>
                                    <ul className="text-xs font-light text-white lg:space-y-4 md:space-y-3 space-y-3">
-                                        <li className="text-lg  lg:mb-8 md:mb-6 mb-6 font-semibold">Our Services</li>
-
+                                        <div>
+                                             <li className="text-lg font-semibold">Our Services</li>
+                                             <div className="flex items-center mt-3 gap-2 lg:mb-6 md:mb-6 mb-6 ">
+                                                  <hr className="w-16  border-cyan-400 border-2 " />
+                                                  <p className="bg-cyan-400  p-1 w-0"></p>
+                                             </div>
+                                        </div>
                                         <li className="flex items-center gap-2 text-base font-normal">
                                              <AiOutlineArrowRight className="text-cyan-400 text-lg" />
                                              <Link to={'/servicesDetails/1'} className="hover:underline hover:text-cyan-600">Market research</Link>
@@ -124,7 +134,7 @@ const Footer = () => {
                          <hr className="border-gray-500" />
                          <div>
                               <h1 className="text-center text-xs font-normal mt-4 text-white">
-                                   © Copyright 2024. Theme by
+                                   © Copyright 2024. Theme by ( ----- )
                               </h1>
                          </div>
                     </div>

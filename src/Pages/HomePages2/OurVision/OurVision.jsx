@@ -22,8 +22,8 @@ const OurVision = () => {
                          At Your Company , we envision empowering organizations to achieve their fullest potential by harnessing the power of technology, creativity, and collaboration. Through unwavering dedication and a commitment to positive change,</p>
                </div>
 
-               <div className="lg:w-[580px]">
-                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150   lg:h-[450px] md:h-[400px] h-[230px] " src="https://i.ibb.co.com/XZsYQR6/linkedin-sales-solutions-46bom4l-Obs-A-unsplash.jpg" alt="" />
+               <div className="">
+                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src="https://i.ibb.co.com/XZsYQR6/linkedin-sales-solutions-46bom4l-Obs-A-unsplash.jpg" alt="" />
                </div>
           </div>
 

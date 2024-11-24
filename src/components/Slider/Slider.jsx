@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination } from 'swiper/modules';
+import { Link } from "react-router-dom";
 
 
 
@@ -65,9 +66,11 @@ const Slider = () => {
                                                   </p>
                                              </div>
                                              <div>
-                                                  <button className="text-sm text-white font-bold px-3 hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">
-                                                       Discover More
-                                                  </button>
+
+                                                  <Link to={'/services'}>
+
+                                                       <button type="submit" className="px-3 mt-6 border py-2  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  text-base  font-semibold "> Discover More</button>
+                                                  </Link>
                                              </div>
                                         </div>
                                    </div>

@@ -14,28 +14,22 @@ import ServiceDetails from "../components/OurServices/ServiceDetails/ServiceDeta
 import ServiceQuoteFrom from "../components/ServiceQuoteFrom/ServiceQuoteFrom";
 import AboutPages from "../Pages/AboutPages/AboutPages";
 
-import RootHomePages from "../components/Root/RootHomePages";
 import Home from "../Pages/Home/Home";
 import HomePages2 from "../Pages/HomePages2/HomePages2";
 
 
 const router = createBrowserRouter([
-     {
-          path: '/',
-          element: <RootHomePages></RootHomePages>,
-          children: [
-               {
-                    path: '/',
-                    element: <Home></Home>
-               }
-          ]
-     },
+
      {
           path: '/',
           element: <Root></Root>,
           errorElement: <ErrorPage></ErrorPage>,
 
           children: [
+               {
+                    path: '/',
+                    element: <Home></Home>
+               },
 
                {
                     path: '/aboutPages',

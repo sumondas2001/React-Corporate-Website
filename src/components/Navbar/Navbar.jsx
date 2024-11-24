@@ -31,6 +31,16 @@ const Navbar = () => {
                     HOME
                </NavLink>
           </li>
+          <li className=" ">
+               <NavLink
+                    to="/homePages2"
+                    className={({ isActive }) =>
+                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                    }
+               >
+                    HOME 2
+               </NavLink>
+          </li>
 
           <li>
                <NavLink

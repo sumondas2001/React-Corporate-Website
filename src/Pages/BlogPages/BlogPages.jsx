@@ -15,7 +15,11 @@ const BlogPages = () => {
      return (
           <div>
                <PagesCoverImg imgUrl={imgUrl} title={"BLOG"}></PagesCoverImg>
-               <Blogs></Blogs>
+
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+
+                    <Blogs></Blogs>
+               </div>
 
           </div>
      );

@@ -34,29 +34,31 @@ const Services = () => {
                </div>
 
 
-               <div className="mb-10"
-                    data-aos="fade-up"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000"
-                    data-aos-offset="100"
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+                    <div className="mb-10"
+                         data-aos="fade-up"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="1000"
+                         data-aos-offset="100"
 
 
-               >
-                    <h1 className="text-2xl  font-medium">Our Services</h1>
-                    <div className="flex items-center gap-2 mt-2">
-                         <hr className="w-20 border-cyan-400 border-2 " />
-                         <p className="bg-cyan-400  p-1 w-0"></p>
+                    >
+                         <h1 className="text-2xl  font-medium">Our Services</h1>
+                         <div className="flex items-center gap-2 mt-2">
+                              <hr className="w-20 border-cyan-400 border-2 " />
+                              <p className="bg-cyan-400  p-1 w-0"></p>
+                         </div>
                     </div>
-               </div>
 
-               <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-8 ">
-                    {
-                         services.map(service => <OurService key={service.id}
-                              service={service}
-                         >
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-8 ">
+                         {
+                              services.map(service => <OurService key={service.id}
+                                   service={service}
+                              >
 
-                         </OurService>)
-                    }
+                              </OurService>)
+                         }
+                    </div>
                </div>
           </div>
      );

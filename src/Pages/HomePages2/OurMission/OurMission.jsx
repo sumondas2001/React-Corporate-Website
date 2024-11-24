@@ -23,7 +23,7 @@ const OurMission = () => {
                </div>
 
                <div className="">
-                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px]   lg:h-[450px] md:h-[300px] h-[200px] " src={imgURl} alt="" />
+                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src={imgURl} alt="" />
                </div>
           </div>
      );

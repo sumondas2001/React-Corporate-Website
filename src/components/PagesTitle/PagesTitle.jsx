@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-
 const PagesTitle = ({ title }) => {
      return (
           <Helmet>
