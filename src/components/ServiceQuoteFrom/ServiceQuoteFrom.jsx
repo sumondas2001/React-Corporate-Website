@@ -100,13 +100,14 @@ const ServiceQuoteFrom = () => {
                     </div>
 
                     <form
+
                          data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
                          data-aos-duration="1000"
                          data-aos-offset="100"
                          className="mt-10" onSubmit={handelQuoteFrom}>
 
-                         <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col">
+                         <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col" >
                               <input className="px-4 py-3 text-sm font-medium  w-full border border-black rounded-lg focus:outline-none focus:border-cyan-500  mt-4 "
                                    type=" text"
                                    name="name"
@@ -120,6 +121,8 @@ const ServiceQuoteFrom = () => {
                                    required
                                    placeholder="Your Email *"
                               />
+
+
                          </div>
 
                          <div className="flex lg:gap-10 md:gap-4 gap-3 lg:flex-row md:flex-col flex-col">
@@ -142,27 +145,19 @@ const ServiceQuoteFrom = () => {
                          <div className="mt-4">
                               <h1>What do you prefer for contact? *</h1>
                               <div className="flex gap-2">
-                                   <input type="checkbox" name="contactPhone" id="" />
+                                   <input type="radio" name="contactPhone" id="" />
                                    <p>Phone</p>
                               </div>
                               <div className="flex gap-2">
-                                   <input type="checkbox" name="contactEmail" id="" />
+                                   <input type="radio" name="contactEmail" id="" />
                                    <p>Email</p>
                               </div>
                          </div>
+                         <div className="">
+                              <textarea className=" w-full  border border-black mt-4 rounded-lg px-4 pb-32 pt-4 focus:outline-none focus:border-cyan-500" type="text" name="message" placeholder="Write Your Quotation Detail Here... *" id="" />
 
-                         <div>
-                              <input className=" w-full  border border-black mt-4 rounded-lg px-4 py-16 focus:outline-none focus:border-cyan-500" type="text" name="message" placeholder="Write Your Quotation Detail Here... *" id="" />
                          </div>
-
-
-
-
-                         <button type="submit" className="px-5 mt-6   border py-3  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  text-base  font-semibold ">Send Message</button>
-
-
-
-
+                         <button type="submit" className="px-5 mt-6 border py-3  bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-semibold ">Send Message</button>
                     </form>
 
                     <div

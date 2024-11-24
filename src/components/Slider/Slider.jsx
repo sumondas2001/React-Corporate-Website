@@ -69,7 +69,7 @@ const Slider = () => {
 
                                                   <Link to={'/services'}>
 
-                                                       <button type="submit" className="px-3 mt-6 border py-2  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  text-base  font-semibold "> Discover More</button>
+                                                       <button type="submit" className="px-5 mt-6 border py-3  bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-semibold "> Discover More</button>
                                                   </Link>
                                              </div>
                                         </div>

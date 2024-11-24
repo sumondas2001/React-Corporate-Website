@@ -63,7 +63,7 @@ const Contacts = () => {
                               <div className="space-y-3 ">
                                    <FaLocationDot className="mx-auto lg:size-9 md:size-7 size-6" />
                                    <h1 className="lg:text-lg md:text-sm text-xs font-medium text-cyan-600">Address</h1>
-                                   <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal"> Dhaka,Bangladesh</p>
+                                   <p className=" hover:text-cyan-700 lg:text-base md:text-sm text-xs font-normal">Nikunja-2,Dhaka,Bangladesh</p>
                               </div>
                          </div>
                     </div>

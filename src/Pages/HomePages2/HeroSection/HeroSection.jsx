@@ -23,7 +23,7 @@ const HeroSection = () => {
                          <h1 className="lg:text-3xl md:text-xl text-xs lg:font-bold md:font-semibold font-medium">Grow Your Business More Efficiently</h1>
                          <p className="lg:text-lg md:text-sm text-xs lg:font-medium md:font-medium font-extralight">Agilos helps you to convert your data into a strategic asset and get top-notch business insights.</p>
 
-                         <button className=" lg:px-5 md:px-4 px-3 border lg:py-3 md:py-2 py-1  bg-gradient-to-tr from-cyan-300 from-20% to-cyan-700  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  lg:text-base  md:text-base text-xs  lg:font-semibold md:font-medium font-normal ">Read More</button>
+                         <button className=" lg:px-5 md:px-4 px-3 border lg:py-3 md:py-2 py-1  bg-gradient-to-tr from-cyan-400 from-30% text-white to-cyan-800  hover:from-cyan-600 hover:from-20% hover:to-cyan-300  lg:text-base  md:text-base text-xs  lg:font-semibold md:font-medium font-normal ">Read More</button>
                     </div>
                     <img
 

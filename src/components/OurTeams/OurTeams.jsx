@@ -34,7 +34,7 @@ const OurTeams = () => {
 
                     <div>
 
-                         <h1 className="text-2xl font-medium text-center mb-4">Our Clients</h1>
+                         <h1 className="text-2xl font-medium text-center mb-4">Our Teams</h1>
 
                          <div className="flex items-center justify-center gap-2 mt-4">
                               <hr className="w-9  border-cyan-400 border-2 " />
