@@ -30,7 +30,7 @@ const Services = () => {
 
 
                <div className="mb-10">
-                    <PagesCoverImg title={"SERVICE"} imgUrl={imgUrl}></PagesCoverImg>
+                    <PagesCoverImg title={"SERVICES"} imgUrl={imgUrl}></PagesCoverImg>
                </div>
 
 

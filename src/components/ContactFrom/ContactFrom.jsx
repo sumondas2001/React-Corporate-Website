@@ -57,7 +57,7 @@ const ContactFrom = () => {
                     </div>
 
                     <div>
-                         <input type="text" className=" w-full  border border-black focus:outline-none focus:border-cyan-500 h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
+                         <textarea type="text" className=" w-full  border border-black focus:outline-none focus:border-cyan-500 h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
                     </div>
 
 

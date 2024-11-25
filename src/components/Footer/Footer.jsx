@@ -31,7 +31,8 @@ const Footer = () => {
                                              type="text"
                                              placeholder="Your Email Address"
                                         />
-                                        <button className="bg-cyan-400 lg:mt-0 md:mt-0 mt-[2px]  hover:bg-cyan-500 px-4 py-2 text-sm font-medium md:ml-4">Subscribe</button>
+                                        <button className="bg-cyan-400 lg:mt-0 md:mt-0 mt-[2px]  hover:bg-cyan-500 px-4  text-sm font-medium md:ml-4  border py-2  bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300   ">Subscribe</button>
+
                                    </div>
                               </div>
                          </div>

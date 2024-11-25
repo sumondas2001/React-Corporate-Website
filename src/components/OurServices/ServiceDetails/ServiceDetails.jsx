@@ -57,7 +57,7 @@ const ServiceDetails = () => {
                <div
 
                     className="mb-14">
-                    <PagesCoverImg imgUrl={imgUrl} title={'DETAILS'}> </PagesCoverImg>
+                    <PagesCoverImg imgUrl={imgUrl} title={'SERVICES DETAILS'}> </PagesCoverImg>
                </div>
 
 

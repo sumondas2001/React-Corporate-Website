@@ -149,18 +149,18 @@ const Navbar = () => {
                                         tabIndex={0}
                                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 py-2 shadow ">
                                         <li>
-                                             <p className=" text-sm font-medium">
+                                             <p className=" text-base font-medium">
                                                   {user?.displayName}
                                              </p>
                                         </li>
                                         <li>
-                                             <p className=" text-xs font-normal mb-2 mt-2">
+                                             <p className=" text-sm font-medium mb-1 mt-1">
                                                   {user?.email}
                                              </p>
                                         </li>
 
                                         <li className=" ">
-                                             <button onClick={handelLogOut} className="text-sm font-light text-black hover:bg-cyan-700 p-2 rounded-lg ">LogOut</button>
+                                             <button onClick={handelLogOut} className="text-sm font-medium text-black hover:bg-red-500 p-2 rounded-lg ">LogOut</button>
 
                                         </li>
                                    </ul>
