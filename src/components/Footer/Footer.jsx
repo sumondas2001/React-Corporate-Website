@@ -14,7 +14,7 @@ const Footer = () => {
                                    <Link to="/">
                                         <img
                                              className="mx-auto size-20 lg:mx-0"
-                                             src="https://i.ibb.co.com/sJZwLBW/pngtree-company-logo-design-trademark-design-creative-logo-png-image-4569380-removebg-preview.png"
+                                             src="https://i.ibb.co.com/XsRK1S7/Blue-Abstract-Business-Company-Logo-1.png"
                                              alt="Company Logo"
                                         />
                                    </Link>
@@ -120,13 +120,13 @@ const Footer = () => {
                     {/* Social Media Links */}
                     <div className="text-white flex gap-4 lg:mt-10 md:mt-4 mt-4 justify-center">
                          <a href="https://www.facebook.com/sumondas1010/">
-                              <FaFacebook className="text-cyan-600 text-2xl " />
+                              <FaFacebook className="size-6 hover:text-cyan-600  " />
                          </a>
                          <a href="#">
-                              <FaInstagram className="text-[#E1306C] text-2xl" />
+                              <FaInstagram className="size-6 hover:text-cyan-600" />
                          </a>
                          <a href="#">
-                              <FaLinkedin className="text-[rgb(10,102,194)] text-2xl" />
+                              <FaLinkedin className="size-6 hover:text-cyan-600" />
                          </a>
                     </div>
 

@@ -21,26 +21,36 @@ const Navbar = () => {
 
 
      const link = <>
-          <li className=" ">
-               <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                    }
-               >
-                    HOME
-               </NavLink>
+
+          <li>
+               <details>
+                    <summary>HOME</summary>
+                    <ul className=" ">
+                         <li>
+                              <NavLink
+                                   to="/"
+                                   className={({ isActive }) =>
+                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                                   }
+                              >
+                                   Home
+                              </NavLink>
+                         </li>
+                         <li>
+                              <NavLink
+                                   to="/homePages2"
+                                   className={({ isActive }) =>
+                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                                   }
+                              >
+                                   Home2
+                              </NavLink>
+
+                         </li>
+                    </ul>
+               </details>
           </li>
-          <li className=" ">
-               <NavLink
-                    to="/homePages2"
-                    className={({ isActive }) =>
-                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                    }
-               >
-                    HOME 2
-               </NavLink>
-          </li>
+
 
           <li>
                <NavLink
@@ -52,16 +62,36 @@ const Navbar = () => {
                     ABOUT
                </NavLink>
           </li>
+
           <li>
-               <NavLink
-                    to="/blog"
-                    className={({ isActive }) =>
-                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                    }
-               >
-                    BLOG
-               </NavLink>
+               <details>
+                    <summary>BLOG</summary>
+                    <ul className="p-2">
+                         <li>
+                              <NavLink
+                                   to="/blog"
+                                   className={({ isActive }) =>
+                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                                   }
+                              >
+                                   BLOG
+                              </NavLink>
+                         </li>
+                         <li>
+
+                              <NavLink
+                                   to="/blog2"
+                                   className={({ isActive }) =>
+                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+                                   }
+                              >
+                                   BLOG2
+                              </NavLink>
+                         </li>
+                    </ul>
+               </details>
           </li>
+
           <li>
                <NavLink
                     to="/contacts"
@@ -82,15 +112,19 @@ const Navbar = () => {
                     SERVICES
                </NavLink>
           </li>
-
-
-
-
-
+          {/* <li>
+               <details>
+                    <summary>Parent</summary>
+                    <ul className="p-2">
+                         <li><a>Submenu 1</a></li>
+                         <li><a>Submenu 2</a></li>
+                    </ul>
+               </details>
+          </li> */}
 
      </>
      return (
-          <div className=" bg-slate-200  text-black py-0 ">
+          <div className=" bg-gray-300  text-black py-0 ">
                <div className="navbar   px-0 lg:max-w-[1210px] md:max-w-[700px] max-w-[350px] mx-auto  ">
                     <div className="navbar-start">
                          <div className="dropdown">
@@ -110,21 +144,21 @@ const Navbar = () => {
                               </div>
                               <ul
                                    tabIndex={0}
-                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52 md:w-44 w-36 p-2 shadow text-base font-bold px-1  ">
+                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52 md:w-44 w-36 p-2 shadow text-base font-semibold px-1  ">
                                    {link}
                               </ul>
                          </div>
 
                          <div >
-                              <Link to={'/'} ><img className="lg:w-20 md:w-16 w-16   " src="https://i.ibb.co.com/sJZwLBW/pngtree-company-logo-design-trademark-design-creative-logo-png-image-4569380-removebg-preview.png" alt="" /> </Link>
+                              <Link to={'/'} ><img className="lg:w-[68px] h-16 md:w-16 w-16  " src="https://i.ibb.co.com/XsRK1S7/Blue-Abstract-Business-Company-Logo-1.png" alt="" /> </Link>
                          </div>
 
                     </div>
 
 
 
-                    <div className="navbar-center hidden lg:flex px-2  border-2 border-cyan-400  shadow- rounded-full  z-10 ">
-                         <ul className="menu menu-horizontal text-base font-bold px-2">
+                    <div className="navbar-center hidden lg:flex px-2      z-10 ">
+                         <ul className="menu menu-horizontal text-base font-semibold px-2">
                               {link}
                          </ul>
                     </div>

@@ -1,4 +1,3 @@
-import { FcHome } from "react-icons/fc";
 import { IoHome } from "react-icons/io5";
 const PagesCoverImg = ({ imgUrl, title }) => {
 

@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
+import { MdCalendarMonth } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 
 const Blog = ({ blog }) => {
-     const { blog_title, blog_date, blog_img, blog_description, user_img, user_name } = blog;
+     const { blog_title, blog_date, blog_img, blog_description, user_img, user_name, id } = blog;
      // console.log(blog)
      return (
           <div className="shadow-xl  bg-[#E3FDFD] pb-6 mt-10 rounded-t-lg "
@@ -16,9 +18,14 @@ const Blog = ({ blog }) => {
           >
                <img className="h-[200px] w-[400px] rounded-t-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={blog_img} alt="" />
                <div className="px-4 mt-6 space-y-3">
-                    <p className="text-xs font-normal">{blog_date}</p>
-                    <h3 className="text-base font-semibold">{blog_title}</h3>
-                    <p className="text-sm font-medium text-black">{blog_description}</p>
+                    <div className="flex gap-1 mb-3">
+                         <MdCalendarMonth className="size-4" />
+                         <p className="text-xs font-normal">{blog_date}</p>
+                    </div>
+                    <Link to={`/blogDetails/${id}`} >
+                         <h3 className="text-base font-semibold hover:text-cyan-700 cursor-pointer">{blog_title}</h3>
+                    </Link>
+                    <p className="text-sm font-medium text-black">{blog_description.slice(0, 130)}</p>
                </div>
                <div className="flex mt-5 items-center px-4">
                     <img className="mr-6 size-8 rounded-full object-cover" src={user_img} alt="" />

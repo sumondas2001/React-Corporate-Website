@@ -16,6 +16,8 @@ import AboutPages from "../Pages/AboutPages/AboutPages";
 
 import Home from "../Pages/Home/Home";
 import HomePages2 from "../Pages/HomePages2/HomePages2";
+import BlogsPages2 from "../Pages/BlogPages/Blogs/BlogsPages2/BlogsPages2";
+import BlogDetails from "../Pages/BlogPages/Blogs/BlogsPages2/BlogDetails/BlogDetails";
 
 
 const router = createBrowserRouter([
@@ -44,6 +46,10 @@ const router = createBrowserRouter([
                     element: <BlogPages></BlogPages>
                },
                {
+                    path: '/blog2',
+                    element: <BlogsPages2></BlogsPages2>
+               },
+               {
                     path: '/contacts',
                     element: <Contacts></Contacts>
                },
@@ -68,6 +74,10 @@ const router = createBrowserRouter([
                {
                     path: '/serviceDetails/:id/serviceQuoteFrom',
                     element: <ServiceQuoteFrom></ServiceQuoteFrom>
+               },
+               {
+                    path: '/blogDetails/:id',
+                    element: <BlogDetails></BlogDetails>
                },
 
                {
