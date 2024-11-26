@@ -1,11 +1,12 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RecentPost from "../Blog2/RecentPost";
 import PagesTitle from "../../../../../components/PagesTitle/PagesTitle";
 import PagesCoverImg from "../../../../../components/PagesCoverImg/PagesCoverImg";
 import { MdCalendarMonth } from "react-icons/md";
 import BlogDetailsFrom from "../BlogDetailsFrom/BlogDetailsFrom";
+import { AuthContext } from "../../../../../Provider/AuthProvider";
 
 const BlogDetails = () => {
      // single blog data
@@ -16,7 +17,9 @@ const BlogDetails = () => {
 
      const imgUrl = 'https://i.ibb.co.com/jWQdDvd/lycs-architecture-U2-BI3-GMn-SSE-unsplash.jpg';
      // console.log(blog)
-
+     // window top pages
+     const { PageTop } = useContext(AuthContext);
+     PageTop();
      useEffect(() => {
           axios.get('/blogs.json')
                .then(res => {
@@ -105,7 +108,7 @@ const BlogDetails = () => {
 
                               </div>
                               {
-                                   blogs?.map(blog => <RecentPost key={blog.id} blog={blog}></RecentPost>)
+                                   blogs?.slice(0, 7).map(blog => <RecentPost key={blog.id} blog={blog}></RecentPost>)
                               }
                          </div>
 

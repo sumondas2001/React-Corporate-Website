@@ -124,7 +124,8 @@ const Navbar = () => {
 
      </>
      return (
-          <div className=" bg-gray-300  text-black py-0 ">
+
+          <div className=" bg-gray-300  text-black py-0  ">
                <div className="navbar   px-0 lg:max-w-[1210px] md:max-w-[700px] max-w-[350px] mx-auto  ">
                     <div className="navbar-start">
                          <div className="dropdown">
@@ -209,6 +210,7 @@ const Navbar = () => {
                     </div>
                </div>
           </div>
+
      );
 };
 

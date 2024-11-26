@@ -9,9 +9,14 @@ import AchievementsSection from "../../components/AchievementsSection/Achievemen
 import Button from "../../components/Button/Button";
 import Slider from "../../components/Slider/slider";
 import OurServices from "../../components/OurServices/OurServices";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Home = () => {
+     // window top pages
+     const { PageTop } = useContext(AuthContext);
+     PageTop();
      return (
           <div>
                <PagesTitle title={"Home"}></PagesTitle>

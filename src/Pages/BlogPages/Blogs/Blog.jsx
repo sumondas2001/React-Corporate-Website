@@ -7,7 +7,7 @@ const Blog = ({ blog }) => {
      const { blog_title, blog_date, blog_img, blog_description, user_img, user_name, id } = blog;
      // console.log(blog)
      return (
-          <div className="shadow-xl  bg-[#E3FDFD] pb-6 mt-10 rounded-t-lg "
+          <div className="shadow-xl hover:shadow-2xl  bg-[#E3FDFD] pb-6 mt-10 rounded-t-lg "
                data-aos="fade-up"
                data-aos-offset="100"
 
@@ -30,7 +30,7 @@ const Blog = ({ blog }) => {
                <div className="flex mt-5 items-center px-4">
                     <img className="mr-6 size-8 rounded-full object-cover" src={user_img} alt="" />
 
-                    <h4 className="text-sm font-medium">By <span className="hover:underline text-base hover:text-cyan-700">{user_name}</span></h4>
+                    <h4 className="text-sm font-medium">By <span className=" text-base hover:text-cyan-700">{user_name}</span></h4>
                </div>
           </div>
      );

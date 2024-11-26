@@ -53,7 +53,14 @@ const ServiceQuoteFrom = () => {
 
 
           const fromData = { name, email, number, address, city, company, message, contactEmail, contactPhone, service_name };
-          toast.success(`Your ${service_name} Is Booking Successfully !! `)
+          toast.success(`Your Is Booking Successfully !! `, {
+               position: 'top-right',
+               style: {
+                    padding: '18px',
+                    color: '#713200',
+                    backgroundColor: '#E3FDFD'
+               },
+          })
           from.reset();
 
           console.log(fromData)

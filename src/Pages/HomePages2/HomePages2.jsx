@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import AchievementsSection from "../../components/AchievementsSection/AchievementsSection";
 import ClientReviews from "../../components/ClientReviews/ClientReviews";
 import ContactFrom from "../../components/ContactFrom/ContactFrom";
@@ -7,11 +8,15 @@ import OurServices from "../../components/OurServices/OurServices";
 import HeroSection from "./HeroSection/HeroSection";
 import OurMission from "./OurMission/OurMission";
 import OurVision from "./OurVision/OurVision";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const HomePages2 = () => {
+     // window top pages
+     const { PageTop } = useContext(AuthContext);
+     PageTop();
      return (
           <div>
-               <HeroSection></HeroSection>
+               <HeroSection ></HeroSection>
                <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
                     <OurMission></OurMission>
                     <OurVision></OurVision>

@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
 const Footer = () => {
+
      return (
           <div className="bg-gray-900 ">
                <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[380px] mx-auto pb-8 pt-2">

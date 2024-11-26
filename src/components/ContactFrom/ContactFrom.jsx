@@ -13,7 +13,14 @@ const ContactFrom = () => {
           const subject = from.subject.value;
           const message = from.message.value;
           from.reset();
-          toast.success('Your Message Send')
+          toast.success('Your Message Send', {
+               position: 'top-right',
+               style: {
+                    padding: '18px',
+                    color: '#713200',
+                    backgroundColor: '#E3FDFD'
+               },
+          });
           const fromData = { firstName, lastName, email, subject, message };
           console.log(fromData)
      }

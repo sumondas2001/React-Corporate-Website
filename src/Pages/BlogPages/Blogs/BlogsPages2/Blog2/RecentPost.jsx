@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const RecentPost = ({ blog }) => {
+
+
      const { blog_title, blog_date, blog_img, id } = blog;
 
      return (

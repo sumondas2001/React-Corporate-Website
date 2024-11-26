@@ -3,7 +3,7 @@ const HeroSection = () => {
      const imgUrl = 'https://i.ibb.co.com/MNsv5pN/campaign-creators-g-Msn-Xq-ILjp4-unsplash.jpg'
 
      return (
-          <div className="mb-20  relative bg-cyan-100 lg:pl-10 md:pl-6 pl-3 ">
+          <div className="mb-20  relative bg-[#E3FDFD] lg:pl-10 md:pl-6 pl-3 ">
                <div className="flex justify-between items-center ">
 
                     <div className="lg:space-y-6 md:space-y-3 space-y-2  "
@@ -16,7 +16,7 @@ const HeroSection = () => {
                               <span className="lg:text-base md:text-sm text-xs lg:font-medium md:font-medium font-light">We Are Expert In This Field</span>
                               <div className="flex  items-center gap-2 lg:mt-3 md:mt-3 mt-1 ">
                                    <hr className="lg:w-20 md:w-16 w-10  border-cyan-400 border-2 " />
-                                   <p className="bg-cyan-400   p-1 w-0"></p>
+                                   <p className="bg-cyan-400 p-1 w-0"></p>
                               </div>
                          </div>
 
