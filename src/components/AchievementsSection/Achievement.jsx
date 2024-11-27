@@ -5,8 +5,11 @@ import ScrollTrigger from 'react-scroll-trigger';
 const Achievement = ({ achievement }) => {
      const [counterState, setCounterState] = useState(false);
 
+
      return (
-          <div className='text-center '>
+          <div className='text-center '
+
+          >
                <ScrollTrigger onEnter={() => setCounterState(true)} onExit={() => setCounterState(false)}>
                     <div>
                          <h1 className="lg:text-3xl md:text-2xl text-xl font-bold text-cyan-900">

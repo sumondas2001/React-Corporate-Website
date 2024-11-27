@@ -46,5 +46,11 @@
           "name": "Dave Simpson",
           "img": "https://preview.colorlib.com/theme/nitro/images/person_1.jpg.webp",
           "profession": "Chiropractor"
+     },
+     {
+          "id": 9,
+          "name": "Meadow",
+          "img": "https://i.ibb.co.com/Zzfh0Zr/mukul-kumar-7iuy-Vy-W-crg-unsplash.jpg",
+          "profession": "Cto"
      }
 ]

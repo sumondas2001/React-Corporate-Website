@@ -4,6 +4,8 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
 import { FaUserCircle } from "react-icons/fa";
 
+import logo from '../../../src/assets/logo/logo.png';
+
 
 
 const Navbar = () => {
@@ -24,9 +26,9 @@ const Navbar = () => {
 
           <li>
                <details>
-                    <summary>HOME</summary>
+                    <summary className="lg:text-white md:text-black text-black">HOME</summary>
                     <ul className=" ">
-                         <li>
+                         <li className="text-black">
                               <NavLink
                                    to="/"
                                    className={({ isActive }) =>
@@ -36,7 +38,7 @@ const Navbar = () => {
                                    Home
                               </NavLink>
                          </li>
-                         <li>
+                         <li className="text-black">
                               <NavLink
                                    to="/homePages2"
                                    className={({ isActive }) =>
@@ -52,7 +54,7 @@ const Navbar = () => {
           </li>
 
 
-          <li>
+          <li className="lg:text-white md:text-black text-black">
                <NavLink
                     to="/aboutPages"
                     className={({ isActive }) =>
@@ -65,9 +67,9 @@ const Navbar = () => {
 
           <li>
                <details>
-                    <summary>BLOG</summary>
+                    <summary className="lg:text-white md:text-black text-black">BLOG</summary>
                     <ul className="p-2">
-                         <li>
+                         <li className="text-black">
                               <NavLink
                                    to="/blog"
                                    className={({ isActive }) =>
@@ -77,12 +79,13 @@ const Navbar = () => {
                                    BLOG
                               </NavLink>
                          </li>
-                         <li>
+                         <li className="text-black">
 
                               <NavLink
                                    to="/blog2"
                                    className={({ isActive }) =>
                                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+
                                    }
                               >
                                    BLOG2
@@ -92,7 +95,7 @@ const Navbar = () => {
                </details>
           </li>
 
-          <li>
+          <li className="lg:text-white md:text-black text-black">
                <NavLink
                     to="/contacts"
                     className={({ isActive }) =>
@@ -102,7 +105,7 @@ const Navbar = () => {
                     CONTACTS
                </NavLink>
           </li>
-          <li>
+          <li className="lg:text-white md:text-black text-black">
                <NavLink
                     to="/services"
                     className={({ isActive }) =>
@@ -125,11 +128,11 @@ const Navbar = () => {
      </>
      return (
 
-          <div className=" bg-gray-300  text-black py-0  ">
-               <div className="navbar   px-0 lg:max-w-[1210px] md:max-w-[700px] max-w-[350px] mx-auto  ">
-                    <div className="navbar-start">
+          <div className="lg:max-w-[1210px]  md:max-w-[700px] max-w-[350px]  mx-auto   ">
+               <div className="navbar absolute lg:px-12 md:px-8 px-3 bg-slate-600 bg-opacity-30 text-white  left-0 right-0  z-50 py-0    ">
+                    <div className="navbar-start md:w-10 lg:w-0 ">
                          <div className="dropdown">
-                              <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                              <div tabIndex={0} role="button" className="mr-4 lg:hidden">
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="h-10 w-6 "
@@ -143,35 +146,38 @@ const Navbar = () => {
                                              d="M4 6h16M4 12h8m-8 6h16" />
                                    </svg>
                               </div>
+
                               <ul
                                    tabIndex={0}
                                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52 md:w-44 w-36 p-2 shadow text-base font-semibold px-1  ">
                                    {link}
                               </ul>
+
                          </div>
 
-                         <div >
-                              <Link to={'/'} ><img className="lg:w-[68px] h-16 md:w-16 w-16  " src="https://i.ibb.co.com/XsRK1S7/Blue-Abstract-Business-Company-Logo-1.png" alt="" /> </Link>
-                         </div>
+
 
                     </div>
 
+                    <div className="z-50 navbar-start ">
+                         <Link to={'/'} ><img className="w-32 brightness-200" src={logo} alt="" /> </Link>
 
+                    </div>
 
-                    <div className="navbar-center hidden lg:flex px-2      z-10 ">
+                    <div className="navbar-center hidden lg:flex px-2 z-50 ">
                          <ul className="menu menu-horizontal text-base font-semibold px-2">
                               {link}
                          </ul>
                     </div>
-                    <div className="navbar-end  z-10">
+                    <div className="navbar-end  z-50">
                          {user ?
 
-                              <div className="dropdown dropdown-end">
+                              <div className="dropdown dropdown-end text-black">
                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
 
                                         {
                                              user?.photoURL ?
-                                                  <div className="w-10 rounded-full">
+                                                  <div className="lg:w-10 md:w-8 w-8 rounded-full">
                                                        <img
                                                             alt="Profile Photo"
                                                             src={user?.photoURL} />

@@ -3,10 +3,10 @@ const HeroSection = () => {
      const imgUrl = 'https://i.ibb.co.com/MNsv5pN/campaign-creators-g-Msn-Xq-ILjp4-unsplash.jpg'
 
      return (
-          <div className="mb-20  relative bg-[#E3FDFD] lg:pl-10 md:pl-6 pl-3 ">
+          <div className="mb-20  relative bg-[#e7ffff] lg:pl-10 md:pl-6 pl-3 ">
                <div className="flex justify-between items-center ">
 
-                    <div className="lg:space-y-6 md:space-y-3 space-y-2  "
+                    <div className="lg:space-y-6 md:space-y-3 space-y-2 lg:mt-0 md:mt-0 mt-14  "
                          data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
                          data-aos-duration="1000"
@@ -27,7 +27,7 @@ const HeroSection = () => {
                     </div>
                     <img
 
-                         className="object-cover  lg:h-[500px] md:h-[350px] h-[200px]  rounded-bl-full lg:w-[900px]  md:w-[400px] w-[210px]" src={imgUrl} alt="" />
+                         className="object-cover  lg:h-screen md:h-[420px] h-[270px]  rounded-bl-full lg:w-[800px]  md:w-[400px] w-[220px] " src={imgUrl} alt="" />
                </div>
 
           </div>

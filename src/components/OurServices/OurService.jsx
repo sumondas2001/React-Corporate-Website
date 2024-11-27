@@ -17,16 +17,17 @@ const OurService = ({ service }) => {
                     <h1 className="text-lg font-semibold mt-3 ">{service_name}</h1>
                     <p className="text-sm font-normal mt-3 ">{service_description?.slice(0, 145)} <span className="font-semibold "> ....</span></p>
 
-                    <div className=" justify-end flex mb-6">
+                    <div className=" justify-end flex mt-2 mb-6">
                          <Link to={`/servicesDetails/${id}`} >
                               <FaArrowRightLong className="mr-6 text-2xl  text-[#5a989b]" />
+
                          </Link>
                     </div>
 
-               </div>
+               </div >
 
 
-          </div>
+          </div >
 
 
      );

@@ -46,7 +46,12 @@ const OurTeams = () => {
                     <p className="lg:text-base md:text-sm text-xs  font-medium text-center mt-4 mb-10">Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Minus minima neque tempora reiciendis.</p>
                </div>
 
-               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 ">
+               <div
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+                    className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 ">
                     {
                          team?.map(team => <OurTeam
                               key={team.id}

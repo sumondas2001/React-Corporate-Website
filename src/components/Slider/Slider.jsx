@@ -7,10 +7,15 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Link } from "react-router-dom";
+import './slider.css'
+
 
 
 const Slider = () => {
      const [allSlider, setSlider] = useState([]);
+
+
+
 
      useEffect(() => {
           axios.get('/slider.json')
@@ -37,11 +42,12 @@ const Slider = () => {
                     pagination={{
                          clickable: true,
                     }}
-                    navigation={true} // Enable navigation buttons
+                    navigation={true}
+                    // Enable navigation buttons
 
                     modules={[Autoplay, Pagination, Navigation]}
 
-                    className="mySwiper"
+                    className="mySwiper "
                >
                     {allSlider.map(slider => (
                          <SwiperSlide key={slider.id} slider={slider}>
@@ -49,10 +55,10 @@ const Slider = () => {
                                    <img
                                         src={slider.image}
                                         alt={`Slide ${slider.id}`}
-                                        className="w-full h-[300px] md:h-[400px] lg:h-[600px] object-cover"
+                                        className="w-full h-screen object-cover"
                                    />
                                    <div className="absolute h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                                        <div className="md:space-y-7 lg:space-y-7 space-y-4 lg:w-1/3 md:w-1/2 w-[250px]">
+                                        <div className="md:space-y-5 lg:space-y-7 space-y-1 lg:w-1/2 md:w-1/2 w-[250px]">
                                              <div>
                                                   <h1 className="md:text-2xl lg:text-3xl text-base font-bold text-white">
                                                        {slider.title}
@@ -65,7 +71,7 @@ const Slider = () => {
                                                   <Link to={'/services'}>
                                                        <button
                                                             type="submit"
-                                                            className="px-5 mt-6 border py-3 bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white hover:from-cyan-600 hover:from-30% hover:to-cyan-300 text-base font-semibold"
+                                                            className="lg:px-5 md:px-4 px-2  mt-6 border lg:py-3 md:py-3 py-2 bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white hover:from-cyan-600 hover:from-30% hover:to-cyan-300 text-base font-semibold"
                                                        >
                                                             Discover More
                                                        </button>

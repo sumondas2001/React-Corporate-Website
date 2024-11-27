@@ -11,7 +11,7 @@ const Blog2 = ({ blog }) => {
                data-aos-easing="ease-out-cubic"
                data-aos-duration="1000"
                data-aos-offset="100"
-               className="flex lg:flex-row md:flex-row flex-col lg:gap-6 md:gap-5 gap-3 border border-slate-300 lg:p-7 md:p-6 p-4 container">
+               className="flex lg:flex-row md:flex-row flex-col lg:gap-6 md:gap-5 gap-3 border border-slate-300 lg:p-7 md:p-6 p-4 container hover:shadow-xl shadow-lg">
                <div className="">
                     <img
                          className="cursor-pointer object-cover md:w-[450px] h-[200px] w-full md:h-[220px] lg:w-[500px] lg:h-[240px] transition duration-1000 hover:scale-90 hover:delay-150"

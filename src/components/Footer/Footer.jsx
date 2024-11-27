@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
+import logo from '../../../src/assets/logo/logo.png'
+
 
 const Footer = () => {
 
@@ -14,8 +16,8 @@ const Footer = () => {
                               <div>
                                    <Link to="/">
                                         <img
-                                             className="mx-auto size-20 lg:mx-0"
-                                             src="https://i.ibb.co.com/XsRK1S7/Blue-Abstract-Business-Company-Logo-1.png"
+                                             className="mx-auto brightness-200 w-44 mb-5  lg:mx-0"
+                                             src={logo}
                                              alt="Company Logo"
                                         />
                                    </Link>

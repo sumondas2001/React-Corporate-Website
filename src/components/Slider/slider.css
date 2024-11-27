@@ -1,0 +1,40 @@
+/* Default styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 20px;
+    height: 20px;
+}
+
+/* Large devices (lg): Width and height 80px (w-20 h-20) */
+@media (min-width: 1024px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 30px;
+    }
+}
+
+/* Medium devices (md): Width and height 64px (w-16 h-16) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 30px;
+    }
+}
+
+/* Small devices (sm): Width and height 24px (w-6 h-6) */
+@media (max-width: 767px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 20px;
+    }
+}
+
+/* Optional: Customize button arrow size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1em;
+    /* Adjust font size relative to button size */
+}
