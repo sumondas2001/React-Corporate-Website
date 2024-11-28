@@ -1,8 +1,10 @@
 
 const OurVision = () => {
+
+     const imgUrl = 'https://i.ibb.co.com/Vp6Xtmt/linkedin-sales-solutions-4rv-Bjo-QWERk-unsplash.jpg';
      return (
 
-          <div className="flex lg:flex-row-reverse md:flex-col-reverse flex-col-reverse lg:gap-14 md:gap-y-10 gap-y-6 items-center mt-10 mb-10  lg:p-4"
+          <div className="flex lg:flex-row-reverse md:flex-col-reverse hover:shadow-2xl shadow-xl  flex-col-reverse lg:gap-14 md:gap-y-10 gap-y-6 items-center mt-10 mb-10  lg:p-5"
                data-aos="fade-up"
                data-aos-easing="ease-out-cubic"
                data-aos-duration="1000"
@@ -23,7 +25,7 @@ const OurVision = () => {
                </div>
 
                <div className="">
-                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src="https://i.ibb.co.com/XZsYQR6/linkedin-sales-solutions-46bom4l-Obs-A-unsplash.jpg" alt="" />
+                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src={imgUrl} alt="" />
                </div>
           </div>
 

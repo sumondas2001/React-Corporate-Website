@@ -42,7 +42,7 @@ const Contacts = () => {
                               data-aos-easing="ease-out-cubic"
                               data-aos-duration="1000"
                               data-aos-offset="100"
-                              className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-6 md:gap-10 gap-8 text-center  mt-8 mb-10  bg-[#E3FDFD] py-20  rounded-xl ">
+                              className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-6 md:gap-10 gap-8 text-center  mt-8 mb-10  bg-[#E3FDFD] lg:py-20 md:py-10 py-6  rounded-xl ">
 
 
                               <div className="space-y-3 lg:border-r lg:border-black">
@@ -102,7 +102,7 @@ const Contacts = () => {
                               data-aos-easing="ease-out-cubic"
                               data-aos-duration="1000"
                               data-aos-offset="100"
-                              className="w-full lg:h-[470px] md:h-72 h-64 object-cover rounded-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7299.2635490807625!2d90.41202048648901!3d23.831689628558014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c65e78f46ee1%3A0x3e009fd37c89634f!2sNikunja%202%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1731227615008!5m2!1sen!2sbd" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                              className="w-full lg:h-[500px] md:h-96 h-72 object-cover rounded-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7299.2635490807625!2d90.41202048648901!3d23.831689628558014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c65e78f46ee1%3A0x3e009fd37c89634f!2sNikunja%202%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1731227615008!5m2!1sen!2sbd" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                </div>

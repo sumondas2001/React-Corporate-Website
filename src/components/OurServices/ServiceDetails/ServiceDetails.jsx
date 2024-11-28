@@ -76,7 +76,7 @@ const ServiceDetails = () => {
                                         <NavLink
                                              key={service.id}
                                              className={({ isActive }) =>
-                                                  `border-2  items-center flex ${isActive ? 'bg-[#71C9CE] border-l-4 border-l-red-500' : 'hover:bg-[#71C9CE] hover:border-l-4 hover:border-l-red-500'
+                                                  `border-2  items-center flex ${isActive ? 'bg-cyan-400 border-l-4 border-l-red-600' : 'hover:bg-cyan-400 hover:border-l-4 hover:border-l-red-600'
                                                   }`
                                              }
                                              to={`/servicesDetails/${service.id}`}
@@ -99,7 +99,7 @@ const ServiceDetails = () => {
                               className="lg:space-y-8 md:space-y-7 space-y-6 lg:w-2/3 md:w-2/3">
                               <img className="lg:w-[800px] md:w-[500px] w-full rounded-2xl lg:h-[370px] md:h-[360px] h-[220px] object-cover  cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={service_img} alt="" />
                               <h1 className="lg:text-3xl md:text-2xl text-2xl font-bold">{service_name}</h1>
-                              <p className="text-sm font-light ">{service_description}</p>
+                              <p className="text-base font-light ">{service_description}</p>
 
                               <div>
 

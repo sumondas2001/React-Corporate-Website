@@ -15,7 +15,9 @@ const About = () => {
                     data-aos-duration="1000"
                     data-aos-offset="100"
                >
-                    <img className="object-cover lg:w-[550px]  md:w-[400px] w-[500px] rounded-3xl mb-3 md:h-[490px] h-[300px] cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 " src={aboutImg} alt="" />
+                    <img
+                         style={{ clipPath: "inset(5% 10% 5% 5% round 5% 20% 0 10%)" }}
+                         className="object-cover lg:w-[550px]  md:w-[400px] w-[500px]  mb-3 md:h-[490px] h-[300px] cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 " src={aboutImg} alt="" />
                </div>
 
                <div className="md:w-1/2 w-5/6 lg:w-1/2 lg:px-14 "

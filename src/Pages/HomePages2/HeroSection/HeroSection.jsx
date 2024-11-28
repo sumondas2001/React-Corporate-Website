@@ -3,7 +3,7 @@ const HeroSection = () => {
      const imgUrl = 'https://i.ibb.co.com/MNsv5pN/campaign-creators-g-Msn-Xq-ILjp4-unsplash.jpg'
 
      return (
-          <div className="mb-20  relative bg-[#e7ffff] lg:pl-10 md:pl-6 pl-3 ">
+          <div className="lg:mb-20 md:mb-16   relative bg-[#e7ffff] lg:pl-10 md:pl-6 pl-3 ">
                <div className="flex justify-between items-center ">
 
                     <div className="lg:space-y-6 md:space-y-3 space-y-2 lg:mt-0 md:mt-0 mt-14  "

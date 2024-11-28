@@ -3,7 +3,7 @@ const OurMission = () => {
 
      const imgURl = 'https://i.ibb.co.com/hYHSPCb/smartworks-coworking-c-W4l-LTav-U80-unsplash-3.jpg';
      return (
-          <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:gap-14 md:gap-y-10 gap-y-6 items-center mt-10 mb-10  lg:p-4"
+          <div className="flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:gap-14 md:gap-y-10 gap-y-6 items-center mt-10 mb-10  lg:p-5 shadow-xl hover:shadow-2xl"
                data-aos="fade-up"
                data-aos-easing="ease-out-cubic"
                data-aos-duration="1000"

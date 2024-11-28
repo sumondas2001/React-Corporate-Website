@@ -1,224 +1,252 @@
-import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
 import { FaUserCircle } from "react-icons/fa";
 
-import logo from '../../../src/assets/logo/logo.png';
-
-
+import logo from "../../../src/assets/logo/logo.png";
 
 const Navbar = () => {
      const { logOut, user } = useContext(AuthContext);
+     // mobile device and tablet  dropDown icon
 
-     const handelLogOut = () => {
-          logOut()
-               .then(() => {
-                    toast.success('LogOut Successfully')
-               })
-               .catch(error => {
-                    console.log(error)
-               })
+     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+     const location = useLocation();
+
+     useEffect(() => {
+          setIsDropdownOpen(false)
+     }, [location])
+
+     const handelDropdownToggle = () => {
+          setIsDropdownOpen(!isDropdownOpen);
      }
 
 
-     const link = <>
+     const handleLogOut = () => {
+          logOut()
+               .then(() => {
+                    toast.success("LogOut Successfully");
+               })
+               .catch((error) => {
+                    console.log(error);
+               });
+     };
 
-          <li>
-               <details>
-                    <summary className="lg:text-white md:text-black text-black">HOME</summary>
-                    <ul className=" ">
-                         <li className="text-black">
-                              <NavLink
-                                   to="/"
-                                   className={({ isActive }) =>
-                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                                   }
-                              >
-                                   Home
-                              </NavLink>
-                         </li>
-                         <li className="text-black">
-                              <NavLink
-                                   to="/homePages2"
-                                   className={({ isActive }) =>
-                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                                   }
-                              >
-                                   Home2
-                              </NavLink>
+     const links = (
+          <>
+               <li>
+                    <details>
+                         <summary className="lg:text-white md:text-black text-black">
+                              HOME
+                         </summary>
+                         <ul className="">
+                              <li className="text-black">
+                                   <NavLink
+                                        to="/"
 
-                         </li>
-                    </ul>
-               </details>
-          </li>
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        Home
+                                   </NavLink>
+                              </li>
+                              <li className="text-black">
+                                   <NavLink
 
+                                        to="/homePages2"
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        Home2
+                                   </NavLink>
+                              </li>
+                         </ul>
+                    </details>
+               </li>
 
-          <li className="lg:text-white md:text-black text-black">
-               <NavLink
-                    to="/aboutPages"
-                    className={({ isActive }) =>
-                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                    }
-               >
-                    ABOUT
-               </NavLink>
-          </li>
+               <li className="lg:text-white md:text-black text-black">
+                    <NavLink
+                         to="/aboutPages"
+                         className={({ isActive }) =>
+                              isActive
+                                   ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                   : ""
+                         }
+                    >
+                         ABOUT
+                    </NavLink>
+               </li>
 
-          <li>
-               <details>
-                    <summary className="lg:text-white md:text-black text-black">BLOG</summary>
-                    <ul className="p-2">
-                         <li className="text-black">
-                              <NavLink
-                                   to="/blog"
-                                   className={({ isActive }) =>
-                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                                   }
-                              >
-                                   BLOG
-                              </NavLink>
-                         </li>
-                         <li className="text-black">
+               <li>
+                    <details>
+                         <summary className="lg:text-white md:text-black text-black">
+                              BLOG
+                         </summary>
+                         <ul className="p-2">
+                              <li className="text-black">
+                                   <NavLink
+                                        to="/blog"
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        BLOG
+                                   </NavLink>
+                              </li>
+                              <li className="text-black">
+                                   <NavLink
+                                        to="/blog2"
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        BLOG2
+                                   </NavLink>
+                              </li>
+                         </ul>
+                    </details>
+               </li>
 
-                              <NavLink
-                                   to="/blog2"
-                                   className={({ isActive }) =>
-                                        isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
+               <li className="lg:text-white md:text-black text-black">
+                    <NavLink
+                         to="/contacts"
+                         className={({ isActive }) =>
+                              isActive
+                                   ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                   : ""
+                         }
+                    >
+                         CONTACTS
+                    </NavLink>
+               </li>
+               <li className="lg:text-white md:text-black text-black">
+                    <NavLink
+                         to="/services"
+                         className={({ isActive }) =>
+                              isActive
+                                   ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                   : ""
+                         }
+                    >
+                         SERVICES
+                    </NavLink>
+               </li>
+          </>
+     );
 
-                                   }
-                              >
-                                   BLOG2
-                              </NavLink>
-                         </li>
-                    </ul>
-               </details>
-          </li>
-
-          <li className="lg:text-white md:text-black text-black">
-               <NavLink
-                    to="/contacts"
-                    className={({ isActive }) =>
-                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                    }
-               >
-                    CONTACTS
-               </NavLink>
-          </li>
-          <li className="lg:text-white md:text-black text-black">
-               <NavLink
-                    to="/services"
-                    className={({ isActive }) =>
-                         isActive ? ' focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]' : ''
-                    }
-               >
-                    SERVICES
-               </NavLink>
-          </li>
-          {/* <li>
-               <details>
-                    <summary>Parent</summary>
-                    <ul className="p-2">
-                         <li><a>Submenu 1</a></li>
-                         <li><a>Submenu 2</a></li>
-                    </ul>
-               </details>
-          </li> */}
-
-     </>
      return (
-
-          <div className="lg:max-w-[1210px]  md:max-w-[700px] max-w-[350px]  mx-auto   ">
-               <div className="navbar absolute lg:px-12 md:px-8 px-3 bg-slate-600 bg-opacity-30 text-white  left-0 right-0  z-50 py-0    ">
-                    <div className="navbar-start md:w-10 lg:w-0 ">
+          <div className="lg:max-w-[1210px]  md:max-w-[700px] max-w-[350px]  mx-auto">
+               <div className="navbar absolute lg:px-12 md:px-8 px-3 bg-slate-600 bg-opacity-30 text-white left-0 top-0 right-0 z-50 py-1">
+                    <div className="navbar-start md:w-10 lg:w-0">
                          <div className="dropdown">
-                              <div tabIndex={0} role="button" className="mr-4 lg:hidden">
+                              {/* Toggle Dropdown */}
+                              <div
+                                   onClick={handelDropdownToggle}
+                                   tabIndex={0}
+                                   role="button"
+                                   className="mr-4 lg:hidden"
+                              >
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="h-10 w-6 "
+                                        className="h-10 w-6"
                                         fill="none"
                                         viewBox="0 0 24 24"
-                                        stroke="currentColor">
+                                        stroke="currentColor"
+                                   >
                                         <path
                                              strokeLinecap="round"
                                              strokeLinejoin="round"
                                              strokeWidth="2"
-                                             d="M4 6h16M4 12h8m-8 6h16" />
+                                             d="M4 6h16M4 12h8m-8 6h16"
+                                        />
                                    </svg>
                               </div>
-
-                              <ul
-                                   tabIndex={0}
-                                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52 md:w-44 w-36 p-2 shadow text-base font-semibold px-1  ">
-                                   {link}
-                              </ul>
+                              {/* // Conditionally render dropdown */}
+                              {
+                                   isDropdownOpen && (
+                                        <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52 md:w-44 w-36 p-2 shadow text-base font-semibold px-1">
+                                             {links}
+                                        </ul>
+                                   )
+                              }
 
                          </div>
-
-
-
                     </div>
 
-                    <div className="z-50 navbar-start ">
-                         <Link to={'/'} ><img className="w-32 brightness-200" src={logo} alt="" /> </Link>
-
+                    <div className="z-50 navbar-start">
+                         <Link to={"/"}>
+                              <img className="w-32 brightness-200" src={logo} alt="" />
+                         </Link>
                     </div>
 
-                    <div className="navbar-center hidden lg:flex px-2 z-50 ">
+                    <div className="navbar-center hidden lg:flex px-2 z-50">
                          <ul className="menu menu-horizontal text-base font-semibold px-2">
-                              {link}
+                              {links}
                          </ul>
+
+
                     </div>
-                    <div className="navbar-end  z-50">
-                         {user ?
 
+                    <div className="navbar-end z-50">
+                         {user ? (
                               <div className="dropdown dropdown-end text-black">
-                                   <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-
-                                        {
-                                             user?.photoURL ?
-                                                  <div className="lg:w-10 md:w-8 w-8 rounded-full">
-                                                       <img
-                                                            alt="Profile Photo"
-                                                            src={user?.photoURL} />
-                                                  </div>
-                                                  :
-                                                  <FaUserCircle className="text-3xl"></FaUserCircle>
-                                        }
+                                   <div
+                                        tabIndex={0}
+                                        role="button"
+                                        className="btn btn-ghost btn-circle avatar"
+                                   >
+                                        {user?.photoURL ? (
+                                             <div className="lg:w-10 md:w-8 w-8 rounded-full">
+                                                  <img alt="Profile Photo" src={user?.photoURL} />
+                                             </div>
+                                        ) : (
+                                             <FaUserCircle className="text-3xl"></FaUserCircle>
+                                        )}
                                    </div>
                                    <ul
                                         tabIndex={0}
-                                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 py-2 shadow ">
+                                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 py-2 shadow"
+                                   >
                                         <li>
-                                             <p className=" text-base font-medium">
-                                                  {user?.displayName}
-                                             </p>
+                                             <p className="text-base font-medium">{user?.displayName}</p>
                                         </li>
                                         <li>
-                                             <p className=" text-sm font-medium mb-1 mt-1">
+                                             <p className="text-sm font-medium mb-1 mt-1">
                                                   {user?.email}
                                              </p>
                                         </li>
-
-                                        <li className=" ">
-                                             <button onClick={handelLogOut} className="text-sm font-medium text-black hover:bg-red-500 p-2 rounded-lg ">LogOut</button>
-
+                                        <li className="">
+                                             <button
+                                                  onClick={handleLogOut}
+                                                  className="text-sm font-medium text-black hover:bg-red-500 p-2 rounded-lg"
+                                             >
+                                                  LogOut
+                                             </button>
                                         </li>
                                    </ul>
                               </div>
-
-
-
-
-                              :
-                              <Link to={'/login'} >  <button className=" text-sm text-white font-bold px-4 flex items-center hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">Login</button></Link>
-                         }
+                         ) : (
+                              <Link to={"/login"}>
+                                   <button className="text-sm text-white font-bold px-4 flex items-center hover:bg-cyan-700 rounded-lg bg-cyan-600 py-2">
+                                        Login
+                                   </button>
+                              </Link>
+                         )}
                     </div>
                </div>
           </div>
-
      );
 };
 
 export default Navbar;
-

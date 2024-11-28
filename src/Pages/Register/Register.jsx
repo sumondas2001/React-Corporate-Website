@@ -63,12 +63,12 @@ const Register = () => {
      };
 
      return (
-          <div className='mb-20'>
+          <div className='mb-20 mt-20'>
 
                <PagesTitle title={"Register"}></PagesTitle>
 
-               <h1 className="text-xl font-bold text-center mt-4 text-cyan-600">Register Now ! </h1>
-               <div className='lg:flex md:flex  gap-10 justify-center items-center mt-10'>
+               <h1 className="text-xl font-bold text-center  text-cyan-600">Register Now ! </h1>
+               <div className='lg:flex md:flex  gap-10 justify-center items-center mt-2'>
                     <div data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
                          data-aos-duration="2000"
