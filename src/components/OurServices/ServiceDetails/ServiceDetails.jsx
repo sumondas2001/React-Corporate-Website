@@ -5,6 +5,7 @@ import PagesCoverImg from "../../PagesCoverImg/PagesCoverImg";
 import { FaCaretRight } from "react-icons/fa6";
 import PagesTitle from "../../PagesTitle/PagesTitle";
 import { AuthContext } from "../../../Provider/AuthProvider";
+import HowWeWork from "../../HowWeWork/HowWeWork";
 
 
 const ServiceDetails = () => {
@@ -114,6 +115,7 @@ const ServiceDetails = () => {
                          </div>
 
                     </div>
+                    <HowWeWork></HowWeWork>
                </div>
           </div >
      );

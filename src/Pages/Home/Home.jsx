@@ -29,10 +29,10 @@ const Home = () => {
                     <AchievementsSection></AchievementsSection>
 
                     <ClientReviews></ClientReviews>
-                    <div className="grid lg:grid-cols-2 mb-10 md:grid-cols-1 grid-cols-1 lg:gap-10 md:gap-3 gap-3">
-                         <HaveQu ></HaveQu>
-                         <ContactFrom></ContactFrom>
-                    </div>
+
+                    <HaveQu ></HaveQu>
+
+                    <ContactFrom></ContactFrom>
 
                     <Button></Button>
                </div>

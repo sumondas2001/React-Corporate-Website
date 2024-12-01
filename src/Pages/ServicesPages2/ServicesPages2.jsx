@@ -1,17 +1,17 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import OurService from "../../components/OurServices/OurService";
 import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
 import PagesTitle from "../../components/PagesTitle/PagesTitle";
 import { AuthContext } from "../../Provider/AuthProvider";
+import ServicePages2 from "./ServicePages2/ServicePages2";
 import HowWeWork from "../../components/HowWeWork/HowWeWork";
 
-const Services = () => {
+const ServicesPages2 = () => {
      // window top pages
      const { PageTop } = useContext(AuthContext);
      PageTop();
 
-     const imgUrl = 'https://i.ibb.co.com/XVvcVDV/austin-distel-mp-N7xj-KQ-Ns-unsplash.jpg'
+     const imgUrl = 'https://i.ibb.co.com/CPqgD5p/louise-viallesoubranne-Ot-O5-I2-R-494-unsplash.jpg'
 
 
      const [services, setServices] = useState([]);
@@ -27,11 +27,11 @@ const Services = () => {
      }, [])
      return (
           <div className="mb-10 ">
-               <PagesTitle title={'Services'}></PagesTitle>
+               <PagesTitle title={'Services2'}></PagesTitle>
 
 
                <div className="mb-10">
-                    <PagesCoverImg title={"SERVICES"} imgUrl={imgUrl}></PagesCoverImg>
+                    <PagesCoverImg title={"SERVICES 2"} imgUrl={imgUrl}></PagesCoverImg>
                </div>
 
 
@@ -51,20 +51,19 @@ const Services = () => {
                          </div>
                     </div>
 
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-8 ">
+                    <div className="grid lg:grid-cols-2  grid-cols-1 gap-10 ">
                          {
-                              services.map(service => <OurService key={service.id}
+                              services.map(service => <ServicePages2 key={service.id}
                                    service={service}
                               >
 
-                              </OurService>)
+                              </ServicePages2>)
                          }
                     </div>
                     <HowWeWork></HowWeWork>
                </div>
-
           </div>
      );
 };
 
-export default Services;
+export default ServicesPages2;

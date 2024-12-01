@@ -70,18 +70,40 @@ const Navbar = () => {
                          </ul>
                     </details>
                </li>
+               <li>
+                    <details>
+                         <summary className="lg:text-white md:text-black text-black">
+                              ABOUT
+                         </summary>
+                         <ul className="">
+                              <li className="text-black">
+                                   <NavLink
+                                        to="/aboutPages"
 
-               <li className="lg:text-white md:text-black text-black">
-                    <NavLink
-                         to="/aboutPages"
-                         className={({ isActive }) =>
-                              isActive
-                                   ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
-                                   : ""
-                         }
-                    >
-                         ABOUT
-                    </NavLink>
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        About
+                                   </NavLink>
+                              </li>
+                              <li className="text-black">
+                                   <NavLink
+
+                                        to="/aboutPages2"
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        About2
+                                   </NavLink>
+                              </li>
+                         </ul>
+                    </details>
                </li>
 
                <li>
@@ -130,17 +152,41 @@ const Navbar = () => {
                          CONTACTS
                     </NavLink>
                </li>
-               <li className="lg:text-white md:text-black text-black">
-                    <NavLink
-                         to="/services"
-                         className={({ isActive }) =>
-                              isActive
-                                   ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
-                                   : ""
-                         }
-                    >
-                         SERVICES
-                    </NavLink>
+
+               <li>
+                    <details>
+                         <summary className="lg:text-white md:text-black text-black">
+                              SERVICES
+                         </summary>
+                         <ul className="">
+                              <li className="text-black">
+                                   <NavLink
+                                        to="/services"
+
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        Services
+                                   </NavLink>
+                              </li>
+                              <li className="text-black">
+                                   <NavLink
+
+                                        to="/servicesPages2"
+                                        className={({ isActive }) =>
+                                             isActive
+                                                  ? " focus:bg-transparent  focus:text-[#3cd0d8] text-[#3cd0d8]"
+                                                  : ""
+                                        }
+                                   >
+                                        services2
+                                   </NavLink>
+                              </li>
+                         </ul>
+                    </details>
                </li>
           </>
      );

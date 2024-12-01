@@ -2,13 +2,13 @@ import { useContext } from "react";
 import AchievementsSection from "../../components/AchievementsSection/AchievementsSection";
 import ClientReviews from "../../components/ClientReviews/ClientReviews";
 import ContactFrom from "../../components/ContactFrom/ContactFrom";
-import HaveQu from "../../components/HaveQu/HaveQu";
 import OurClients from "../../components/OurClients/OurClients";
 import OurServices from "../../components/OurServices/OurServices";
 import HeroSection from "./HeroSection/HeroSection";
 import OurMission from "./OurMission/OurMission";
 import OurVision from "./OurVision/OurVision";
 import { AuthContext } from "../../Provider/AuthProvider";
+import HaveQu2 from "./HaveQu2/HaveQu2";
 
 const HomePages2 = () => {
      // window top pages
@@ -28,7 +28,7 @@ const HomePages2 = () => {
 
 
                     <div className="grid lg:grid-cols-2 mb-10 md:grid-cols-1 grid-cols-1 lg:gap-10 md:gap-3 gap-3">
-                         <HaveQu ></HaveQu>
+                         <HaveQu2 ></HaveQu2>
                          <ContactFrom></ContactFrom>
                     </div>
                </div>

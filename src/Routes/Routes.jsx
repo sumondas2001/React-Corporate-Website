@@ -18,6 +18,8 @@ import Home from "../Pages/Home/Home";
 import HomePages2 from "../Pages/HomePages2/HomePages2";
 import BlogsPages2 from "../Pages/BlogPages/Blogs/BlogsPages2/BlogsPages2";
 import BlogDetails from "../Pages/BlogPages/Blogs/BlogsPages2/BlogDetails/BlogDetails";
+import AboutPages2 from "../Pages/AboutPages/AboutPages2/AboutPages2";
+import ServicesPages2 from "../Pages/ServicesPages2/ServicesPages2";
 
 
 const router = createBrowserRouter([
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
                {
                     path: '/aboutPages',
                     element: <AboutPages></AboutPages>
+               },
+               {
+                    path: '/aboutPages2',
+                    element: <AboutPages2></AboutPages2>
                },
                {
                     path: '/homePages2',
@@ -65,6 +71,10 @@ const router = createBrowserRouter([
                {
                     path: '/services',
                     element: <Services></Services>
+               },
+               {
+                    path: '/servicesPages2',
+                    element: <ServicesPages2></ServicesPages2>
                },
                {
                     path: '/servicesDetails/:id',
