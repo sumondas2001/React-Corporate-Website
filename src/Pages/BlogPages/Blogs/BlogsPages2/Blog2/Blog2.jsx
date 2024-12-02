@@ -33,7 +33,7 @@ const Blog2 = ({ blog }) => {
                          </button>
                     </Link>
 
-                    <div className="flex items-center ">
+                    <div className="flex items-center mt-3 ">
                          <img className="mr-4 size-8 rounded-full object-cover" src={user_img} alt="" />
                          <p>By <span className="text-base font-medium">{user_name}</span></p>
                     </div>

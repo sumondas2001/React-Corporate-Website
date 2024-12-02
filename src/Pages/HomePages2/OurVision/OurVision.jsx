@@ -20,12 +20,12 @@ const OurVision = () => {
                               <p className="bg-cyan-400   p-1 w-0"></p>
                          </div>
                     </div>
-                    <p className="lg:text-lg md:text-base text-sm font-normal">Our vision is to become a global leader in delivering transformative solutions that redefine industry standards. We aspire to create a future where innovation, sustainability, and excellence drive progress for businesses and communities alike.
+                    <p className="lg:text-lg md:text-base text-sm font-normal  px-2 pb-4">Our vision is to become a global leader in delivering transformative solutions that redefine industry standards. We aspire to create a future where innovation, sustainability, and excellence drive progress for businesses and communities alike.
                          At Your Company , we envision empowering organizations to achieve their fullest potential by harnessing the power of technology, creativity, and collaboration. Through unwavering dedication and a commitment to positive change,</p>
                </div>
 
                <div className="">
-                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src={imgUrl} alt="" />
+                    <img className="object-cover lg:rounded-l-xl md:rounded-t-xl lg:rounded-t-none rounded-t-xl cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src={imgUrl} alt="" />
                </div>
           </div>
 

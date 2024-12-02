@@ -20,6 +20,7 @@ import BlogsPages2 from "../Pages/BlogPages/Blogs/BlogsPages2/BlogsPages2";
 import BlogDetails from "../Pages/BlogPages/Blogs/BlogsPages2/BlogDetails/BlogDetails";
 import AboutPages2 from "../Pages/AboutPages/AboutPages2/AboutPages2";
 import ServicesPages2 from "../Pages/ServicesPages2/ServicesPages2";
+import PrivateRoutes from "../components/PrivateRoutes/PrivateRoutes";
 
 
 const router = createBrowserRouter([
@@ -83,7 +84,7 @@ const router = createBrowserRouter([
 
                {
                     path: '/serviceDetails/:id/serviceQuoteFrom',
-                    element: <ServiceQuoteFrom></ServiceQuoteFrom>
+                    element: <PrivateRoutes><ServiceQuoteFrom /></PrivateRoutes>
                },
                {
                     path: '/blogDetails/:id',

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import loginImg from '../../assets/login/login.svg';
 import { FaGoogle } from "react-icons/fa";
 import { useContext, useEffect } from 'react';
@@ -10,7 +10,9 @@ import PagesTitle from '../../components/PagesTitle/PagesTitle';
 const Login = () => {
 
      const { loginUser, googleLogin } = useContext(AuthContext);
-
+     const location = useLocation();
+     console.log(location)
+     const navigate = useNavigate();
      useEffect(() => {
           AOS.init()
      }, [])
@@ -28,6 +30,7 @@ const Login = () => {
                     console.log(res.user);
                     toast.success('Login Successfully');
                     from.reset();
+                    navigate(location.state ? location.state : '/');
                })
                .catch(error => {
                     toast.error(error.message);
@@ -40,9 +43,7 @@ const Login = () => {
                     toast.success('Login Successfully');
                     console.log(res.user);
 
-
-
-
+                    navigate(location.state ? location.state : '/');
                })
                .catch(error => {
                     toast.error(error.message)

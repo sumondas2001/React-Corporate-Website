@@ -1,12 +1,12 @@
 import { FaEnvelopeOpenText, FaPhoneAlt, FaRegClock } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
-import ContactFrom from "../../components/ContactFrom/ContactFrom";
 import PagesTitle from "../../components/PagesTitle/PagesTitle";
 import PagesCoverImg from "../../components/PagesCoverImg/PagesCoverImg";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import GetInTouch from "../../components/GetInTouch/GetInTouch";
+import ContactFrom2 from "./ContactsFrom2/ContactsFrom2";
 
 
 const Contacts = () => {
@@ -23,7 +23,7 @@ const Contacts = () => {
                <PagesCoverImg imgUrl={imgUrl} title={'CONTACTS'}></PagesCoverImg>
 
 
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <div
                          data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"
@@ -79,7 +79,7 @@ const Contacts = () => {
                               </div>
                               <div className="lg:w-1/2 w-full">
                                    <h1 className="text-xl font-medium ">How we can help you?</h1>
-                                   <ContactFrom></ContactFrom>
+                                   <ContactFrom2></ContactFrom2>
                               </div>
                          </div>
                     </div>

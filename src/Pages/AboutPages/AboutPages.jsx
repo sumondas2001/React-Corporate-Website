@@ -20,7 +20,7 @@ const AboutPages = () => {
                <PagesTitle title={"About"}></PagesTitle>
 
                <PagesCoverImg imgUrl={imgUrl} title={"ABOUT"}></PagesCoverImg>
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <CeoSection></CeoSection>
                     <OurTeams></OurTeams>
                     <About></About>

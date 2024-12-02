@@ -11,6 +11,7 @@ import Slider from "../../components/Slider/slider";
 import OurServices from "../../components/OurServices/OurServices";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+// import Growth from "../../components/Growth/Growth";
 
 
 const Home = () => {
@@ -21,16 +22,16 @@ const Home = () => {
           <div>
                <PagesTitle title={"Home"}></PagesTitle>
                <Slider></Slider>
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <About></About>
                     {/* <Growth></Growth> */}
                     <OurServices></OurServices>
                     <OurClients></OurClients>
                     <AchievementsSection></AchievementsSection>
 
+                    <HaveQu ></HaveQu>
                     <ClientReviews></ClientReviews>
 
-                    <HaveQu ></HaveQu>
 
                     <ContactFrom></ContactFrom>
 

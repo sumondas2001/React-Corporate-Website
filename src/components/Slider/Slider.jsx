@@ -51,7 +51,7 @@ const Slider = () => {
                >
                     {allSlider.map(slider => (
                          <SwiperSlide key={slider.id} slider={slider}>
-                              <div className="carousel-item relative w-full">
+                              <div className="carousel-item lg:h-full md:h-full h-[400px] relative w-full">
                                    <img
                                         src={slider.image}
                                         alt={`Slide ${slider.id}`}

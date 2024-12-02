@@ -74,7 +74,7 @@ const ServiceQuoteFrom = () => {
                <div className=" mb-10">
                     <PagesCoverImg title={'Get A Quote'} imgUrl={imgUrl}></PagesCoverImg>
                </div>
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
 
                     <div
 

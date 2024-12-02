@@ -28,7 +28,7 @@ const Blog = ({ blog }) => {
                     <p className="text-sm font-medium text-black">{blog_description.slice(0, 130)}</p>
                </div>
                <div className="flex mt-5 items-center px-4">
-                    <img className="mr-6 size-8 rounded-full object-cover" src={user_img} alt="" />
+                    <img className="mr-3 size-8 rounded-full object-cover" src={user_img} alt="" />
 
                     <h4 className="text-sm font-medium">By <span className=" text-base hover:text-cyan-700">{user_name}</span></h4>
                </div>

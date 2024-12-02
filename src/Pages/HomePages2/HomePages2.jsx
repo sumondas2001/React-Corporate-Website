@@ -9,6 +9,8 @@ import OurMission from "./OurMission/OurMission";
 import OurVision from "./OurVision/OurVision";
 import { AuthContext } from "../../Provider/AuthProvider";
 import HaveQu2 from "./HaveQu2/HaveQu2";
+import PagesTitle from "../../components/PagesTitle/PagesTitle";
+import ContactFrom2 from "../Contacts/ContactsFrom2/ContactsFrom2";
 
 const HomePages2 = () => {
      // window top pages
@@ -16,8 +18,10 @@ const HomePages2 = () => {
      PageTop();
      return (
           <div>
+               <PagesTitle title={"Home2"}></PagesTitle>
+
                <HeroSection ></HeroSection>
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[370px] mx-auto ">
+               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <OurMission></OurMission>
                     <OurVision></OurVision>
                     <OurServices></OurServices>
@@ -29,7 +33,7 @@ const HomePages2 = () => {
 
                     <div className="grid lg:grid-cols-2 mb-10 md:grid-cols-1 grid-cols-1 lg:gap-10 md:gap-3 gap-3">
                          <HaveQu2 ></HaveQu2>
-                         <ContactFrom></ContactFrom>
+                         <ContactFrom2></ContactFrom2>
                     </div>
                </div>
           </div>

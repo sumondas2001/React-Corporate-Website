@@ -19,11 +19,11 @@ const OurMission = () => {
                               <p className="bg-cyan-400   p-1 w-0"></p>
                          </div>
                     </div>
-                    <p className="lg:text-lg md:text-base text-sm font-normal">Our mission is to inspire progress and deliver excellence by empowering businesses with innovative solutions. We are committed to creating value for our clients through cutting-edge strategies, sustainable practices, and unparalleled service. At Your Company, we aim to build long-lasting relationships founded on trust, transparency, and a shared vision for success. By prioritizing integrity and fostering collaboration, </p>
+                    <p className="lg:text-lg md:text-base text-sm font-normal px-2 pb-4">Our mission is to inspire progress and deliver excellence by empowering businesses with innovative solutions. We are committed to creating value for our clients through cutting-edge strategies, sustainable practices, and unparalleled service. At Your Company, we aim to build long-lasting relationships founded on trust, transparency, and a shared vision for success. By prioritizing integrity and fostering collaboration, </p>
                </div>
 
                <div className="">
-                    <img className="object-cover rounded-lg cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src={imgURl} alt="" />
+                    <img className="object-cover lg:rounded-r-xl md:rounded-t-xl lg:rounded-t-none rounded-t-xl   cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 lg:w-[580px] md:w-[700px] w-[425px]  lg:h-[450px] md:h-[300px] h-[200px] " src={imgURl} alt="" />
                </div>
           </div>
      );
