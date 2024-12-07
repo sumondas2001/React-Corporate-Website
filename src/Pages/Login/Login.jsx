@@ -4,7 +4,7 @@ import { FaGoogle } from "react-icons/fa";
 import { useContext, useEffect } from 'react';
 import AOS from 'aos';
 import { AuthContext } from '../../Provider/AuthProvider';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 import PagesTitle from '../../components/PagesTitle/PagesTitle';
 
 const Login = () => {
@@ -29,6 +29,7 @@ const Login = () => {
                .then(res => {
                     console.log(res.user);
                     toast.success('Login Successfully');
+
                     from.reset();
                     navigate(location.state ? location.state : '/');
                })
@@ -89,7 +90,7 @@ const Login = () => {
                                    </label>
                               </div>
                               <div className="form-control mt-6">
-                                   <button type='submit' className="btn text-sm font-semibold bg-[#5cc2c7] hover:bg-[#52afb4]">Login</button>
+                                   <button type='submit' className="btn bg-gradient-to-b from-cyan-400 from-30% to-cyan-600 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-medium ">Login</button>
 
 
                               </div>

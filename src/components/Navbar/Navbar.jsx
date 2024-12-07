@@ -40,8 +40,9 @@ const Navbar = () => {
                          <summary className="lg:text-white md:text-black text-black">
                               HOME
                          </summary>
-                         <ul className="">
+                         <ul>
                               <li className="text-black">
+
                                    <NavLink
                                         to="/"
 
@@ -192,8 +193,8 @@ const Navbar = () => {
      );
 
      return (
-          <div className="lg:max-w-[1210px]  md:max-w-[700px] max-w-[350px]  mx-auto">
-               <div className="navbar absolute lg:px-12 md:px-8 px-3 bg-slate-600 bg-opacity-30 text-white left-0 top-0 right-0 z-50 py-1">
+          <div className=" fixed text-white left-0 top-0 right-0  mx-auto bg-opacity-30 z-50 bg-slate-800 ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] py-1 navbar px-0 mx-auto">
                     <div className="navbar-start md:w-10 lg:w-0">
                          <div className="dropdown">
                               {/* Toggle Dropdown */}
@@ -201,7 +202,7 @@ const Navbar = () => {
                                    onClick={handelDropdownToggle}
                                    tabIndex={0}
                                    role="button"
-                                   className="mr-4 lg:hidden"
+                                   className="mr-4 lg:hidden "
                               >
                                    <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +222,7 @@ const Navbar = () => {
                               {/* // Conditionally render dropdown */}
                               {
                                    isDropdownOpen && (
-                                        <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52 md:w-44 w-36 p-2 shadow text-base font-semibold px-1">
+                                        <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 lg:w-52  md:w-44 w-36 p-2 shadow text-base font-semibold px-1">
                                              {links}
                                         </ul>
                                    )
@@ -236,8 +237,9 @@ const Navbar = () => {
                          </Link>
                     </div>
 
-                    <div className="navbar-center hidden lg:flex px-2 z-50">
-                         <ul className="menu menu-horizontal text-base font-semibold px-2">
+                    <div className="navbar-center  hidden lg:flex px-2 z-50">
+
+                         <ul className="menu menu-horizontal brightness-150 text-base font-semibold px-2">
                               {links}
                          </ul>
 
@@ -294,5 +296,11 @@ const Navbar = () => {
           </div>
      );
 };
-
 export default Navbar;
+
+
+
+
+
+
+

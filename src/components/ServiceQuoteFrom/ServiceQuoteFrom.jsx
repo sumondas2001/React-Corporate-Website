@@ -74,7 +74,7 @@ const ServiceQuoteFrom = () => {
                <div className=" mb-10">
                     <PagesCoverImg title={'Get A Quote'} imgUrl={imgUrl}></PagesCoverImg>
                </div>
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
 
                     <div
 
@@ -96,12 +96,12 @@ const ServiceQuoteFrom = () => {
                                    <p className="text-sm font-normal mt-4">Get a quote in just 30 minutes</p>
                               </div>
 
-                              <div>
-                                   <h1 className="lg:text-xl md:text-lg text-sm  font-bold "> {service_name}</h1>
-                                   <div className="flex flex-row-reverse items-center gap-2 mt-2">
-                                        <hr className="lg:w-36 md:w-28 w-20 border-cyan-400 border-2 " />
+                              <div >
+                                   <h1 className=" bg-cyan-200 px-3 py-1 rounded-full text-black text-opacity-75 text-sm  font-medium "> {service_name}</h1>
+                                   {/* <div className="flex flex-row-reverse items-center gap-2 mt-2">
+                                        <hr className="lg:w-24 md:w-20 w-12 border-cyan-400 border-2 " />
                                         <p className="bg-cyan-400  p-1 w-0"></p>
-                                   </div>
+                                   </div> */}
                               </div>
 
                          </div>
@@ -165,7 +165,7 @@ const ServiceQuoteFrom = () => {
                               <textarea className=" w-full  border border-black mt-4 rounded-lg px-4 pb-32 pt-4 focus:outline-none focus:border-cyan-500" type="text" name="message" placeholder="Write Your Quotation Detail Here... *" id="" />
 
                          </div>
-                         <button type="submit" className="px-5 mt-6 border py-3  bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-semibold ">Send Message</button>
+                         <button type="submit" className="px-3 mt-6 border py-2  bg-gradient-to-b from-cyan-400 from-30% to-cyan-600 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-medium ">Send Message</button>
                     </form>
 
                     <HowWeWork></HowWeWork>

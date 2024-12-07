@@ -24,7 +24,10 @@ const Root = () => {
 
                </div>
                <Footer></Footer>
-               <Toaster />
+               <Toaster
+                    position="top-right"
+                    reverseOrder={true}
+               />
           </div>
      );
 };

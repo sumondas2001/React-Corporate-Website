@@ -1,40 +1,55 @@
-/* Default styles for Swiper navigation buttons */
-.swiper-button-next,
+/* Position Swiper navigation buttons on the right side (bottom corner) */
+.swiper-button-next, 
 .swiper-button-prev {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    bottom: 20px; /* Adjust the vertical position */
+    right: 20px; /* Start positioning from the right */
+    z-index: 10; /* Ensure the buttons are above the Swiper content */
+    width: 40px; /* Adjust button size */
+    height: 40px; /* Adjust button size */
+    color: #fff; /* Set the color for the buttons */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better visibility */
+    border-radius: 50%; /* Make the buttons circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out; /* Add a smooth hover effect */
 }
 
-/* Large devices (lg): Width and height 80px (w-20 h-20) */
-@media (min-width: 1024px) {
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        font-size: 30px;
-    }
+/* Adjust hover styles for buttons */
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter background on hover */
+    color: #000; /* Change icon color on hover */
 }
 
-/* Medium devices (md): Width and height 64px (w-16 h-16) */
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        font-size: 30px;
-    }
+/* Target Swiper next button specifically */
+.swiper-button-next {
+    right: 20px; /* Align next button to the far right */
 }
 
-/* Small devices (sm): Width and height 24px (w-6 h-6) */
-@media (max-width: 767px) {
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        font-size: 20px;
-    }
+/* Target Swiper previous button to the left of next */
+.swiper-button-prev {
+    right: 70px; /* Place it slightly left of the next button */
 }
 
-/* Optional: Customize button arrow size */
-.swiper-button-next::after,
+/* Custom arrow size */
+.swiper-button-next::after, 
 .swiper-button-prev::after {
-    font-size: 1em;
-    /* Adjust font size relative to button size */
+    font-size: 12px; /* Set icon size */
+}
+
+/* Responsive adjustments for small devices */
+@media (max-width: 767px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        bottom: 10px; /* Adjust bottom spacing for smaller screens */
+        right: 10px; /* Adjust right spacing for smaller screens */
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-prev {
+        right: 50px; /* Reduce the gap between buttons for smaller screens */
+    }
 }

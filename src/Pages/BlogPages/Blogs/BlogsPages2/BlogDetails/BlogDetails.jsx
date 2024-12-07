@@ -50,7 +50,7 @@ const BlogDetails = () => {
                     <PagesCoverImg imgUrl={imgUrl} title={'BLOGS DETAILS'}></PagesCoverImg>
                </div>
 
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <div
                          data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"

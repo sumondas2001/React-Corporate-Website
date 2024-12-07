@@ -50,7 +50,7 @@ const OurTeams2 = () => {
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000"
                     data-aos-offset="100"
-                    className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 ">
+                    className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 ">
                     {
                          team?.map(team => <OurTeam2
                               key={team.id}

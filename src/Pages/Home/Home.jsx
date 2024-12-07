@@ -20,9 +20,9 @@ const Home = () => {
      PageTop();
      return (
           <div>
-               <PagesTitle title={"Home"}></PagesTitle>
+               <PagesTitle title={"Home"}> </PagesTitle>
                <Slider></Slider>
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <About></About>
                     {/* <Growth></Growth> */}
                     <OurServices></OurServices>

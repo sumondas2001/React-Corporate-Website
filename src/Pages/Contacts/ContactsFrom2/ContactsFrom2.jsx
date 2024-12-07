@@ -71,7 +71,7 @@ const ContactFrom2 = () => {
                          <div>
                               <textarea type="text" className=" w-full  border border-black focus:outline-none focus:border-cyan-500 h-28 mt-6 rounded-lg px-4 py-3 " name="message" placeholder="Your Message....." required id="" />
                          </div>
-                         <button type="submit" className="px-5 mt-6 border py-3  bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-semibold ">Send Message</button>
+                         <button type="submit" className="px-3 mt-6 border py-2  bg-gradient-to-b from-cyan-400 from-30% to-cyan-600 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-medium  ">Send Message</button>
                     </form>
 
                </div>

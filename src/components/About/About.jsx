@@ -8,7 +8,7 @@ const About = () => {
 
      return (
 
-          <div className="mt-10 mb-10 flex flex-col md:flex-row lg:justify-between md:gap-8  items-center text-center lg:text-left md:text-left bg-[#e9f5f5] lg:p-8 md:p-3 p-0 rounded-md">
+          <div className="mt-10 mb-10 flex flex-col md:flex-row lg:justify-between md:gap-8  items-center text-center lg:text-left md:text-left bg-[#e9f5f5] lg:p-2 md:p-2 p-0 rounded-md">
 
                <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
@@ -61,7 +61,7 @@ const About = () => {
                     </div>
 
                     <div className="mt-6 flex justify-center lg:justify-start">
-                         <Link to={'/aboutPages'} className=" lg:mb-0 md:mb-0 mb-6"> <button className="px-5 mt-6 border py-3  bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-semibold ">Read more</button></Link>
+                         <Link to={'/aboutPages'} className=" lg:mb-0 md:mb-0 mb-6"> <button className="px-3 mt-6 border py-2 bg-gradient-to-b from-cyan-400 from-30% to-cyan-600 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-medium  ">Read more</button></Link>
 
 
 

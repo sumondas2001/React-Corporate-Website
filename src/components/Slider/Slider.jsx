@@ -28,22 +28,26 @@ const Slider = () => {
                });
      }, []);
 
+
      return (
 
-          <div className="sliderWidth">
+          <div className="sliderWidth ">
+
+
                <Swiper
                     spaceBetween={3}
                     centeredSlides={true}
-                    speed={2000}
+                    speed={1000}
+                    loop={true}
                     autoplay={{
-                         delay: 2500,
+                         delay: 3000,
                          disableOnInteraction: false,
                     }}
                     pagination={{
                          clickable: true,
                     }}
                     navigation={true}
-                    // Enable navigation buttons
+
 
                     modules={[Autoplay, Pagination, Navigation]}
 
@@ -57,7 +61,7 @@ const Slider = () => {
                                         alt={`Slide ${slider.id}`}
                                         className="w-full h-screen object-cover"
                                    />
-                                   <div className="absolute h-full md:pl-14 lg:pl-14 pl-8 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
+                                   <div className="absolute h-full  lg:pl-[85px] md:pl-14 pl-12 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                                         <div className="md:space-y-5 lg:space-y-7 space-y-1 lg:w-1/2 md:w-1/2 w-[250px]">
                                              <div>
                                                   <h1 className="md:text-2xl lg:text-3xl text-base font-bold text-white">
@@ -71,7 +75,7 @@ const Slider = () => {
                                                   <Link to={'/services'}>
                                                        <button
                                                             type="submit"
-                                                            className="lg:px-5 md:px-4 px-2  mt-6 border lg:py-3 md:py-3 py-2 bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white hover:from-cyan-600 hover:from-30% hover:to-cyan-300 text-base font-semibold"
+                                                            className="lg:px-3 md:px-3 px-2  mt-6 border lg:py-2 md:py-2 py-[6px] bg-gradient-to-b from-cyan-400 from-30% to-cyan-600 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-medium "
                                                        >
                                                             Discover More
                                                        </button>

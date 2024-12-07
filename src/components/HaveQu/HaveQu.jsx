@@ -20,7 +20,7 @@ const HaveQu = () => {
                     </div>
                     <p className="mb-14 font-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab rem provident <br />similique id? Quas modi consequatur animi voluptates sint.</p>
                </div>
-               <div className="flex lg:flex-row md:flex-col flex-col gap-10 shadow-xl hover:shadow-2xl  p-4">
+               <div className="flex lg:flex-row md:flex-col flex-col gap-10 shadow-xl hover:shadow-2xl  py-4">
 
                     <div className="w-full">
                          <img
@@ -30,7 +30,7 @@ const HaveQu = () => {
                               data-aos-offset="100"
 
 
-                              className="object-cover mx-auto lg:w-[500px] md:w-[500px] w-full   h-[430px] cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 " src={imgUrl} alt="" />
+                              className="object-cover mx-auto lg:w-[600px] md:w-[500px] w-full   h-[430px] cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150 " src={imgUrl} alt="" />
 
                     </div>
                     <div

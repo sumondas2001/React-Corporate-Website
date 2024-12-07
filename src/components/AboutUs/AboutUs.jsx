@@ -30,7 +30,7 @@ const AboutUs = () => {
                     data-aos-offset="100"
                >
 
-                    <p className="lg:text-lg md:text-base text-xs lg:w-4/5 md:w-4/5 w-full mx-auto font-medium text-center ">Welcome to Your Company , where innovation meets excellence. As a leading corporate entity, we specialize in delivering tailored solutions designed to empower businesses and drive sustainable growth. Founded on the principles of integrity, innovation, and customer-centricity, we are committed to transforming challenges into opportunities for our clients.With a team of skilled professionals who bring extensive industry expertise and a forward-thinking mindset, we tailor our services to meet your unique needs.</p>
+                    <p className="lg:text-base md:text-base text-xs lg:w-4/5 md:w-4/5 w-full mx-auto font-medium text-center ">Welcome to Your Company , where innovation meets excellence. As a leading corporate entity, we specialize in delivering tailored solutions designed to empower businesses and drive sustainable growth. Founded on the principles of integrity, innovation, and customer-centricity, we are committed to transforming challenges into opportunities for our clients.With a team of skilled professionals who bring extensive industry expertise and a forward-thinking mindset, we tailor our services to meet your unique needs.</p>
                </div>
 
           </div>

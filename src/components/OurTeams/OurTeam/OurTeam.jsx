@@ -19,7 +19,7 @@ const OurTeam = ({ team }) => {
 
           >
                <div>
-                    <img className="h-96 rounded-t-xl w-full object-cover cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={img} alt="" />
+                    <img className="h-80 rounded-t-xl w-full object-cover cursor-pointer transition duration-1000 hover:scale-90 hover:delay-150" src={img} alt="" />
                </div>
                <div className='text-center mt-3'>
                     <h1 className="text-lg font-semibold">{name}</h1>

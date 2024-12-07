@@ -62,7 +62,7 @@ const ServiceDetails = () => {
                </div>
 
 
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <div
 
                          className="flex lg:flex-row md:flex-row flex-col-reverse  lg:gap-20 gap-10 md:gap-10">
@@ -71,7 +71,7 @@ const ServiceDetails = () => {
                               data-aos-easing="ease-out-cubic"
                               data-aos-duration="1000"
                               data-aos-offset="100"
-                              className=" lg:w-1/3 md:w-1/3 w-full shadow-xl rounded-xl  shadow-slate-300">
+                              className=" lg:w-1/3 md:w-1/3 w-full shadow-lg rounded-xl  shadow-slate-300">
                               {
                                    allServices.map((service) => (
                                         <NavLink
@@ -109,7 +109,7 @@ const ServiceDetails = () => {
 
 
 
-                                        <button className="px-5 mt-6 border py-3  bg-gradient-to-tr from-cyan-400 from-30% to-cyan-800 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-semibold ">Get A Quote</button>
+                                        <button className="px-3 mt-6 border py-2  bg-gradient-to-b from-cyan-400 from-30% to-cyan-600 text-white  hover:from-cyan-600 hover:from-30% hover:to-cyan-300  text-base  font-medium ">Get A Quote</button>
                                    </Link>
                               </div>
                          </div>

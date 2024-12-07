@@ -19,7 +19,7 @@ const AboutPages2 = () => {
                     <PagesCoverImg imgUrl={imgUrl} title={'ABOUT PAGES 2'}></PagesCoverImg>
                </div>
 
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto  ">
                     <AboutUs></AboutUs>
                     <CeoSection2></CeoSection2>
                     <OurTeams2></OurTeams2>

@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import AchievementsSection from "../../components/AchievementsSection/AchievementsSection";
 import ClientReviews from "../../components/ClientReviews/ClientReviews";
-import ContactFrom from "../../components/ContactFrom/ContactFrom";
 import OurClients from "../../components/OurClients/OurClients";
 import OurServices from "../../components/OurServices/OurServices";
 import HeroSection from "./HeroSection/HeroSection";
@@ -21,7 +20,7 @@ const HomePages2 = () => {
                <PagesTitle title={"Home2"}></PagesTitle>
 
                <HeroSection ></HeroSection>
-               <div className="lg:max-w-[1250px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
                     <OurMission></OurMission>
                     <OurVision></OurVision>
                     <OurServices></OurServices>
