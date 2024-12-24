@@ -2,12 +2,14 @@ import { useContext, useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+
 import { FaUserCircle } from "react-icons/fa";
 
 import logo from "../../../src/assets/logo/logo.png";
 
 const Navbar = () => {
      const { logOut, user } = useContext(AuthContext);
+     console.log(user)
      // mobile device and tablet  dropDown icon
 
      const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -16,6 +18,7 @@ const Navbar = () => {
 
      useEffect(() => {
           setIsDropdownOpen(false)
+
      }, [location])
 
      const handelDropdownToggle = () => {
@@ -40,6 +43,7 @@ const Navbar = () => {
                          <summary className="lg:text-white md:text-black text-black">
                               HOME
                          </summary>
+
                          <ul>
                               <li className="text-black">
 
@@ -69,6 +73,7 @@ const Navbar = () => {
                                    </NavLink>
                               </li>
                          </ul>
+
                     </details>
                </li>
                <li>
@@ -256,7 +261,7 @@ const Navbar = () => {
                                    >
                                         {user?.photoURL ? (
                                              <div className="lg:w-10 md:w-8 w-8 rounded-full">
-                                                  <img alt="Profile Photo" src={user?.photoURL} />
+                                                  <img src={user?.photoURL} />
                                              </div>
                                         ) : (
                                              <FaUserCircle className="text-3xl"></FaUserCircle>
@@ -267,7 +272,10 @@ const Navbar = () => {
                                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 py-2 shadow"
                                    >
                                         <li>
+
                                              <p className="text-base font-medium">{user?.displayName}</p>
+
+
                                         </li>
                                         <li>
                                              <p className="text-sm font-medium mb-1 mt-1">

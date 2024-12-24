@@ -35,7 +35,7 @@ const ServicesPages2 = () => {
                </div>
 
 
-               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto  ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[350px] mx-auto  ">
                     <div className="mb-10"
                          data-aos="fade-up"
                          data-aos-easing="ease-out-cubic"

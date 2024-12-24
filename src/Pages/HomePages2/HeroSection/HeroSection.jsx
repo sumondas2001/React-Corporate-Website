@@ -27,7 +27,7 @@ const HeroSection = () => {
                     </div>
                     <img
 
-                         className="object-cover  lg:h-screen md:h-[420px] h-[270px]  rounded-bl-full lg:w-[800px]  md:w-[400px] w-[220px] " src={imgUrl} alt="" />
+                         className="object-cover  lg:h-screen md:h-[420px] h-96  rounded-bl-full lg:w-[800px]  md:w-[400px] w-[220px] " src={imgUrl} alt="" />
                </div>
 
           </div>

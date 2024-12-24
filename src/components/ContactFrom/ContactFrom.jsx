@@ -18,7 +18,10 @@ const ContactFrom = () => {
                style: {
                     padding: '18px',
                     color: '#713200',
-                    backgroundColor: '#E3FDFD'
+                    backgroundColor: '#E3FDFD',
+                    fontSize: '12px',
+                    paddingTop: '6px',
+                    paddingBottom: '6px'
                },
           });
           const fromData = { firstName, lastName, email, subject, message };

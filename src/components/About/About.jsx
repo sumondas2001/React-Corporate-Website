@@ -32,7 +32,7 @@ const About = () => {
                                    <FaDollarSign className='lg:size-8 text-cyan-900  mx-auto md:size-8  md:mt-2 size-7' />
                               </div>
                               <div className="text-center sm:text-left ">
-                                   <h1 className="text-xl font-bold text-cyan-700 mb-3">Our Mission</h1>
+                                   <h1 className="text-xl font-bold text-cyan-700 mb-3 ">Our Mission</h1>
 
                                    <p className="text-base font-medium">Our mission is to empower brands by crafting innovative and impactful creative solutions, driving strategic campaign success.</p>
                               </div>

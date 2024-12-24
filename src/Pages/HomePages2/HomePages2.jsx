@@ -20,7 +20,7 @@ const HomePages2 = () => {
                <PagesTitle title={"Home2"}></PagesTitle>
 
                <HeroSection ></HeroSection>
-               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[350px] mx-auto ">
                     <OurMission></OurMission>
                     <OurVision></OurVision>
                     <OurServices></OurServices>

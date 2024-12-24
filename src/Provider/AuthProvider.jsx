@@ -48,14 +48,12 @@ const AuthProvider = ({ children }) => {
           })
      }, []);
 
-     const userUpdateProfile = (name) => {
-          updateProfile(auth.currentUser, {
+     const updateUserProfile = (name) => {
+          return updateProfile(auth.currentUser, {
                displayName: name,
-               photoURL: user.photoURL
+               // photoURL: photo,
           })
-               .then()
-               .catch()
-     };
+     }
 
      // pages top 
 
@@ -73,8 +71,9 @@ const AuthProvider = ({ children }) => {
           logOut,
           user,
           loading,
-          userUpdateProfile,
-          PageTop
+          updateUserProfile,
+          PageTop,
+          setUser,
      }
      return (
           <AuthContext.Provider value={authInfo}>

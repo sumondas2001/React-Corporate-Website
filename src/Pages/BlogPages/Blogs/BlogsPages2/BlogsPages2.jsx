@@ -27,7 +27,7 @@ const BlogsPages2 = () => {
                     <PagesCoverImg imgUrl={imgUrl} title={'BLOGS-2'}></PagesCoverImg>
                </div>
 
-               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[350px] mx-auto ">
                     <div className="lg:mt-10 md:mt-8 mt-5 lg:mb-10 md:mb-8 mb-5">
                          <h1 className="text-2xl  font-medium  mb-4">Blogs</h1>
                          <div className="flex items-center gap-2 mt-2">

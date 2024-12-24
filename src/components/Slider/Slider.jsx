@@ -40,7 +40,7 @@ const Slider = () => {
                     speed={1000}
                     loop={true}
                     autoplay={{
-                         delay: 3000,
+                         delay: 5000,
                          disableOnInteraction: false,
                     }}
                     pagination={{
@@ -55,7 +55,7 @@ const Slider = () => {
                >
                     {allSlider.map(slider => (
                          <SwiperSlide key={slider.id} slider={slider}>
-                              <div className="carousel-item lg:h-full md:h-full h-[400px] relative w-full">
+                              <div className="carousel-item lg:h-full md:h-full h-full relative w-full">
                                    <img
                                         src={slider.image}
                                         alt={`Slide ${slider.id}`}

@@ -137,8 +137,8 @@ const Footer = () => {
                     <div className="mt-6">
                          <hr className="border-gray-500" />
                          <div>
-                              <h1 className="text-center text-xs font-normal mt-4 text-white">
-                                   © Copyright 2024. Theme by <span className="text-sm font-medium">Soft Tech Solution</span>
+                              <h1 className=" flex items-center justify-center text-sm font-normal mt-4 text-white">
+                                   <span className="text-lg mr-1  font-medium">   © </span> Copyright 2024. Theme by Soft Tech Solution
                               </h1>
                          </div>
                     </div>

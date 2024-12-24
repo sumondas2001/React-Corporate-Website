@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import loginImg from '../../assets/login/login.svg';
 import { FaGoogle, } from "react-icons/fa";
 import { useContext, useEffect, useState } from 'react';
@@ -10,8 +10,10 @@ import PagesTitle from '../../components/PagesTitle/PagesTitle';
 
 
 const Register = () => {
-     const { createUser, googleLogin, updateProfile } = useContext(AuthContext);
+     const { createUser, googleLogin, updateUserProfile, setUser, user } = useContext(AuthContext);
      const [error, setError] = useState('');
+
+     const navigate = useNavigate();
 
 
 
@@ -39,12 +41,17 @@ const Register = () => {
 
 
           createUser(email, password)
+
                .then(res => {
 
-                    toast.success('Register Successfully');
-                    updateProfile(name)
                     from.reset();
                     console.log(res.user)
+                    updateUserProfile(name)
+
+                    setUser({ ...user, displayName: name })
+                    toast.success('Register Successfully');
+                    navigate('/');
+
                })
                .catch(error => {
                     console.log(error);

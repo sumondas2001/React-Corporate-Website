@@ -59,7 +59,10 @@ const ServiceQuoteFrom = () => {
                style: {
                     padding: '18px',
                     color: '#713200',
-                    backgroundColor: '#E3FDFD'
+                    backgroundColor: '#E3FDFD',
+                    fontSize: '12px',
+                    paddingTop: '6px',
+                    paddingBottom: '6px'
                },
           })
           from.reset();
@@ -74,7 +77,7 @@ const ServiceQuoteFrom = () => {
                <div className=" mb-10">
                     <PagesCoverImg title={'Get A Quote'} imgUrl={imgUrl}></PagesCoverImg>
                </div>
-               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[360px] mx-auto ">
+               <div className="lg:max-w-[1200px] md:max-w-[700px] max-w-[350px] mx-auto ">
 
                     <div
 
