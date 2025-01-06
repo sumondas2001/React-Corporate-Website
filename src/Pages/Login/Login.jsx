@@ -4,7 +4,7 @@ import { FaGoogle } from "react-icons/fa";
 import { useContext, useEffect } from 'react';
 import AOS from 'aos';
 import { AuthContext } from '../../Provider/AuthProvider';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import PagesTitle from '../../components/PagesTitle/PagesTitle';
 
 const Login = () => {
