@@ -58,7 +58,7 @@ const Slider = () => {
                               <div className="carousel-item lg:h-full md:h-full h-full relative w-full">
                                    <img
                                         src={slider.image}
-                                        alt={`Slide ${slider.id}`}
+
                                         className="w-full h-screen object-cover"
                                    />
                                    <div className="absolute h-full  lg:pl-[85px] md:pl-14 pl-12 top-0 left-0 right-0 justify-start flex gap-6 items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
