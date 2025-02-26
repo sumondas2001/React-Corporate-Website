@@ -71,6 +71,8 @@ const ServiceDetails = () => {
                               data-aos-easing="ease-out-cubic"
                               data-aos-duration="1000"
                               data-aos-offset="100"
+
+
                               className=" lg:w-1/3 md:w-1/3 w-full shadow-lg rounded-xl  shadow-slate-300">
                               {
                                    allServices.map((service) => (

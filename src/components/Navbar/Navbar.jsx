@@ -9,7 +9,7 @@ import logo from "../../../src/assets/logo/logo.png";
 
 const Navbar = () => {
      const { logOut, user } = useContext(AuthContext);
-     console.log(user)
+     // console.log(user)
      // mobile device and tablet  dropDown icon
 
      const [isDropdownOpen, setIsDropdownOpen] = useState(false);
